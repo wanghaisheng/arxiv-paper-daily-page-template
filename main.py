@@ -301,9 +301,9 @@ class _OverloadTasks:
         _project = f"# Inuitive-paper-arxiv-daily latest papers around 3d Vision\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = "> Welcome to contribute! Add your topics and keywords in " \
-               "[`topic.yml`](https://github.com/beiyuouo/arxiv-daily/blob/main/database/topic.yml).\n"
+               "[`topic.yml`](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/topic.yml).\n"
         _tos += "> You can also view historical data through the " \
-                "[storage](https://github.com/beiyuouo/arxiv-daily/blob/main/database/storage).\n"
+                "[storage](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/storage).\n"
 
         _form = _project + _pin + _tos + content
 
