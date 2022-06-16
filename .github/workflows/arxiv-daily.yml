@@ -2,10 +2,10 @@ name: Run Arxiv Papers Daily
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "* 0/12 * * *" #'*/60 * * * *'
-  push:
-    branches: [main]
+#   schedule:
+#     - cron: "* 0/12 * * *" #'*/60 * * * *'
+#   push:
+#     branches: [main]
 
 jobs:
   build:
