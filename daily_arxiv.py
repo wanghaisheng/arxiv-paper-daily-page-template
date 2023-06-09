@@ -98,10 +98,10 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2):
                 cnt += 1
                 repo_url = r["official"]["url"]
                 content[
-                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|\n"
+                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|**[link]({repo_url})**|{paper_abstract}|\n"
             else:
                 content[
-                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|null|\n"
+                    paper_key] = f"|**{publish_time}**|**{paper_title}**|{paper_first_author} et.al.|[{paper_id}]({paper_url})|null|{paper_abstract}|\n"
 
         except Exception as e:
             print(f"exception: {e} with id: {paper_key}")
@@ -176,8 +176,8 @@ def json_to_md(filename, to_web=False):
                     # the head of each part
                     f.write(f"### {subtopic}\n\n")
 
-                    f.write("|Publish Date|Title|Authors|PDF|Code|\n" +
-                            "|---|---|---|---|---|\n")
+                    f.write("|Publish Date|Title|Authors|PDF|Code|Abstract|\n" +
+                            "|---|---|---|---|---|---|\n")
 
                     # sort papers by date
                     day_content = sort_papers(day_content)
@@ -217,9 +217,9 @@ def json_to_md(filename, to_web=False):
                         continue
                     # the head of each part
                     f.write(f"# {subtopic}\n\n")
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
+                    f.write("| Publish Date | Title | Authors | PDF | Code | Abstract |\n")
                     f.write(
-                        "|:---------|:-----------------------|:---------|:------|:------|\n")
+                        "|:---------|:-----------------------|:---------|:------|:------|:------|\n")
 
                     # sort papers by date
                     day_content = sort_papers(day_content)
@@ -236,9 +236,9 @@ def json_to_md(filename, to_web=False):
                         continue
                     # the head of each part
                     f.write(f"## {subtopic}\n\n")
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
+                    f.write("| Publish Date | Title | Authors | PDF | Code | Abstract |\n")
                     f.write(
-                        "|:---------|:-----------------------|:---------|:------|:------|\n")
+                        "|:---------|:-----------------------|:---------|:------|:------|:------|\n")
 
                     # sort papers by date
                     day_content = sort_papers(day_content)
