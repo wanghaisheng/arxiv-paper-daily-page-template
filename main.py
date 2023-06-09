@@ -160,7 +160,7 @@ class CoroutineSpeedup:
             # 编排模型
             # ----------------------------------------------------------------------------------
             # IF repo
-            #   |publish_time|paper_title|paper_first_author|[paper_id](paper_url)|`[link](url)`
+            #   |publish_time|paper_title|paper_first_author|[paper_id](paper_url)|`[link](url)|`paper_abstract``
             # ELSE
             #   |publish_time|paper_title|paper_first_author|[paper_id](paper_url)|`null`
             _paper.update({
@@ -170,14 +170,15 @@ class CoroutineSpeedup:
                     "authors": f"{paper_first_author} et.al.",
                     "id": paper_id,
                     "paper_url": paper_url,
-                    "repo": repo_url
+                    "repo": repo_url,
+                    "abstract" :paper_abstract
                 },
             })
         self.channel.put_nowait({
             "paper": _paper,
             "topic": context["hook"]["topic"],
             "subtopic": context["hook"]["subtopic"],
-            "fields": ["Publish Date", "Title", "Authors", "PDF", "Code"]
+            "fields": ["Publish Date", "Title", "Authors", "PDF", "Code","Abstract"]
         })
         logger.success(
             f"handle [{self.channel.qsize()}/{self.max_queue_size}]"
@@ -261,12 +262,13 @@ class _OverloadTasks:
             text=paper['id'], link=paper['paper_url'])
         _repo = self._set_markdown_hyperlink(
             text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
-
+        paper['abstract']=f"{paper['abstract']}"
         line = f"|{paper['publish_time']}" \
                f"|{paper['title']}" \
                f"|{paper['authors']}" \
                f"|{_pdf}" \
-               f"|{_repo}|\n"
+               f"|{_repo}" \
+               f"|{paper['abstract']}"| \n"
 
         return line
 
@@ -298,11 +300,10 @@ class _OverloadTasks:
                 f.write(i)
 
     def generate_markdown_template(self, content: str):
-        repo_url="https://github.com/wanghaisheng/wearable-device-paper-daily"
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
 
-        _project = f"# arxiv-daily latest papers around {repo_name}\n"
+        _project = f"# arxiv-daily latest papers around wearable device\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = "> Welcome to contribute! Add your topics and keywords in " \
                "[`topic.yml`]({repo_url}/blob/main/database/topic.yml).\n"
@@ -371,4 +372,5 @@ class Scaffold:
             shutil.copyfile(SERVER_PATH_README, os.path.join(SERVER_PATH_DOCS, "index.md"))
 
 if __name__ == "__main__":
+    
     Fire(Scaffold)
