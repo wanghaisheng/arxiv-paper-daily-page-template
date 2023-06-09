@@ -309,6 +309,7 @@ class _OverloadTasks:
     def generate_markdown_template(self, content: str):
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
+        print('-====,',repo_url)
 
         _project = f"# arxiv-daily latest papers around {repo_name}\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
