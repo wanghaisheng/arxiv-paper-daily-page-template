@@ -310,7 +310,7 @@ class _OverloadTasks:
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
 
-        _project = f"# arxiv-daily latest papers around wearable device\n"
+        _project = f"# arxiv-daily latest papers around {repo_name}\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = "> Welcome to contribute! Add your topics and keywords in " \
                "[`topic.yml`]({repo_url}/blob/main/database/topic.yml).\n"
