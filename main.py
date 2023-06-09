@@ -298,12 +298,15 @@ class _OverloadTasks:
                 f.write(i)
 
     def generate_markdown_template(self, content: str):
-        _project = f"#arxiv-daily latest papers you should know \n"
+        repo_url="https://github.com/wanghaisheng/wearable-device-paper-daily"
+        repo_name=" wearable device"
+
+        _project = f"# arxiv-daily latest papers around {repo_name}\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = "> Welcome to contribute! Add your topics and keywords in " \
-               "[`topic.yml`](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/topic.yml).\n"
+               "[`topic.yml`]({repo_url}/blob/main/database/topic.yml).\n"
         _tos += "> You can also view historical data through the " \
-                "[storage](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/storage).\n"
+                "[storage]({repo_url}/blob/main/database/storage).\n"
 
         _form = _project + _pin + _tos + content
 
