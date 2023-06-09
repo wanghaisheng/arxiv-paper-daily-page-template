@@ -124,7 +124,7 @@ class CoroutineSpeedup:
 
             code_url = base_url + paper_id
             paper_first_author = result.authors[0]
-
+            paper_abstract= result["abstract"]
             publish_time = result.published.date()
 
             ver_pos = paper_id.find('v')
