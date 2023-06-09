@@ -298,7 +298,7 @@ class _OverloadTasks:
                 f.write(i)
 
     def generate_markdown_template(self, content: str):
-        _project = f"# Inuitive-paper-arxiv-daily latest papers around 3d Vision\n"
+        _project = f"#arxiv-daily latest papers you should know \n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = "> Welcome to contribute! Add your topics and keywords in " \
                "[`topic.yml`](https://github.com/wanghaisheng/Inuitive-paper-daily/blob/main/database/topic.yml).\n"
