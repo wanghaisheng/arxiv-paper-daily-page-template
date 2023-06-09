@@ -127,7 +127,7 @@ class CoroutineSpeedup:
             paper_title = result.title
 
             paper_url = result.entry_id
-            paper_abstract= result.summary.strip()
+            paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
             print(paper_abstract)
             code_url = base_url + paper_id
             paper_first_author = result.authors[0]
