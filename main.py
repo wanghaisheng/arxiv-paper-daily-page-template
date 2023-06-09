@@ -268,7 +268,7 @@ class _OverloadTasks:
                f"|{paper['authors']}" \
                f"|{_pdf}" \
                f"|{_repo}" \
-               f"|{paper['abstract']}"| \n"
+               f"|{paper['abstract']}"|\n"
 
         return line
 
