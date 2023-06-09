@@ -313,9 +313,9 @@ class _OverloadTasks:
         _project = f"# arxiv-daily latest papers around {repo_name}\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
         _tos = f"> Welcome to contribute! Add your topics and keywords in " \
-               "[`topic.yml`]({repo_url}/blob/main/database/topic.yml).\n"
+               f"[`topic.yml`]({repo_url}/blob/main/database/topic.yml).\n"
         _tos += f"> You can also view historical data through the " \
-                "[storage]({repo_url}/blob/main/database/storage).\n"
+                f"[storage]({repo_url}/blob/main/database/storage).\n"
 
         _form = _project + _pin + _tos + content
 
