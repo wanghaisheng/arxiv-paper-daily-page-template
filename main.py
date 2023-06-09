@@ -299,7 +299,8 @@ class _OverloadTasks:
 
     def generate_markdown_template(self, content: str):
         repo_url="https://github.com/wanghaisheng/wearable-device-paper-daily"
-        repo_name=" wearable device"
+        repo_url=os.getenv('repo')
+        repo_name=repo_url.split('/')[-1].replace('-',' ')
 
         _project = f"# arxiv-daily latest papers around {repo_name}\n"
         _pin = f"Automated deployment @ {self.update_time} Asia/Shanghai\n"
