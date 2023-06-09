@@ -1,2 +1,4 @@
 "Camera":
   "Camera": '"Camera"OR"multi camera"OR"video"'
+"ocr":
+  "Camera": '"ocr"'
