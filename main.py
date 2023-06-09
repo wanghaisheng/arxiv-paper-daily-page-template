@@ -113,18 +113,24 @@ class CoroutineSpeedup:
         context.update({"response": res, "hook": context})
         self.worker.put_nowait(context)
 
+
     def parse(self, context):
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
         _paper = {}
         arxiv_res = context.get("response")
         for result in arxiv_res:
+#             beaware result is a https://github.com/lukasschwab/arxiv.py 
+            attributes_and_methods = dir(result)
+
+
             paper_id = result.get_short_id()
             paper_title = result.title
-            paper_url = result.entry_id
 
+            paper_url = result.entry_id
+            paper_abstract= result.summary
             code_url = base_url + paper_id
             paper_first_author = result.authors[0]
-            paper_abstract= result["abstract"]
+
             publish_time = result.published.date()
 
             ver_pos = paper_id.find('v')
@@ -268,8 +274,8 @@ class _OverloadTasks:
                f"|{paper['authors']}" \
                f"|{_pdf}" \
                f"|{_repo}" \
-               f"|{paper['abstract']}"|\n"
-
+               f"|{paper['abstract']}|\n"
+        print(':::',line)
         return line
 
     @staticmethod
