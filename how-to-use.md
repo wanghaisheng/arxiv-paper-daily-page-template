@@ -13,6 +13,31 @@ check yml format to be valid against https://www.yamllint.com/
 
 
 
+
+The query string would look like this: image segmentation AND (cat:cs.CV OR cat:stat.ML OR cat:cs.LG). You could build this in query_with_keywords:
+
+categories = ["cs.CV", "stat.ML", "cs.LG"]
+category_condition = " OR ".join(["cat:" + c for c in categories]) # "cat:cs.CV OR cat:stat.ML OR cat:cs.LG"
+
+def query_with_keywords(query):
+    query_with_categories = "{} AND ({})".format(query, category_condition)
+    search = arxiv.Search(
+        query=query_with_categories,
+        max_results=3000,
+        sort_by=arxiv.SortCriterion.LastUpdatedDate
+    )
+    terms = []
+    titles = []
+    abstracts = []
+    for res in tqdm(client.results(search), desc=query):
+        terms.append(res.categories)
+        titles.append(res.title)
+        abstracts.append(res.summary)
+    return terms, titles, abstracts
+    
+    
+    
+
 3. edit  mkdocs.yml 
 
 4. replace with your own clarity
