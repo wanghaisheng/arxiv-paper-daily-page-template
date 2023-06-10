@@ -2,6 +2,8 @@
 
 2. handwrite the topic.yml
 
+how to choose better keywords, you can run your root keyword search agaisnt wos, use the filter mesh term to find out more relevant ones
+
 how to write query ,ple refer here
 
 https://info.arxiv.org/help/api/user-manual.html#query_details
