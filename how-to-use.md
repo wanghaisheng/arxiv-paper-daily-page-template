@@ -1,15 +1,30 @@
-1.create new repo use this template
+1.create new repo use this template                 
+
 
 2. handwrite the topic.yml
 
 how to choose better keywords, you can run your root keyword search agaisnt wos, use the filter mesh term to find out more relevant ones
 
-how to write query ,ple refer here
+
+infant:
+  infant1: '"infant"or"neonatal"'
+  infant2: '"infant"and"neonatal"'
+  infant3: '"infant" or "neonatal"'
+  infant4: '"infant "or"neonatal "'  
+  infant5: '"infant "and"neonatal"'
+
+
+for  or and operator，only  infants works
+
+
+how to write complex query ,ple refer here
 
 https://info.arxiv.org/help/api/user-manual.html#query_details
 
 
 check yml format to be valid against https://www.yamllint.com/
+
+
 
 
 
