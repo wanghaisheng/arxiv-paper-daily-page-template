@@ -293,10 +293,10 @@ class _OverloadTasks:
 
         paper_contents= f"---\r" \
         f"layout: '../../layouts/MarkdownPost.astro'\r" \
-        f"title: '{paper['title']}'\r" \
+        f"title: '{paper['title'].replace('**','')}'\r" \
         f"pubDate: '{paper['publish_time']}'\r" \
         f"description: '  '\r" \
-        f"author: 'paper tracker'\r" \
+        f"author: ' {paper['authors']}'\r" \
         f"cover:\r" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
@@ -310,10 +310,9 @@ class _OverloadTasks:
         f"   content: 作者是我\r" \
         f" - name: keywords\r" \
         f"   content: key3, key4\r" \
-        f"---\r" \
         f"keywords: key1, key2, key3\r" \
+        f"---\r" \
         f"\r" \
-        f"## authors: \r  {paper['authors']} \r"\
         f"{paper['abstract']}\n"
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
