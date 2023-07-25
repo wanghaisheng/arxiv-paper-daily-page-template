@@ -313,8 +313,9 @@ class _OverloadTasks:
         f"   content: key3, key4\r" \
 
         f"keywords: key1, key2, key3\r" \
-        "---"
-        
+        f"---\r" \
+        f"## authors: \r  {paper['authors']} \r"\
+        f"{paper['abstract']}\n"
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
 
