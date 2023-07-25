@@ -297,7 +297,7 @@ class _OverloadTasks:
         f"title: '{paper['title'].replace('**','')}'\r" \
         f"pubDate: {paper['publish_time'].replace('**','')}\r" \
         f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\r" \
-        f"author: ' {paper['authors']}'\r" \
+        f"author: '{paper['authors']}'\r" \
         f"cover:\r" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
