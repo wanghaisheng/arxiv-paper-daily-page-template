@@ -1,2 +1,2 @@
 "brand":
-  "brand": '"brand build "OR"brand monitor "OR"brand"'
+  "brand": 'abs:"brand build "OR"abs:brand monitor"'
