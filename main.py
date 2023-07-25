@@ -31,7 +31,9 @@ from config import (
     SERVER_PATH_DOCS,
     SERVER_PATH_STORAGE_MD,
     TIME_ZONE_CN,
-    SERVER_PATH_STORAGE_PAPER_MD,
+    SERVER_PATH_STORAGE_PAPER_MD_weekly,
+    SERVER_PATH_STORAGE_PAPER_MD_appleblog,
+
     logger
 )
 
@@ -284,9 +286,39 @@ class _OverloadTasks:
                         f"## abstract: \r  {paper['abstract']} \r" 
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
-        paper_path=SERVER_PATH_STORAGE_PAPER_MD.format(paper['id'])
-        with open(paper_path, "w", encoding="utf8") as f:
+        paper_path_weekly=SERVER_PATH_STORAGE_PAPER_MD_weekly.format(paper['id'])
+        with open(paper_path_weekly, "w", encoding="utf8") as f:
                 f.write(paper_contents)        
+        paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
+        context: dict = self.channel.get()
+
+        paper_contents= f"---\r" \
+        f"layout: '../../layouts/MarkdownPost.astro'\r" \
+        f"title: {paper['title']}\r" \
+        f"pubDate: {paper['publish_time']}\r" \
+        f"description: '  '\r" \
+        f"author: 'paper tracker'\r" \
+        f"cover:\r" \
+        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
+        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
+        f"    alt: 'cover'\r" \
+        f"tags: [{context["topic"]}, {context["subtopic"]}] \r" \
+        f"theme: 'light'\r" \
+        f"featured: true\r" \
+
+        f"meta:\r" \
+        f" - name: author\r" \
+        f"   content: 作者是我\r" \
+        f" - name: keywords\r" \
+        f"   content: key3, key4\r" \
+
+        f"keywords: key1, key2, key3\r" \
+        "---"
+        
+        with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                f.write(paper_contents)      
+
+
         return line
 
     @staticmethod

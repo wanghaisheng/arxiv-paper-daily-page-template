@@ -142,7 +142,8 @@ dist/
 .astro/
 
 # dependencies
-node_modules/
+weekly/node_modules/
+apple-blog/node_modules/
 
 # logs
 npm-debug.log*

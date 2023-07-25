@@ -21,7 +21,11 @@ SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "database")
 SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "storage")
 
 SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "storage_{}.md")
-SERVER_PATH_STORAGE_PAPER_MD = join("src/pages/posts", "{}.md")
+render_style1='weekly'
+render_style2='apple-blog'
+
+SERVER_PATH_STORAGE_PAPER_MD_weekly = join("weekly/src/pages/posts", "{}.md")
+SERVER_PATH_STORAGE_PAPER_MD_appleblog = join("apple-blog/src/pages/posts", "{}.md")
 
 SERVER_PATH_TOPIC = join(SERVER_DIR_DATABASE, "topic.yml")
 

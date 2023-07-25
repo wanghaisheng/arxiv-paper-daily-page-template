@@ -1,5 +1,7 @@
 # 开发教程
 
+choose  one of weekly or apple-blog style
+
 ### 一、准备工作
 
 1. Fork 本仓库到自己 Github 仓库下
