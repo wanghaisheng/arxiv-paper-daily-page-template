@@ -294,7 +294,7 @@ class _OverloadTasks:
         paper_contents= f"---\r" \
         f"layout: '../../layouts/MarkdownPost.astro'\r" \
         f"title: '{paper['title'].replace('**','')}'\r" \
-        f"pubDate: '{paper['publish_time']}'\r" \
+        f"pubDate: {paper['publish_time'].replace('**','')}\r" \
         f"description: '  '\r" \
         f"author: ' {paper['authors']}'\r" \
         f"cover:\r" \
@@ -310,6 +310,7 @@ class _OverloadTasks:
         f"   content: 作者是我\r" \
         f" - name: keywords\r" \
         f"   content: key3, key4\r" \
+        f"\r" \
         f"keywords: key1, key2, key3\r" \
         f"---\r" \
         f"\r" \
