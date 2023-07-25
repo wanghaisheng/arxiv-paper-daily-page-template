@@ -302,7 +302,7 @@ class _OverloadTasks:
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
         f"    alt: 'cover'\r" \
-        f"tags: [{context['topic']}, {context['subtopic']}] \r" \
+        f"tags: ['brand','brand monitor'] \r" \
         f"theme: 'light'\r" \
         f"featured: true\r" \
 
