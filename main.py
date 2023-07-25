@@ -31,6 +31,7 @@ from config import (
     SERVER_PATH_DOCS,
     SERVER_PATH_STORAGE_MD,
     TIME_ZONE_CN,
+    SERVER_PATH_STORAGE_PAPER_MD,
     logger
 )
 
@@ -277,6 +278,15 @@ class _OverloadTasks:
                f"|{_repo}" \
                f"|{paper['abstract']}|\n"
         print(':::',line)
+        paper_contents=f" "\
+                        f"## {paper['publish_time']}" \
+                        f"## {paper['authors']}" \
+                        f"## {paper['abstract']}" \
+                        f"## {paper['summary']}"            
+        #    gpt paper summary section
+        paper_path=SERVER_PATH_STORAGE_PAPER_MD.format(paper['id']+"-"+paper['title'])
+        with open(paper_path, "w", encoding="utf8") as f:
+                f.write(paper_contents)        
         return line
 
     @staticmethod

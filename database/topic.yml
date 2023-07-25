@@ -1,4 +1,2 @@
-"Camera":
-  "Camera": '"Camera"OR"multi camera"OR"video"'
-"social media":
-  "creator": '"youtube"or"tiktok"'
+"brand":
+  "brand": '"brand build "OR"brand monitor "OR"brand"'
