@@ -290,7 +290,6 @@ class _OverloadTasks:
         with open(paper_path_weekly, "w", encoding="utf8") as f:
                 f.write(paper_contents)        
         paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
-        context: dict = self.channel.get()
 
         paper_contents= f"---\r" \
         f"layout: '../../layouts/MarkdownPost.astro'\r" \
