@@ -290,12 +290,13 @@ class _OverloadTasks:
         with open(paper_path_weekly, "w", encoding="utf8") as f:
                 f.write(paper_contents)        
         paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
-
+        repo_url=os.getenv('repo')
+        repo_name=repo_url.split('/')[-1].replace('-',' ')
         paper_contents= f"---\r" \
         f"layout: '../../layouts/MarkdownPost.astro'\r" \
         f"title: '{paper['title'].replace('**','')}'\r" \
         f"pubDate: {paper['publish_time'].replace('**','')}\r" \
-        f"description: '  '\r" \
+        f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\r" \
         f"author: ' {paper['authors']}'\r" \
         f"cover:\r" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
