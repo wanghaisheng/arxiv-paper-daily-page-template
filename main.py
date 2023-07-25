@@ -293,8 +293,8 @@ class _OverloadTasks:
 
         paper_contents= f"---\r" \
         f"layout: '../../layouts/MarkdownPost.astro'\r" \
-        f"title: {paper['title']}\r" \
-        f"pubDate: {paper['publish_time']}\r" \
+        f"title: '{paper['title']}'\r" \
+        f"pubDate: '{paper['publish_time']}'\r" \
         f"description: '  '\r" \
         f"author: 'paper tracker'\r" \
         f"cover:\r" \
