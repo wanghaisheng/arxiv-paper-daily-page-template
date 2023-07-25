@@ -278,13 +278,13 @@ class _OverloadTasks:
                f"|{_repo}" \
                f"|{paper['abstract']}|\n"
         print(':::',line)
-        paper_contents= f"## paper title:{paper['title']} \r " \
+        paper_contents= f"#paper title:{paper['title']} \r " \
                         f"## publish date: \r{paper['publish_time']} \r" \
                         f"## authors: \r  {paper['authors']} \r" \
                         f"## abstract: \r  {paper['abstract']} \r" 
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
-        paper_path=SERVER_PATH_STORAGE_PAPER_MD.format(paper['id']+"-"+paper['title'])
+        paper_path=SERVER_PATH_STORAGE_PAPER_MD.format(paper['id'])
         with open(paper_path, "w", encoding="utf8") as f:
                 f.write(paper_contents)        
         return line
