@@ -304,7 +304,7 @@ class _OverloadTasks:
         f"    alt: 'cover'\r" \
         f"tags: ['brand','brand monitor'] \r" \
         f"theme: 'light'\r" \
-        f"featured: true\r" \
+        f"featured: true" \
         f"\r" \
         f"meta:\r" \
         f" - name: author\r" \
