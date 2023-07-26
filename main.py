@@ -295,7 +295,7 @@ class _OverloadTasks:
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
-        f"pubDate:{datetime.now(TIME_ZONE_CN)}\n" \
+        f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
         f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\n" \
         f"author: 'wanghaisheng'\n" \
         f"cover:\n" \
