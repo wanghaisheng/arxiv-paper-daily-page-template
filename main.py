@@ -315,7 +315,7 @@ class _OverloadTasks:
         f"keywords: key1, key2, key3\r" \
         f"---\r" \
         f"\r" \
-        f"## authors:  {paper['authors']} \r" \
+        f"## authors:{paper['authors']} \r" \
         f"{paper['abstract']}\n"
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
