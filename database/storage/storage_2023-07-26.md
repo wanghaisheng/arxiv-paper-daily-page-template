@@ -1,5 +1,5 @@
 # arxiv-daily latest papers around arxiv paper daily template
-Automated deployment @ 2023-07-26 10:16:33 Asia/Shanghai
+Automated deployment @ 2023-07-26 10:20:20 Asia/Shanghai
 > Welcome to contribute! Add your topics and keywords in [`topic.yml`](https://github.com/wanghaisheng/arxiv-paper-daily-template/blob/main/database/topic.yml).
 > You can also view historical data through the [storage](https://github.com/wanghaisheng/arxiv-paper-daily-template/blob/main/database/storage).
 
