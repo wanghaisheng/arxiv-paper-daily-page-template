@@ -305,7 +305,7 @@ class _OverloadTasks:
         f"tags: ['brand','brand monitor']\r" \
         f"theme: 'light'\r" \
         f"featured: true\r" \
-        f"\r" \        
+        f"\r" \
         f"meta:\r" \
         f" - name: author\r" \
         f"   content: 作者是我\r" \
