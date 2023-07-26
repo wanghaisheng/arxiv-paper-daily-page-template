@@ -292,27 +292,27 @@ class _OverloadTasks:
         paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
-        paper_contents= f"---\r" \
-        f"layout: '../../layouts/MarkdownPost.astro'\r" \
-        f"title: '{paper['title'].replace('**','')}'\r" \
-        f"pubDate: {paper['publish_time'].replace('**','')}\r" \
-        f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\r" \
-        f"author: '{paper['authors']}'\r" \
-        f"cover:\r" \
-        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
-        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\r" \
-        f"    alt: 'cover'\r" \
-        f"tags: ['brand','brand monitor']\r" \
-        f"theme: 'light'\r" \
-        f"featured: true\r" \
-        f"meta:\r" \
-        f" - name: author\r" \
-        f"   content: 作者是我\r" \
-        f" - name: keywords\r" \
-        f"   content: key3, key4\r" \
-        f"keywords: key1, key2, key3\r" \
+        paper_contents= f"---\n" \
+        f"layout: '../../layouts/MarkdownPost.astro'\n" \
+        f"title: '{paper['title'].replace('**','')}'\n" \
+        f"pubDate: {paper['publish_time'].replace('**','')}\n" \
+        f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\n" \
+        f"author: '{paper['authors']}'\n" \
+        f"cover:\n" \
+        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
+        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
+        f"    alt: 'cover'\n" \
+        f"tags: ['brand','brand monitor']\n" \
+        f"theme: 'light'\n" \
+        f"featured: true\n" \
+        f"meta:\n" \
+        f" - name: author\n" \
+        f"   content: 作者是我\n" \
+        f" - name: keywords\n" \
+        f"   content: key3, key4\n" \
+        f"keywords: key1, key2, key3\n" \
         f"---" \
-        f"\r" \
+        f"\n" \
         f"## authors:{paper['authors']} \r" \
         f"{paper['abstract']}\n"
 
