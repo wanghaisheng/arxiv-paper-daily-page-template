@@ -295,9 +295,9 @@ class _OverloadTasks:
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
-        f"pubDate: {paper['publish_time'].replace('**','')}\n" \
+        f"pubDate:{datetime.now(TIME_ZONE_CN)}\n" \
         f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\n" \
-        f"author: '{paper['authors']}'\n" \
+        f"author: 'wanghaisheng'\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
@@ -313,8 +313,9 @@ class _OverloadTasks:
         f"keywords: key1, key2, key3\n" \
         f"---" \
         f"\n" \
-        f"## authors:{paper['authors']} \r" \
-        f"{paper['abstract']}\n"
+        f"## authors:\r{paper['authors']} \r" \
+        f"## publish_time:\r{paper['publish_time']} \r" \
+        f"## abstract:\r{paper['abstract']}\n"
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
