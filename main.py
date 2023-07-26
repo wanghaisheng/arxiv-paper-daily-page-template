@@ -310,10 +310,10 @@ class _OverloadTasks:
         f" - name: author\r" \
         f"   content: 作者是我\r" \
         f" - name: keywords\r" \
-        f"   content: key3, key4\r" \
+        f"   content: key3, key4" \
         f"\r" \
         f"keywords: key1, key2, key3\r" \
-        f"---\r" \
+        f"---" \
         f"\r" \
         f"## authors:{paper['authors']} \r" \
         f"{paper['abstract']}\n"
