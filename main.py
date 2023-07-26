@@ -304,14 +304,12 @@ class _OverloadTasks:
         f"    alt: 'cover'\r" \
         f"tags: ['brand','brand monitor'] \r" \
         f"theme: 'light'\r" \
-        f"featured: true" \
-        f"\n\r" \
+        f"featured: true\r" \
         f"meta:\r" \
         f" - name: author\r" \
         f"   content: 作者是我\r" \
         f" - name: keywords\r" \
-        f"   content: key3, key4" \
-        f"\n\r" \
+        f"   content: key3, key4\r" \
         f"keywords: key1, key2, key3\r" \
         f"---" \
         f"\r" \
