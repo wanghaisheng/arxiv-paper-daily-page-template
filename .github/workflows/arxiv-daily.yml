@@ -39,6 +39,7 @@ jobs:
       # ============================================
       - name: Run daily arxiv
         run: |
+          python paper_thumbnail_mj.py
           python main.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }}
         env:
           repo: ${{github.repository}}       

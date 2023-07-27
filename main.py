@@ -21,6 +21,7 @@ from datetime import datetime
 import requests
 import arxiv
 import yaml
+from  random import randint
 
 from fire import Fire
 
@@ -33,6 +34,7 @@ from config import (
     TIME_ZONE_CN,
     SERVER_PATH_STORAGE_PAPER_MD_weekly,
     SERVER_PATH_STORAGE_PAPER_MD_appleblog,
+    topic,
 
     logger
 )
@@ -296,11 +298,11 @@ class _OverloadTasks:
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
         f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
-        f"description: 'Automated track arxiv-daily latest papers around {repo_name}'\n" \
+        f"description: 'Automated track arxiv-daily latest papers around {topic}'\n" \
         f"author: 'wanghaisheng'\n" \
         f"cover:\n" \
-        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
-        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
+        f"    url: '../../public/assets/{randint(1, 100)}.jpg'\n" \
+        f"    square: '../../public/assets/{randint(1, 100)}.jpg'\n" \
         f"    alt: 'cover'\n" \
         f"tags: ['brand','brand monitor']\n" \
         f"theme: 'light'\n" \

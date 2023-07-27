@@ -6,3 +6,4 @@ pyyaml
 loguru
 pytz
 fire
+beautifulsoup4
