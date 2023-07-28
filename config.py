@@ -25,8 +25,8 @@ render_style1='weekly'
 render_style2='apple-blog'
 topic="brand,brand monitor"
 
-SERVER_PATH_STORAGE_PAPER_MD_weekly = join("weekly/src/pages/posts", "{}.md")
-SERVER_PATH_STORAGE_PAPER_MD_appleblog = join("apple-blog/src/pages/posts", "{}.md")
+SERVER_PATH_STORAGE_PAPER_MD_weekly = join("src/pages/posts", "{}.md")
+SERVER_PATH_STORAGE_PAPER_MD_appleblog = join("src/pages/posts", "{}.md")
 
 SERVER_PATH_TOPIC = join(SERVER_DIR_DATABASE, "topic.yml")
 

@@ -289,8 +289,8 @@ class _OverloadTasks:
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
         paper_path_weekly=SERVER_PATH_STORAGE_PAPER_MD_weekly.format(paper['id'])
-        with open(paper_path_weekly, "w", encoding="utf8") as f:
-                f.write(paper_contents)        
+        # with open(paper_path_weekly, "w", encoding="utf8") as f:
+        #         f.write(paper_contents)        
         paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
