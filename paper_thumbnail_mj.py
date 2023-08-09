@@ -12,6 +12,7 @@ def get_image_urls(url):
     body = soup.find("body")
     sc = list(body.find_all("script"))[-1].string
     sc = str(sc)
+    print(sc)
     # parse JSON
     sc = json.loads(sc).get("props").get("pageProps").get("jobs")
     for i in sc:
