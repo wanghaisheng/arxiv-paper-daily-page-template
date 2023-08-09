@@ -12,6 +12,7 @@ def get_image_urls(url):
     body = soup.find("body")
     sc = list(body.find_all("script"))[-1].string
     sc = str(sc)
+    print(soup)
     script = soup.find('script', {'id': '__NEXT_DATA__'})
     sc = script.contents[0]    
     print(sc)
