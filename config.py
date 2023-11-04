@@ -21,8 +21,18 @@ SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "database")
 SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "storage")
 
 SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "storage_{}.md")
+
+# 风格选择
 render_style1='weekly'
-render_style2='apple-blog'
+render_style2='appleblog'
+render_style3='mkdocs'
+
+#风格博文数据库 目录根
+
+appleblog_SERVER_MD_DIR_STORAGE=join(SERVER_DIR_DATABASE, "apple-blog/src/pages/posts")
+weekly_SERVER_MD_DIR_STORAGE=join(SERVER_DIR_DATABASE, "weekly/src/pages/posts")
+mkdocs_SERVER_MD_DIR_STORAGE=SERVER_PATH_STORAGE_MD
+
 topic="brand,brand monitor"
 
 SERVER_PATH_STORAGE_PAPER_MD_weekly = join("weekly/src/pages/posts", "{}.md")
