@@ -25,6 +25,7 @@ import shutil
 import yaml
 import time
 import random
+from config import *
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
 except ImportError:
@@ -304,7 +305,12 @@ if __name__ == "__main__":
     # update json data
     update_json_file(json_file, data_collector)
     # json data to markdown
-    json_to_md(json_file)
+    if render_style=='appleblog':
+        print('use apple blog post render:json to md')
+    elif render_style=='weekly':
+        print('use weekly blog post render:json to md')
+    else:
+        json_to_md(json_file)
 
-    # json data to markdown
-    json_to_md(json_file, to_web=True)
+        # json data to markdown
+        json_to_md(json_file, to_web=True)
