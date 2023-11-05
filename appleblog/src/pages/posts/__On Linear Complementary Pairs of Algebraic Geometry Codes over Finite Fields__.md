@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'On Linear Complementary Pairs of Algebraic Geometry Codes over Finite Fields'
-pubDate: 2023-11-05 22:37:11
+pubDate: 2023-11-05 22:45:00
 description: ''
 author: 'wanghaisheng'
 cover:

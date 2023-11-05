@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Analysis of Information Propagation in Ethereum Network Using Combined Graph Attention Network and Reinforcement Learning to Optimize Network Efficiency and Scalability'
-pubDate: 2023-11-05 22:37:11
+pubDate: 2023-11-05 22:45:00
 description: ''
 author: 'wanghaisheng'
 cover:

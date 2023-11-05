@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Misaligned magnetized accretion flows onto spinning black holes: magneto-spin alignment, outflow power and intermittent jets'
-pubDate: 2023-11-05 22:37:11
+pubDate: 2023-11-05 22:45:00
 description: ''
 author: 'wanghaisheng'
 cover:

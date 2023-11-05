@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Perceptual Shape Loss for Monocular 3D Face Reconstruction'
-pubDate: 2023-11-05 22:37:11
+pubDate: 2023-11-05 22:45:00
 description: ''
 author: 'wanghaisheng'
 cover:
