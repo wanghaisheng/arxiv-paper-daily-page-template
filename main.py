@@ -32,8 +32,6 @@ from config import (
     SERVER_PATH_DOCS,
     SERVER_PATH_STORAGE_MD,
     TIME_ZONE_CN,
-    SERVER_PATH_STORAGE_PAPER_MD_weekly,
-    SERVER_PATH_STORAGE_PAPER_MD_appleblog,
     topic,
 
     logger
