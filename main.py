@@ -33,7 +33,7 @@ from config import (
     SERVER_PATH_STORAGE_MD,
     TIME_ZONE_CN,
     topic,
-
+editor_name,
     logger
 )
 
