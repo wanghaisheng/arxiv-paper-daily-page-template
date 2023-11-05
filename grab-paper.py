@@ -121,19 +121,21 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2):
 
 def update_json_file(filename, data):
     json_file = "arxiv-daily.json"
+    m=None
     if os.path.exists(json_file):
         with open(json_file,'w')as a:
             print("create " + json_file)
+            m={}
     else:
         print('json file exists')
 
     
-    with open(filename, "r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+        with open(filename, "r") as f:
+            content = f.read()
+            if not content:
+                m = {}
+            else:
+                m = json.loads(content)
 
     json_data = m.copy()
 
