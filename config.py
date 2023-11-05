@@ -15,12 +15,7 @@ SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
 
 os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
 
-# 文件数据库 目录根
-SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "database")
 
-SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "storage")
-
-SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "storage_{}.md")
 
 # 风格选择
 render_style1='weekly'
@@ -29,14 +24,38 @@ render_style3='mkdocs'
 render_style='appleblog'
 #风格博文数据库 目录根
 
-appleblog_SERVER_MD_DIR_STORAGE=join(SERVER_DIR_DATABASE, "appleblog/src/pages/posts")
-weekly_SERVER_MD_DIR_STORAGE=join(SERVER_DIR_DATABASE, "weekly/src/pages/posts")
-mkdocs_SERVER_MD_DIR_STORAGE=SERVER_PATH_STORAGE_MD
+
+
+# 文件数据库 目录根
+
+
+# ##mkdocs style
+# SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "database")
+
+# SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "storage")
+
+# SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "storage_{}.md")
+
+# appleblog style
+
+SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "appleblog/src/pages")
+
+SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "posts")
+
+SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "{}.md")
+
+# weekly style
+
+# SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "weekly/src/pages")
+
+# SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "posts")
+
+# SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "{}.md")
+
 
 topic="brand,brand monitor"
 
-SERVER_PATH_STORAGE_PAPER_MD_weekly = join("weekly/src/pages/posts", "{}.md")
-SERVER_PATH_STORAGE_PAPER_MD_appleblog = join("apple-blog/src/pages/posts", "{}.md")
+
 
 SERVER_PATH_TOPIC = join(SERVER_DIR_DATABASE, "topic.yml")
 
