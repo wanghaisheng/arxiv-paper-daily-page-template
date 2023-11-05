@@ -32,7 +32,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
-json_file = "arxiv-daily.json"
+json_file = "database/arxiv-daily.json"
 
 
 def get_authors(authors, first_author=False):
@@ -279,7 +279,7 @@ if __name__ == "__main__":
 
     data_collector = dict()
 
-    yaml_path = os.path.join(".", "topic.yml")
+    yaml_path = os.path.join(".", "database/topic.yml")
     yaml_data = get_yaml_data(yaml_path)
 
     # print(yaml_data)
