@@ -46,6 +46,7 @@ def json_to_appleblog_post_md(filename, to_web=False):
     DateNow = datetime.date.today()
     DateNow = str(DateNow)
     DateNow = DateNow.replace('-', '.')
+    
     paper['publish_time'] = f"**{paper['publish_time']}**"
     paper['title'] = f"**{paper['title']}**"
     _pdf = self._set_markdown_hyperlink(
