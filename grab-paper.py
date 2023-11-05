@@ -32,6 +32,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
+json_file = "arxiv-daily.json"
 
 
 def get_authors(authors, first_author=False):
