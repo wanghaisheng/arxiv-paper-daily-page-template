@@ -298,7 +298,7 @@ class _OverloadTasks:
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
         f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
-        f"description: '{paper['abstract']}'\n" \
+        f"description: ''\n" \
         f"author: '{editor_name}'\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
@@ -315,9 +315,9 @@ class _OverloadTasks:
         f"   content: key3, key4\n" \
         f"\n" \
         f"keywords: key1, key2, key3\n" \
-        f"---\n" 
-
-        
+        f"---\n" \
+        f"## abstracts:\n" \
+        f"{paper['abstract']}\n" 
         # paper_contents= f"---\n" \
         # f"layout: '../../layouts/MarkdownPost.astro'\n" \
         # f"title: '{paper['title'].replace('**','')}'\n" \
