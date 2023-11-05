@@ -123,7 +123,7 @@ def update_json_file(filename, data):
     json_file = "arxiv-daily.json"
     m=None
     print('start to check json file')
-    if os.path.exists(filename):
+    if os.path.exists(filename)==False:
         print('json file does not exists')
         
         with open(filename,'w')as a:
