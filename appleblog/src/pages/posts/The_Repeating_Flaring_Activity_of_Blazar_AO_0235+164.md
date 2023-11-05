@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The Repeating Flaring Activity of Blazar AO 0235+164'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

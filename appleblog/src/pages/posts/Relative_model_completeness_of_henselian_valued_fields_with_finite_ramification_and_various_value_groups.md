@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Relative model completeness of henselian valued fields with finite ramification and various value groups'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

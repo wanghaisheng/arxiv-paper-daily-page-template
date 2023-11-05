@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Machine Learning-Based Framework for Clustering Residential Electricity Load Profiles to Enhance Demand Response Programs'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

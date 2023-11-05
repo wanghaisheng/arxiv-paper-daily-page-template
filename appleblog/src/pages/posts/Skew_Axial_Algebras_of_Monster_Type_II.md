@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Skew Axial Algebras of Monster Type II'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

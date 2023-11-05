@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'PDRs4All VI: Probing the Photochemical Evolution of PAHs in the Orion Bar Using Machine Learning Techniques'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

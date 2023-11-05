@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Electronic, Optical and Elastic Properties of Perovskite CsSnI$_{3-x}$Cl$_x$ (x = 0, 1, 2, 3): Using First Principles Study'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Study of bulk properties of the system formed in U+U collisions at $\sqrt{s_{\mathrm NN}}$ =~2.12~GeV using JAM model'
-pubDate: 2023-11-05 23:08:49
+pubDate: 2023-11-05 23:16:11
 description: ''
 author: 'wanghaisheng'
 cover:
