@@ -1,4 +1,4 @@
-name: Run Arxiv Papers Daily
+name: Run Arxiv Papers Daily appleblog
 
 on:
   workflow_dispatch:
