@@ -409,7 +409,7 @@ class _OverloadTasks:
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
         table_lines = "".join([self._generate_markdown_table_content(
-            paper,tags=[_topic,_subtopic) for paper in _paper_obj.values()])
+            paper,tags=[_topic,_subtopic]) for paper in _paper_obj.values()])
 
         _content_md = _subtopic_md + _fields_md + _style_md + table_lines
 
