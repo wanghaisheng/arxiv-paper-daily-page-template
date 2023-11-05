@@ -278,7 +278,7 @@ class _OverloadTasks:
         _repo = self._set_markdown_hyperlink(
             text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
         paper['abstract']=f"{paper['abstract']}"
-        paper['keywords] = tags
+        paper['keywords'] = tags
         line = f"|{paper['publish_time']}" \
                f"|{paper['title']}" \
                f"|{paper['authors']}" \
