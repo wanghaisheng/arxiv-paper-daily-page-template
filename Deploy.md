@@ -11,6 +11,13 @@
 /Users/wenke/github/arxiv-paper-daily-page-template/appleblog/src/pages/archive.astro
 
 
+
+
+修改
+
+/Users/wenke/github/arxiv-paper-daily-page-template/appleblog/src/consts.js
+
+
 # 开发教程
 
 choose  one of weekly or apple-blog style
