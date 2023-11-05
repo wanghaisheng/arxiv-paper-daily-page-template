@@ -9,9 +9,9 @@ from loguru import logger
 # 定位项目根目录
 SERVER_DIR_PROJECT = dirname(__file__) if "win" in platform else abspath(".")
 
-SERVER_PATH_README = join(SERVER_DIR_PROJECT, "README.md")
+SERVER_PATH_README = join(SERVER_DIR_PROJECT, "mkdocs/README.md")
 
-SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
+SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "mkdocs/docs")
 
 os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
 
