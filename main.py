@@ -318,7 +318,9 @@ class _OverloadTasks:
         #    gpt paper summary section
         postname=self._check_for_illegal_char(paper['title'])
         postname=postname.replace(' ','_')
-        
+        ## if filename start with __ ,astro post will 404
+        if postname.startswith('__'):
+            postname=postname.replace('__',"")
         paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
