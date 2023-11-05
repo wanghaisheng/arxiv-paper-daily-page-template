@@ -53,26 +53,50 @@ class _OverloadTasks:
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
         f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
-        f"description: 'Automated track arxiv-daily latest papers around {topic}'\n" \
-        f"author: 'wanghaisheng'\n" \
+        f"description: '{paper['abstract']}'\n" \
+        f"author: 'Apple Newsroom'\n" \
         f"cover:\n" \
-        f"    url: '../../public/assets/{randint(1, 100)}.jpg'\n" \
-        f"    square: '../../public/assets/{randint(1, 100)}.jpg'\n" \
+        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
+        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f"tags: ['brand','brand monitor']\n" \
+        f"tags: ["新闻稿", "Apple", "HomePod"] \n" \
         f"theme: 'light'\n" \
         f"featured: true\n" \
-        f"meta:\n" \
+        f"\n" \
+        f"meta:
         f" - name: author\n" \
-        f"   content: 作者是我\n" \
+        f"   content: {paper['authors']}\n" \
         f" - name: keywords\n" \
         f"   content: key3, key4\n" \
-        f"keywords: key1, key2, key3\n" \
-        f"---" \
         f"\n" \
-        f"## authors:\r{paper['authors']} \r" \
-        f"## publish_time:\r{paper['publish_time']} \r" \
-        f"## abstract:\r{paper['abstract']}\n"
+        f"keywords: key1, key2, key3\n" \
+        f"---\n" 
+
+        
+        # paper_contents= f"---\n" \
+        # f"layout: '../../layouts/MarkdownPost.astro'\n" \
+        # f"title: '{paper['title'].replace('**','')}'\n" \
+        # f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
+        # f"description: 'Automated track arxiv-daily latest papers around {topic}'\n" \
+        # f"author: 'wanghaisheng'\n" \
+        # f"cover:\n" \
+        # f"    url: '../../public/assets/{randint(1, 100)}.jpg'\n" \
+        # f"    square: '../../public/assets/{randint(1, 100)}.jpg'\n" \
+        # f"    alt: 'cover'\n" \
+        # f"tags: ['brand','brand monitor']\n" \
+        # f"theme: 'light'\n" \
+        # f"featured: true\n" \
+        # f"meta:\n" \
+        # f" - name: author\n" \
+        # f"   content: 作者是我\n" \
+        # f" - name: keywords\n" \
+        # f"   content: key3, key4\n" \
+        # f"keywords: key1, key2, key3\n" \
+        # f"---" \
+        # f"\n" \
+        # f"## authors:\r{paper['authors']} \r" \
+        # f"## publish_time:\r{paper['publish_time']} \r" \
+        # f"## abstract:\r{paper['abstract']}\n"
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
@@ -108,6 +132,9 @@ class _OverloadTasks:
                 f.write(i)
 
     def generate_markdown_template(self, content: str):
+
+
+        
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
         print('-====,',repo_url)
