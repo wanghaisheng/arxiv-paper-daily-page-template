@@ -1,3 +1,4 @@
+from config import *
 class _OverloadTasks:
     def __init__(self):
         self._build()
@@ -22,7 +23,7 @@ class _OverloadTasks:
     def _set_markdown_hyperlink(text, link):
         return f"[{text}]({link})"
 
-    def _generate_markdown_table_content(self, paper: dict):
+    def _generate_markdown_table_content(self, paper: dict,tags=None):
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
         _pdf = self._set_markdown_hyperlink(
@@ -30,6 +31,7 @@ class _OverloadTasks:
         _repo = self._set_markdown_hyperlink(
             text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
         paper['abstract']=f"{paper['abstract']}"
+        paper['keywords]=None
         line = f"|{paper['publish_time']}" \
                f"|{paper['title']}" \
                f"|{paper['authors']}" \
@@ -43,10 +45,8 @@ class _OverloadTasks:
                         f"## abstract: \r  {paper['abstract']} \r" 
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
-        paper_path_weekly=SERVER_PATH_STORAGE_PAPER_MD_weekly.format(paper['id'])
-        with open(paper_path_weekly, "w", encoding="utf8") as f:
-                f.write(paper_contents)        
-        paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD_appleblog.format(paper['id'])
+
+        paper_path_appleblog=SERVER_PATH_STORAGE_PAPER_MD.format(paper['id'])
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
         paper_contents= f"---\n" \
@@ -54,12 +54,12 @@ class _OverloadTasks:
         f"title: '{paper['title'].replace('**','')}'\n" \
         f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
         f"description: '{paper['abstract']}'\n" \
-        f"author: 'Apple Newsroom'\n" \
+        f"author: '{editor_name}'\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f"tags: ["新闻稿", "Apple", "HomePod"] \n" \
+        f"tags: {paper['keywords']} \n" \
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
@@ -151,7 +151,7 @@ class _OverloadTasks:
 
         return _form
 
-    def to_appleblog_post_markdown(self, context: dict) -> dict:
+    def to_markdown(self, context: dict) -> dict:
         _fields = context["fields"]
         _topic = context["topic"]
         _subtopic = context["subtopic"]
@@ -162,7 +162,7 @@ class _OverloadTasks:
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
         table_lines = "".join([self._generate_markdown_table_content(
-            paper) for paper in _paper_obj.values()])
+            paper,tags=[_topic,_subtopic) for paper in _paper_obj.values()])
 
         _content_md = _subtopic_md + _fields_md + _style_md + table_lines
 
