@@ -45,6 +45,8 @@ SERVER_DIR_STORAGE = join(SERVER_DIR_DATABASE, "posts")
 
 SERVER_PATH_STORAGE_MD = join(SERVER_DIR_STORAGE, "{}.md")
 
+SERVER_PATH_STORAGE_BACKUP = join(SERVER_DIR_PROJECT, "/database/backup/{}.md")
+
 # weekly style
 
 # SERVER_DIR_DATABASE = join(SERVER_DIR_PROJECT, "weekly/src/pages")

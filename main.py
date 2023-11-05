@@ -11,6 +11,7 @@
 import json.decoder
 import os.path
 import shutil
+import re
 
 from gevent import monkey
 
@@ -31,6 +32,7 @@ from config import (
     SERVER_PATH_README,
     SERVER_PATH_DOCS,
     SERVER_PATH_STORAGE_MD,
+    SERVER_PATH_STORAGE_BACKUP,
     TIME_ZONE_CN,
     topic,
 editor_name,
@@ -251,7 +253,7 @@ class _OverloadTasks:
         # yyyy-mm-dd
         self.update_time = ToolBox.log_date(mode="log")
 
-        self.storage_path_by_date = SERVER_PATH_STORAGE_MD.format(
+        self.storage_path_by_date = SERVER_PATH_STORAGE_BACKUP.format(
             ToolBox.log_date('file'))
         self.storage_path_readme = SERVER_PATH_README
         self.storage_path_docs = SERVER_PATH_DOCS
@@ -267,7 +269,31 @@ class _OverloadTasks:
     @staticmethod
     def _set_markdown_hyperlink(text, link):
         return f"[{text}]({link})"
+    @staticmethod
+    def _check_for_illegal_char(input_str):
+        # remove illegal characters for Windows file names/paths 
+        # (illegal filenames are a superset (41) of the illegal path names (36))
+        # this is according to windows blacklist obtained with Powershell
+        # from: https://stackoverflow.com/questions/1976007/what-characters-are-forbidden-in-windows-and-linux-directory-names/44750843#44750843
+        #
+        # PS> $enc = [system.Text.Encoding]::UTF8
+        # PS> $FileNameInvalidChars = [System.IO.Path]::GetInvalidFileNameChars()
+        # PS> $FileNameInvalidChars | foreach { $enc.GetBytes($_) } | Out-File -FilePath InvalidFileCharCodes.txt
 
+        illegal = '\u0022\u003c\u003e\u007c\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\u0008' + \
+                '\u0009\u000a\u000b\u000c\u000d\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015' + \
+                '\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f\u003a\u002a\u003f\u005c\u002f' 
+
+        output_str, _ = re.subn('['+illegal+']','_', input_str)
+        output_str = output_str.replace('\\','_')   # backslash cannot be handled by regex
+        output_str = output_str.replace('..','_')   # double dots are illegal too, or at least a bad idea 
+        output_str = output_str[:-1] if output_str[-1] == '.' else output_str # can't have end of line '.'
+
+        if output_str != input_str:
+            print(f"The name '{input_str}' had invalid characters, "
+                f"name was modified to '{output_str}'")
+
+        return output_str
     def _generate_markdown_table_content(self, paper: dict,tags=None):
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
@@ -290,8 +316,9 @@ class _OverloadTasks:
                         f"## abstract: \r  {paper['abstract']} \r" 
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
-
-        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(paper['title'].replace('**','').replace(' ','-'))
+        postname=self._check_for_illegal_char(paper['title'])
+        
+        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
         paper_contents= f"---\n" \
