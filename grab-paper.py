@@ -301,7 +301,8 @@ if __name__ == "__main__":
     if os.path.exists(json_file):
         with open(json_file,'w')as a:
             print("create " + json_file)
-
+    else:
+        print('json file exists')
     # update json data
     update_json_file(json_file, data_collector)
     # json data to markdown
