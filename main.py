@@ -310,7 +310,7 @@ class _OverloadTasks:
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
-        f"meta:
+        f"meta:\n" \
         f" - name: author\n" \
         f"   content: {paper['authors']}\n" \
         f" - name: keywords\n" \
