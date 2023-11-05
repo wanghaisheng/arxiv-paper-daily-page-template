@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Centralized Management of a Wifi Mesh for Autonomous Farms'
-pubDate: 2023-11-05 22:21:43
+pubDate: 2023-11-05 22:30:10
 description: ''
 author: 'wanghaisheng'
 cover:
