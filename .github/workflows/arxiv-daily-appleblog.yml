@@ -39,7 +39,7 @@ jobs:
       # ============================================
       - name: Run daily arxiv
         run: |
-          python grab-paper.py
+          # python grab-paper.py
           python main.py run --env=${{ env.RUN_ENV }} --power=${{ env.POWER }}
         env:
           repo: ${{github.repository}}       
