@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Survey on Watching Social Issue Videos among YouTube and TikTok Users'
-pubDate: 2023-11-05 22:30:10
+pubDate: 2023-11-05 22:37:11
 description: ''
 author: 'wanghaisheng'
 cover:

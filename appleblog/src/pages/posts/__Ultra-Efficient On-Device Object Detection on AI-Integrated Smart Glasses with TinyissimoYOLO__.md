@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Ultra-Efficient On-Device Object Detection on AI-Integrated Smart Glasses with TinyissimoYOLO'
-pubDate: 2023-11-05 22:30:10
+pubDate: 2023-11-05 22:37:11
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'StairNet: Visual Recognition of Stairs for Human-Robot Locomotion'
-pubDate: 2023-11-05 22:30:10
+pubDate: 2023-11-05 22:37:11
 description: ''
 author: 'wanghaisheng'
 cover:

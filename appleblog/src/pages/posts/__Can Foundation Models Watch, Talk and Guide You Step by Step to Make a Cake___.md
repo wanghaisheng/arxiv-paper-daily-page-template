@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Can Foundation Models Watch, Talk and Guide You Step by Step to Make a Cake?'
-pubDate: 2023-11-05 22:30:10
+pubDate: 2023-11-05 22:37:11
 description: ''
 author: 'wanghaisheng'
 cover:
