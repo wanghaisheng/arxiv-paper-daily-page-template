@@ -1,2 +1,4 @@
 "wearable":
-  "wearable": 'abs:"smart watch"OR"abs:smart watch"'
+  "smart watch": 'abs:"smart watch"OR"abs:smart watch"'
+  "smart band": 'abs:"smart band"OR"abs:smart band"'
+  "smart ring": 'abs:"smart ring"OR"abs:smart ring"'

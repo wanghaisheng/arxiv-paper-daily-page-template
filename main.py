@@ -302,7 +302,7 @@ class _OverloadTasks:
         _repo = self._set_markdown_hyperlink(
             text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
         paper['abstract']=f"{paper['abstract']}"
-        paper['keywords'] = tags
+        paper['keywords'] = list(set(tags))
         line = f"|{paper['publish_time']}" \
                f"|{paper['title']}" \
                f"|{paper['authors']}" \
@@ -317,6 +317,7 @@ class _OverloadTasks:
                         # f"## {paper['summary']}"            
         #    gpt paper summary section
         postname=self._check_for_illegal_char(paper['title'])
+        postname=postname.replace(' ','_')
         
         paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
