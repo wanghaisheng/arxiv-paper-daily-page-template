@@ -17,3 +17,10 @@ more to add
 
 3.修改发布爬取定时任务
 
+
+
+
+https://github.com/wanghaisheng/ArXivDailyVideo
+
+
+https://github.com/taesiri/ArXivQA
