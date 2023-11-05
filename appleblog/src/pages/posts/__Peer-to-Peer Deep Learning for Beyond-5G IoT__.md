@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Peer-to-Peer Deep Learning for Beyond-5G IoT'
-pubDate: 2023-11-05 22:21:43
+pubDate: 2023-11-05 22:30:10
 description: ''
 author: 'wanghaisheng'
 cover:

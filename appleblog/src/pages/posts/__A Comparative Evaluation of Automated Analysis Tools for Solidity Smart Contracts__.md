@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Comparative Evaluation of Automated Analysis Tools for Solidity Smart Contracts'
-pubDate: 2023-11-05 22:21:43
+pubDate: 2023-11-05 22:30:10
 description: ''
 author: 'wanghaisheng'
 cover:
