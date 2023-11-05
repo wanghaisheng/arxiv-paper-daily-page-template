@@ -120,7 +120,6 @@ def get_daily_papers(topic: str, query: str = "slam", max_results=2):
 
 
 def update_json_file(filename, data):
-    json_file = "arxiv-daily.json"
     m=None
     print('start to check json file')
     if os.path.exists(filename)==False:
@@ -312,7 +311,7 @@ if __name__ == "__main__":
 
     print(data_collector)
     # update README.md file
-    json_file = "arxiv-daily.json"
+    json_file = "database/arxiv-daily.json"
 
     # update json data
     update_json_file(json_file, data_collector)
