@@ -22,7 +22,7 @@ import requests
 import arxiv
 import yaml
 from  random import randint
-from  appblog-post-render import _OverloadTasks as _OverloadTasks_appblog
+from  appblog_post_render import _OverloadTasks as _OverloadTasks_appblog
 from fire import Fire
 
 from config import (
