@@ -316,7 +316,7 @@ class _OverloadTasks:
         f"\n" \
         f"keywords: key1, key2, key3\n" \
         f"---\n" \
-        f"\n" \        
+        f"\n" \
         f"## abstracts:\n" \
         f"{paper['abstract']}\n" 
         # paper_contents= f"---\n" \
