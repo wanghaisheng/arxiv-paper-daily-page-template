@@ -55,10 +55,10 @@ jobs:
           git commit -m "Automated deployment @ $(date '+%Y-%m-%d %H:%M:%S') ${{ env.TZ }}"
           git push --force origin main
       # ============================================
-      # TODO [√] 更新 mkdocs
+      # TODO [√] 更新 vercel
       # ============================================
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REQUIREMENTS: requirements-mkdocs.txt
+      # - name: Deploy docs
+      #   uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     REQUIREMENTS: requirements-mkdocs.txt
