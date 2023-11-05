@@ -58,7 +58,7 @@ topic="brand,brand monitor"
 
 
 
-SERVER_PATH_TOPIC = join(SERVER_DIR_DATABASE, "topic.yml")
+SERVER_PATH_TOPIC = join("database", "topic.yml")
 
 # 服务器日志文件路径
 SERVER_DIR_DATABASE_LOG = join(SERVER_DIR_DATABASE, "logs")
