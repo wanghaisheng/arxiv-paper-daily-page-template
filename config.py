@@ -15,6 +15,7 @@ SERVER_PATH_DOCS = join(SERVER_DIR_PROJECT, "docs")
 
 os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
 
+editor_name='wanghaisheng'
 
 
 # 风格选择
