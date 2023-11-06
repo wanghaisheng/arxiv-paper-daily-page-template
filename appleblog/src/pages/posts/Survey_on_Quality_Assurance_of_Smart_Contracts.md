@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Survey on Quality Assurance of Smart Contracts'
-pubDate: 2023-11-05 23:16:11
+pubDate: 2023-11-06 21:42:48
 description: ''
 author: 'wanghaisheng'
 cover:
@@ -21,5 +21,11 @@ meta:
 keywords: key1, key2, key3
 ---
 
+## paper id
+[pdf](2311.00270v2)
+## download
+[pdf]([2311.00270v2](http://arxiv.org/abs/2311.00270v2))
 ## abstracts:
 With the increasing adoption of smart contracts, ensuring their security has become a critical concern. Numerous vulnerabilities and attacks have been identified and exploited, resulting in significant financial losses. In response, researchers have developed various tools and techniques to identify and prevent vulnerabilities in smart contracts. In this survey, we present a systematic overview of the quality assurance of smart contracts, covering vulnerabilities, attacks, defenses, and tool support. By classifying vulnerabilities based on known attacks, we can identify patterns and common weaknesses that need to be addressed. Moreover, in order to effectively protect smart contracts, we have created a labeled dataset to evaluate various vulnerability detection tools and compare their effectiveness.
+## QA:
+None

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Free electron emission in vacuum assisted by photonic time crystals'
-pubDate: 2023-11-05 23:16:11
+pubDate: 2023-11-06 21:42:35
 description: ''
 author: 'wanghaisheng'
 cover:
@@ -21,5 +21,11 @@ meta:
 keywords: key1, key2, key3
 ---
 
+## paper id
+[pdf](2311.01203v1)
+## download
+[pdf]([2311.01203v1](http://arxiv.org/abs/2311.01203v1))
 ## abstracts:
 The Cerenkov radiation and the Smith-Purcell effect state that free electron emission occurs exclusively in dielectrics when the velocity of the particles exceeds the speed of light in the medium or in the vicinity of periodic gratings close to each other within a vacuum. We demonstrate that free electrons in a vacuum can also emit highly directional monochromatic waves when they are in close proximity to a medium that is periodically modulated temporally, suggesting the existence of temporal Smith-Purcell effect. The momentum band gaps of time-varying media, such as photonic time crystals (PTCs), create new pathways for the injection of external energy, allowing the frequency, intensity, and spatial distribution of the electromagnetic fields to be controlled. Moreover, the PTC substrate enables the conversion of localized evanescent fields into amplified, highly directional propagating plane waves that are only sensitive to the velocity of particles and the modulation frequency, which allows us to observe and utilize Cerenkov-like radiation in free space. Our work exhibits significant opportunities for the utilization of time-varying structures in various fields, including particle identification, ultraweak signal detection, and improved radiation source design.
+## QA:
+None

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Open Problems in DAOs'
-pubDate: 2023-11-05 23:16:11
+pubDate: 2023-11-06 21:42:51
 description: ''
 author: 'wanghaisheng'
 cover:
@@ -21,5 +21,11 @@ meta:
 keywords: key1, key2, key3
 ---
 
+## paper id
+[pdf](2310.19201v1)
+## download
+[pdf]([2310.19201v1](http://arxiv.org/abs/2310.19201v1))
 ## abstracts:
 Decentralized autonomous organizations (DAOs) are a new, rapidly-growing class of organizations governed by smart contracts. Here we describe how researchers can contribute to the emerging science of DAOs and other digitally-constituted organizations. From granular privacy primitives to mechanism designs to model laws, we identify high-impact problems in the DAO ecosystem where existing gaps might be tackled through a new data set or by applying tools and ideas from existing research fields such as political science, computer science, economics, law, and organizational science. Our recommendations encompass exciting research questions as well as promising business opportunities. We call on the wider research community to join the global effort to invent the next generation of organizations.
+## QA:
+None

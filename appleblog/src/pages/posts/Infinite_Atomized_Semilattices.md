@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Infinite Atomized Semilattices'
-pubDate: 2023-11-05 23:16:11
+pubDate: 2023-11-06 21:42:42
 description: ''
 author: 'wanghaisheng'
 cover:
@@ -21,5 +21,11 @@ meta:
 keywords: key1, key2, key3
 ---
 
+## paper id
+[pdf](2311.01389v1)
+## download
+[pdf]([2311.01389v1](http://arxiv.org/abs/2311.01389v1))
 ## abstracts:
 We extend the theory of atomized semilattices to the infinite setting. We show that it is well-defined and that every semilattice is atomizable. We also study atom redundancy, focusing on complete and finitely generated semilattices and show that for finitely generated semilattices, atomizations consisting exclusively of non-redundant atoms always exist.
+## QA:
+None

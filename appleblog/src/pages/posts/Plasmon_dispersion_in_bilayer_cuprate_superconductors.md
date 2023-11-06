@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Plasmon dispersion in bilayer cuprate superconductors'
-pubDate: 2023-11-05 23:16:11
+pubDate: 2023-11-06 21:42:33
 description: ''
 author: 'wanghaisheng'
 cover:
@@ -21,5 +21,11 @@ meta:
 keywords: key1, key2, key3
 ---
 
+## paper id
+[pdf](2311.01413v1)
+## download
+[pdf]([2311.01413v1](http://arxiv.org/abs/2311.01413v1))
 ## abstracts:
 The essential building blocks of cuprate superconductors are two-dimensional CuO$_2$ sheets interspersed with charge reservoir layers. In bilayer cuprates, two closely spaced CuO$_2$ sheets are separated by a larger distance from the subsequent pair in the next unit cell. In contrast to single-layer cuprates, prior theoretical work on bilayer systems has predicted two distinct acoustic plasmon bands for a given out-of-plane momentum transfer. Here we report random phase approximation (RPA) calculations for bilayer systems which corroborate the existence of two distinct plasmons bands. We find that the intensity of the lower-energy band is negligibly small, whereas the higher-energy band carries significant spectral weight. We also present resonant inelastic x-ray scattering (RIXS) experiments at the O $K$-edge on the bilayer cuprate Y$_{0.85}$Ca$_{0.15}$Ba$_2$Cu$_3$O$_7$ (Ca-YBCO), which show only one dispersive plasmon branch, in agreement with the RPA calculations. In addition, the RPA results indicate that the dispersion of the higher-energy plasmon band in Ca-YBCO is not strictly acoustic, but exhibits a substantial energy gap of approximately 250 meV at the two-dimensional Brillouin zone center.
+## QA:
+None
