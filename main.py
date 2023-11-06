@@ -341,7 +341,7 @@ class _OverloadTasks:
         repo_name=repo_url.split('/')[-1].replace('-',' ')
         
         
-        QA_md_link = "https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
+        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
         if paper['QA_md_contents']==None:
             print('gen realtime')
@@ -371,9 +371,9 @@ class _OverloadTasks:
         f"---\n" \
         f"\n" \
         f"## paper id\n" \
-        f"[pdf]({paper['id']})\n" \
+        f"{paper['id']}\n" \
         f"## download\n" \
-        f"[pdf]({_pdf})\n" \
+        f"{_pdf}\n" \
         f"## abstracts:\n" \
         f"{paper['abstract']}\n" \
         f"## QA:\n" \
