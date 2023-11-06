@@ -24,3 +24,11 @@ https://github.com/wanghaisheng/ArXivDailyVideo
 
 
 https://github.com/taesiri/ArXivQA
+
+
+https://github.com/Nipun1212/Claude_api
+
+
+https://github.com/nhaouari/papersnap
+
+https://github.com/st1vms/unofficial-claude2-api

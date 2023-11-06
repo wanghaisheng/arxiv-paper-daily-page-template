@@ -69,6 +69,20 @@ class ToolBox:
             return data_
         except json.decoder.JSONDecodeError as e:
             logger.error(e)
+    @staticmethod
+    def handle_md(url: str):
+        headers = {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44"
+        }
+        proxies = {"http": None, "https": None}
+        session = requests.session()
+        response = session.get(url, headers=headers, proxies=proxies)
+        try:
+            data_ = response.text()
+            return data_
+        except Exception as e:
+            logger.error(e)
 
 
 class CoroutineSpeedup:
@@ -294,6 +308,7 @@ class _OverloadTasks:
                 f"name was modified to '{output_str}'")
 
         return output_str
+        
     def _generate_markdown_table_content(self, paper: dict,tags=None):
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
@@ -324,6 +339,14 @@ class _OverloadTasks:
         paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
+        
+        
+        QA_md_link = "https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
+        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
+        if paper['QA_md_contents']==None:
+            print('gen realtime')
+            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
+            # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
         f"title: '{paper['title'].replace('**','')}'\n" \
@@ -347,8 +370,17 @@ class _OverloadTasks:
         f"keywords: key1, key2, key3\n" \
         f"---\n" \
         f"\n" \
+        f"## paper id\n" \
+        f"[pdf]({paper['id']})\n" \
+        f"## download\n" \
+        f"[pdf]({_pdf})\n" \
         f"## abstracts:\n" \
-        f"{paper['abstract']}\n" 
+        f"{paper['abstract']}\n" \
+        f"## QA:\n" \
+        f"{paper['QA_md_contents']}\n" 
+        
+        
+        
         # paper_contents= f"---\n" \
         # f"layout: '../../layouts/MarkdownPost.astro'\n" \
         # f"title: '{paper['title'].replace('**','')}'\n" \
