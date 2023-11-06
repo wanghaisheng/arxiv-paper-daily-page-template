@@ -345,6 +345,7 @@ class _OverloadTasks:
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
         if paper['QA_md_contents']==None:
             print('gen realtime')
+            paper['QA_md_contents']='coming soon'
             # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
             # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
