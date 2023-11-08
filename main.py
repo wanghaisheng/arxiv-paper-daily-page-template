@@ -122,7 +122,19 @@ class CoroutineSpeedup:
 
     def runtime(self, context: dict):
         keyword_ = context.get("keyword")
-
+        # import arxivscraper.arxivscraper as ax
+        # import pandas as pd
+        
+        # scraper = ax.Scraper(
+        #     category="cs",
+        #     date_from="2022-04-25",
+        #     date_until="2022-04-26",
+        #     t=10,
+        #     filters={"abstract": ["healthcare", "medical", "hospital"]},
+        # )
+        # output = scraper.scrape()
+        # cols = ("id", "title", "categories", "abstract", "doi", "created", "updated", "authors")
+        # df = pd.DataFrame(output, columns=cols)
         res = arxiv.Search(
             query=keyword_,
             max_results=self.max_results,
