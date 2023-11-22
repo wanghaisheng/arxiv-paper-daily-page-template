@@ -4,6 +4,8 @@
 
 2.appleblog
 
+3.https://github.com/ixartz/Astro-boilerplate
+
 demo site
 
 https://arxiv-paper-daily-template-jeu1.vercel.app/
