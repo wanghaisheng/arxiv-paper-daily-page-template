@@ -24,6 +24,7 @@ more to add
 翻译 总结 使用gpt2free
 
 
+https://github.com/wanghaisheng/obsidian-textgenerator-plugin
 
 https://github.com/wanghaisheng/ArXivDailyVideo
 
