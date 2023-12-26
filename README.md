@@ -30,6 +30,7 @@ https://github.com/binary-husky/gpt_academic
 pdf下载
 
 https://github.com/Shadow-Alex/PaperCrawler
+https://huggingface.co/spaces/qingxu98/grobid/blob/main/Dockerfile
 
 google搜索 
 
