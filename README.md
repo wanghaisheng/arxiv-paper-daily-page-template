@@ -21,7 +21,14 @@ more to add
 
 
 
-翻译 总结 使用gpt2free
+翻译
+https://github.com/binary-husky/gpt_academic/blob/31304f481a1c4d3e07d92348cb698bfcb57bcc16/crazy_functions/pdf_fns/parse_pdf.py#L14
+
+https://github.com/binary-husky/gpt_academic/blob/31304f481a1c4d3e07d92348cb698bfcb57bcc16/crazy_functions/%E6%89%B9%E9%87%8F%E7%BF%BB%E8%AF%91PDF%E6%96%87%E6%A1%A3_%E5%A4%9A%E7%BA%BF%E7%A8%8B.py#L7
+
+
+
+总结 使用gpt2free
 
 https://github.com/wanghaisheng/ChatPaper
 
