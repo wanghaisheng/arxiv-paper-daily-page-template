@@ -1,0 +1,27 @@
+all search terms:
+  all search terms: '"wearable device"OR"smart watch"OR"smart ring"OR"Photoplethysmography"OR"actigraphy"OR"huawei watch"OR"smart glass"OR"wearable camera"'
+wearable device:
+  wearable device: '"wearable device"or"Wearable Electronic Devices"'
+heart rate:
+  heart rate: '"wearable device"and"heart rate"'
+actigraphy:
+  actigraphy: '"actigraphy"'
+huawei:
+  huawei watch: '"huawei watch"'
+  huawei band: '"huawei band"'
+apple:
+  apple watch: '"apple watch"'
+smart watch:
+  smart watch: '"smart watch"'
+smart ring:
+  smart ring: '"smart ring"'
+smart glass:
+  smart glass: '"smart glass"'
+PPG:
+  Photoplethysmography: '"Photoplethysmography"'
+Electromyography:
+  Electromyography: '"Electromyography"'
+Electroencephalography:
+  Electroencephalography: '"Electroencephalography"'
+camera:
+  wearable camera: '"wearable camera"'
