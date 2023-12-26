@@ -24,6 +24,14 @@ more to add
 翻译 总结 使用gpt2free
 
 
+
+pdf下载
+
+https://github.com/Shadow-Alex/PaperCrawler
+
+google搜索 
+
+
 https://github.com/wanghaisheng/obsidian-textgenerator-plugin
 
 https://github.com/wanghaisheng/ArXivDailyVideo
