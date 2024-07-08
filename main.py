@@ -25,7 +25,8 @@ import yaml
 from  random import randint
 # from  appblog_post_render import _OverloadTasks as _OverloadTasks_appblog
 from fire import Fire
-
+import re
+import unicodedata
 from config import (
     SERVER_PATH_TOPIC,
     SERVER_DIR_STORAGE,
@@ -144,6 +145,31 @@ class CoroutineSpeedup:
         context.update({"response": res, "hook": context})
         self.worker.put_nowait(context)
 
+    
+    def clean_paper_title(title):
+        """
+        Cleans the paper title by removing non-meaningful characters, supporting Unicode characters from various languages.
+        
+        Parameters:
+        title (str): The paper title string to be cleaned.
+        
+        Returns:
+        str: The cleaned paper title.
+        """
+        # Normalize the Unicode string to decompose any combined characters
+        normalized_title = unicodedata.normalize('NFKD', title)
+        
+        # Remove non-alphanumeric characters (including non-Latin scripts)
+        # \p{L} matches any kind of letter from any language
+        cleaned_title = re.sub(r'[^\p{L}\s\d]', '', normalized_title)
+        
+        # Replace multiple spaces with a single space
+        cleaned_title = re.sub(r'\s+', ' ', cleaned_title)
+        
+        # Strip leading and trailing spaces
+        cleaned_title = cleaned_title.strip()
+        
+        return cleaned_title
 
     def parse(self, context):
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
@@ -156,7 +182,7 @@ class CoroutineSpeedup:
 
             paper_id = result.get_short_id()
             paper_title = result.title
-
+            paper_title=clean_paper_title(papaer_title)
             paper_url = result.entry_id
             paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
             print(paper_abstract)
@@ -362,7 +388,7 @@ class _OverloadTasks:
             # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        f"title: '{paper['title'].replace('**','')}'\n" \
+        f"title: {paper["title"]}\n" \
         f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
         f"description: ''\n" \
         f"author: '{editor_name}'\n" \
