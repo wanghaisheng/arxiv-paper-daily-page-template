@@ -446,6 +446,11 @@ class _OverloadTasks:
         # f"## authors:\r{paper['authors']} \r" \
         # f"## publish_time:\r{paper['publish_time']} \r" \
         # f"## abstract:\r{paper['abstract']}\n"
+        if not os.path.exists(paper_path_appleblog):
+            os.makedirs(paper_path_appleblog)
+            print(f"Directory '{paper_path_appleblog}' was created.")
+        else:
+            print(f"Directory '{paper_path_appleblog}' already exists.")
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
