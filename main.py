@@ -395,7 +395,7 @@ class _OverloadTasks:
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f'tags: "{post_tags}" \n' \
+        f'tags: "{post_tags}"\n' \
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
