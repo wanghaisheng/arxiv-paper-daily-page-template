@@ -146,7 +146,7 @@ class CoroutineSpeedup:
         self.worker.put_nowait(context)
 
     
-    def clean_paper_title(title):
+    def clean_paper_title(self,title):
         """
         Cleans the paper title by removing non-meaningful characters, supporting Unicode characters from various languages.
         
@@ -182,7 +182,7 @@ class CoroutineSpeedup:
 
             paper_id = result.get_short_id()
             paper_title = result.title
-            paper_title=clean_paper_title(papaer_title)
+            paper_title=self.clean_paper_title(papaer_title)
             paper_title=paper_title.replace("'","\'")
             paper_url = result.entry_id
             paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
