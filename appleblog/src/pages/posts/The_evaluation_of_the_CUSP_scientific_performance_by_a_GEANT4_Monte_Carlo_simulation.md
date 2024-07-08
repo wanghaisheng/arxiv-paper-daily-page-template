@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**The evaluation of the CUSP scientific performance by a GEANT4 Monte Carlo simulation**'
-pubDate: '2024-07-09 06:30:29'
+pubDate: '2024-07-09 06:41:50'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Separating the "Chirp" from the "Chat": Self-supervised Visual Grounding of Sound and Language**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:42'
 description: ''
 author: 'wanghaisheng'
 cover:

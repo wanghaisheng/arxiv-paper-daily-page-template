@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Free-SurGS: SfM-Free 3D Gaussian Splatting for Surgical Scene Reconstruction**'
-pubDate: '2024-07-09 06:30:42'
+pubDate: '2024-07-09 06:41:46'
 description: ''
 author: 'wanghaisheng'
 cover:

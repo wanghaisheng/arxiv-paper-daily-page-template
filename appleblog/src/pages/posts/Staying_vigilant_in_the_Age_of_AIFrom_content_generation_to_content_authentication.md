@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Staying vigilant in the Age of AI: From content generation to content authentication**'
-pubDate: '2024-07-09 06:30:40'
+pubDate: '2024-07-09 06:41:23'
 description: ''
 author: 'wanghaisheng'
 cover:

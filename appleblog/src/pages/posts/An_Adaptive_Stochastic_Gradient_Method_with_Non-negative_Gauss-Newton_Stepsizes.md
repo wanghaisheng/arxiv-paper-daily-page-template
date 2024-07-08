@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**An Adaptive Stochastic Gradient Method with Non-negative Gauss-Newton Stepsizes**'
-pubDate: '2024-07-09 06:30:25'
+pubDate: '2024-07-09 06:42:04'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Gaps in the complex Farey sequence of an imaginary quadratic number field**'
-pubDate: '2024-07-09 06:30:17'
+pubDate: '2024-07-09 06:41:12'
 description: ''
 author: 'wanghaisheng'
 cover:

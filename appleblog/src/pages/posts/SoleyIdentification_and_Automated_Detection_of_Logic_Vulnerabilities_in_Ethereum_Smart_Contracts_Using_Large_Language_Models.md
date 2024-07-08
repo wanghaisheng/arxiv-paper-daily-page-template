@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Soley: Identification and Automated Detection of Logic Vulnerabilities in Ethereum Smart Contracts Using Large Language Models**'
-pubDate: '2024-07-09 06:30:55'
+pubDate: '2024-07-09 06:41:35'
 description: ''
 author: 'wanghaisheng'
 cover:

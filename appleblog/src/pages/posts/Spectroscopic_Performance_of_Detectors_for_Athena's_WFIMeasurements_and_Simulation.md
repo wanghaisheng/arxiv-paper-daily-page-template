@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Spectroscopic Performance of Detectors for Athena's WFI: Measurements and Simulation**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:46'
 description: ''
 author: 'wanghaisheng'
 cover:

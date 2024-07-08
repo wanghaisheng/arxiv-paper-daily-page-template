@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Plant Doctor: A hybrid machine learning and image segmentation software to quantify plant damage in video footage**'
-pubDate: '2024-07-09 06:30:42'
+pubDate: '2024-07-09 06:41:46'
 description: ''
 author: 'wanghaisheng'
 cover:

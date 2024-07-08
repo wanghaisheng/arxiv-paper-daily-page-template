@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Automatic Dance Video Segmentation for Understanding Choreography**'
-pubDate: '2024-07-09 06:30:53'
+pubDate: '2024-07-09 06:41:43'
 description: ''
 author: 'wanghaisheng'
 cover:

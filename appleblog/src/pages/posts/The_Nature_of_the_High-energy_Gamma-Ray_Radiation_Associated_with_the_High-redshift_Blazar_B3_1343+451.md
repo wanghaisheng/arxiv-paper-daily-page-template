@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**The Nature of the High-energy Gamma-Ray Radiation Associated with the High-redshift Blazar B3 1343+451**'
-pubDate: '2024-07-09 06:30:27'
+pubDate: '2024-07-09 06:41:47'
 description: ''
 author: 'wanghaisheng'
 cover:

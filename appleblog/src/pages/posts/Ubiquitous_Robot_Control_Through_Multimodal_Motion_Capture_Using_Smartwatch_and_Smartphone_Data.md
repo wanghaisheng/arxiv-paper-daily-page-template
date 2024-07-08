@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Ubiquitous Robot Control Through Multimodal Motion Capture Using Smartwatch and Smartphone Data**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:43'
 description: ''
 author: 'wanghaisheng'
 cover:

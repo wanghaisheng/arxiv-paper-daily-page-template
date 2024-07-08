@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**3D Multimodal Image Registration for Plant Phenotyping**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:46'
 description: ''
 author: 'wanghaisheng'
 cover:

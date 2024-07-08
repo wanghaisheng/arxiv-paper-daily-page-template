@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**A SMART Mnemonic Sounds like "Glue Tonic": Mixing LLMs with Student Feedback to Make Mnemonic Learning Stick**'
-pubDate: '2024-07-09 06:30:55'
+pubDate: '2024-07-09 06:41:36'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Polarons in supersolids: path-integral treatment of an impurity in a one-dimensional dipolar supersolid**'
-pubDate: '2024-07-09 06:30:31'
+pubDate: '2024-07-09 06:41:53'
 description: ''
 author: 'wanghaisheng'
 cover:

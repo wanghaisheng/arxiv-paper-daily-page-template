@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Global Out of Time Order Correlators as a Signature of Scrambling Dynamics of Local Observables**'
-pubDate: '2024-07-09 06:30:20'
+pubDate: '2024-07-09 06:41:17'
 description: ''
 author: 'wanghaisheng'
 cover:

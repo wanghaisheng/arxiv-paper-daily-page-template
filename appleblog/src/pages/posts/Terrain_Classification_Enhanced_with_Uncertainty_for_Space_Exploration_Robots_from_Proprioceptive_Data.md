@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Terrain Classification Enhanced with Uncertainty for Space Exploration Robots from Proprioceptive Data**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:46'
 description: ''
 author: 'wanghaisheng'
 cover:

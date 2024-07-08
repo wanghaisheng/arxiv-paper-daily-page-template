@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**DASS: Distilled Audio State Space Models Are Stronger and More Duration-Scalable Learners**'
-pubDate: '2024-07-09 06:30:37'
+pubDate: '2024-07-09 06:41:19'
 description: ''
 author: 'wanghaisheng'
 cover:

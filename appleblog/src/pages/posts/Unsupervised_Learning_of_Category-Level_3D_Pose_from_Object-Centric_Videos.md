@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Unsupervised Learning of Category-Level 3D Pose from Object-Centric Videos**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:44'
 description: ''
 author: 'wanghaisheng'
 cover:

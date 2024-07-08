@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Markerless Multi-view 3D Human Pose Estimation: a survey**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:45'
 description: ''
 author: 'wanghaisheng'
 cover:

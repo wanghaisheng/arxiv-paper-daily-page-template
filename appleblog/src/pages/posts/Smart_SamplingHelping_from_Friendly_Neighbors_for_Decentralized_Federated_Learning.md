@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Smart Sampling: Helping from Friendly Neighbors for Decentralized Federated Learning**'
-pubDate: '2024-07-09 06:30:53'
+pubDate: '2024-07-09 06:41:31'
 description: ''
 author: 'wanghaisheng'
 cover:

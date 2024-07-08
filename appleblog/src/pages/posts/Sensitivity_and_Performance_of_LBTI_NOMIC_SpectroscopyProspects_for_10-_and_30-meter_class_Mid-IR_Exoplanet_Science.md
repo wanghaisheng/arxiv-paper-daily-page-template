@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Sensitivity and Performance of LBTI/NOMIC Spectroscopy: Prospects for 10- and 30-meter class Mid-IR Exoplanet Science**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:45'
 description: ''
 author: 'wanghaisheng'
 cover:

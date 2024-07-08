@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**TF-SASM: Training-free Spatial-aware Sparse Memory for Multi-object Tracking**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:44'
 description: ''
 author: 'wanghaisheng'
 cover:

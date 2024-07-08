@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Finding dusty AGNs from the JWST CEERS survey with mid-infrared photometry**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:38'
 description: ''
 author: 'wanghaisheng'
 cover:

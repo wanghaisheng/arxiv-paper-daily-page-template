@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Immutable in Principle, Upgradeable by Design: Exploratory Study of Smart Contract Upgradeability**'
-pubDate: '2024-07-09 06:30:53'
+pubDate: '2024-07-09 06:41:32'
 description: ''
 author: 'wanghaisheng'
 cover:

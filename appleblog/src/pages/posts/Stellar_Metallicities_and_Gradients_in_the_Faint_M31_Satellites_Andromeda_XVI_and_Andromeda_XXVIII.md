@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Stellar Metallicities and Gradients in the Faint M31 Satellites Andromeda XVI and Andromeda XXVIII**'
-pubDate: '2024-07-09 06:30:26'
+pubDate: '2024-07-09 06:41:47'
 description: ''
 author: 'wanghaisheng'
 cover:

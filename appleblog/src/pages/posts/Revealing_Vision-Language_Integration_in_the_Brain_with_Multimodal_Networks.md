@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Revealing Vision-Language Integration in the Brain with Multimodal Networks**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:39'
 description: ''
 author: 'wanghaisheng'
 cover:

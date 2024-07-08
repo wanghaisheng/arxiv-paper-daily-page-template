@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Noise analysis of a quasi-phase-matched quantum frequency converter and higher-order counter-propagating SPDC**'
-pubDate: '2024-07-09 06:30:30'
+pubDate: '2024-07-09 06:41:52'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Watching Swarm Dynamics from Above: A Framework for Advanced Object Tracking in Drone Videos**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:41'
 description: ''
 author: 'wanghaisheng'
 cover:

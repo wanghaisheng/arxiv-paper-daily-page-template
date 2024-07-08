@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Corvus A: A low-mass, isolated galaxy at 3.5 Mpc**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:45'
 description: ''
 author: 'wanghaisheng'
 cover:

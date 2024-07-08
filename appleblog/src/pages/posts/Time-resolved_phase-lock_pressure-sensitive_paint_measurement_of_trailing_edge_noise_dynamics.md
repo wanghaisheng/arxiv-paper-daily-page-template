@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Time-resolved phase-lock pressure-sensitive paint measurement of trailing edge noise dynamics**'
-pubDate: '2024-07-09 06:30:41'
+pubDate: '2024-07-09 06:41:44'
 description: ''
 author: 'wanghaisheng'
 cover:

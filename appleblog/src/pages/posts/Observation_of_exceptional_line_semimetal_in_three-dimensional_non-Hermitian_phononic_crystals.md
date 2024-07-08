@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Observation of exceptional line semimetal in three-dimensional non-Hermitian phononic crystals**'
-pubDate: '2024-07-09 06:30:30'
+pubDate: '2024-07-09 06:41:51'
 description: ''
 author: 'wanghaisheng'
 cover:

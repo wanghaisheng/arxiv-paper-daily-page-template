@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**SmartAxe: Detecting Cross-Chain Vulnerabilities in Bridge Smart Contracts via Fine-Grained Static Analysis**'
-pubDate: '2024-07-09 06:30:55'
+pubDate: '2024-07-09 06:41:35'
 description: ''
 author: 'wanghaisheng'
 cover:

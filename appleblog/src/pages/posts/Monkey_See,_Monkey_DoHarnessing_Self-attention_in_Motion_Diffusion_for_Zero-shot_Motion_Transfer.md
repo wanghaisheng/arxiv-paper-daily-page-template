@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Monkey See, Monkey Do: Harnessing Self-attention in Motion Diffusion for Zero-shot Motion Transfer**'
-pubDate: '2024-07-09 06:30:52'
+pubDate: '2024-07-09 06:41:42'
 description: ''
 author: 'wanghaisheng'
 cover:
