@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Measuring Domain Shifts using Deep Learning Remote Photoplethysmography Model Similarity'
-pubDate: 2024-07-09 04:44:07
+pubDate: 2024-07-09 05:09:56
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['Photoplethysmography', 'PPG'] 
+tags: ['PPG', 'Photoplethysmography'] 
 theme: 'light'
 featured: true
 

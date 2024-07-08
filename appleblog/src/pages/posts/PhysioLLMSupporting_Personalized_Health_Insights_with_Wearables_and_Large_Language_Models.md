@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'PhysioLLM: Supporting Personalized Health Insights with Wearables and Large Language Models'
-pubDate: 2024-07-09 04:44:20
+pubDate: 2024-07-09 05:10:28
 description: ''
 author: 'wanghaisheng'
 cover:

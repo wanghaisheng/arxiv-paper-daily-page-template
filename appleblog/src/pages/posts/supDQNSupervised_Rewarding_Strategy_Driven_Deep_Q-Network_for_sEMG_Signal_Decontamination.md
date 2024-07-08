@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'supDQN: Supervised Rewarding Strategy Driven Deep Q-Network for sEMG Signal Decontamination'
-pubDate: 2024-07-09 04:44:31
+pubDate: 2024-07-09 05:10:01
 description: ''
 author: 'wanghaisheng'
 cover:

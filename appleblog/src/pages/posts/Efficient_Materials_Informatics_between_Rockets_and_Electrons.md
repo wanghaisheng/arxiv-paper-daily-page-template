@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Efficient Materials Informatics between Rockets and Electrons'
-pubDate: 2024-07-09 04:44:24
+pubDate: 2024-07-09 05:11:09
 description: ''
 author: 'wanghaisheng'
 cover:

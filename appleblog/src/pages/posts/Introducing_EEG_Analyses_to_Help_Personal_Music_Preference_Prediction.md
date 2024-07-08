@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Introducing EEG Analyses to Help Personal Music Preference Prediction'
-pubDate: 2024-07-09 04:44:44
+pubDate: 2024-07-09 05:10:58
 description: ''
 author: 'wanghaisheng'
 cover:

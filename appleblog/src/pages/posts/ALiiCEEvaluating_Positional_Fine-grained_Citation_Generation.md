@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'ALiiCE: Evaluating Positional Fine-grained Citation Generation'
-pubDate: 2024-07-09 04:44:14
+pubDate: 2024-07-09 05:10:14
 description: ''
 author: 'wanghaisheng'
 cover:

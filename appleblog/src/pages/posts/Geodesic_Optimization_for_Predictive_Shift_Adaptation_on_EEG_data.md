@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Geodesic Optimization for Predictive Shift Adaptation on EEG data'
-pubDate: 2024-07-09 04:44:37
+pubDate: 2024-07-09 05:10:50
 description: ''
 author: 'wanghaisheng'
 cover:

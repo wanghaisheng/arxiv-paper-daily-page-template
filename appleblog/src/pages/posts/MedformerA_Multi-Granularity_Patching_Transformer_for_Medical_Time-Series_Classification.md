@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Medformer: A Multi-Granularity Patching Transformer for Medical Time-Series Classification'
-pubDate: 2024-07-09 04:44:41
+pubDate: 2024-07-09 05:10:54
 description: ''
 author: 'wanghaisheng'
 cover:

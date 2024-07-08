@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Definition and clinical validation of Pain Patient States from high-dimensional mobile data: application to a chronic pain cohort'
-pubDate: 2024-07-09 04:43:50
+pubDate: 2024-07-09 05:10:19
 description: ''
 author: 'wanghaisheng'
 cover:

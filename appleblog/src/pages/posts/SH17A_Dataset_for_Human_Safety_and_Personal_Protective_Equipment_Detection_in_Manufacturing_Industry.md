@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SH17: A Dataset for Human Safety and Personal Protective Equipment Detection in Manufacturing Industry'
-pubDate: 2024-07-09 04:44:44
+pubDate: 2024-07-09 05:10:33
 description: ''
 author: 'wanghaisheng'
 cover:

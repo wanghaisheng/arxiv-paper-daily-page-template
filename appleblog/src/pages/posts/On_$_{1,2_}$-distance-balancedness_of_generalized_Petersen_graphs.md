@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'On $\{1,2\}$-distance-balancedness of generalized Petersen graphs'
-pubDate: 2024-07-09 04:44:18
+pubDate: 2024-07-09 05:10:26
 description: ''
 author: 'wanghaisheng'
 cover:

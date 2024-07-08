@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Hearables: Multimodal physiological in-ear sensing'
-pubDate: 2024-07-09 04:43:56
+pubDate: 2024-07-09 05:10:26
 description: ''
 author: 'wanghaisheng'
 cover:

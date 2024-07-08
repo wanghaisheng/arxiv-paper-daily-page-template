@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'GriDB: Scaling Blockchain Database via Sharding and Off-Chain Cross-Shard Mechanism'
-pubDate: 2024-07-09 04:44:11
+pubDate: 2024-07-09 05:10:09
 description: ''
 author: 'wanghaisheng'
 cover:

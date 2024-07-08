@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Cryogenic Behavior of High-Permittivity Gate Dielectrics: The Impact of the Atomic Layer Deposition Temperature and the Lithography Pattering Method'
-pubDate: 2024-07-09 04:44:30
+pubDate: 2024-07-09 05:11:16
 description: ''
 author: 'wanghaisheng'
 cover:

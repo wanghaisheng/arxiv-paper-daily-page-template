@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Activity-Aware Deep Cognitive Fatigue Assessment using Wearables'
-pubDate: 2024-07-09 04:43:51
+pubDate: 2024-07-09 05:10:21
 description: ''
 author: 'wanghaisheng'
 cover:

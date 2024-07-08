@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Inverse spin galvanic effect in proximitized superconductor/paramagnet systems'
-pubDate: 2024-07-09 04:44:21
+pubDate: 2024-07-09 05:10:30
 description: ''
 author: 'wanghaisheng'
 cover:

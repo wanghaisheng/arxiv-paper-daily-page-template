@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'AI for Equitable Tennis Training: Leveraging AI for Equitable and Accurate Classification of Tennis Skill Levels and Training Phases'
-pubDate: 2024-07-09 04:44:20
+pubDate: 2024-07-09 05:10:29
 description: ''
 author: 'wanghaisheng'
 cover:

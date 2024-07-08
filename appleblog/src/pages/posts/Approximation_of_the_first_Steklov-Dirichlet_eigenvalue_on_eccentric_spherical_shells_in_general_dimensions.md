@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Approximation of the first Steklov-Dirichlet eigenvalue on eccentric spherical shells in general dimensions'
-pubDate: 2024-07-09 04:44:18
+pubDate: 2024-07-09 05:10:26
 description: ''
 author: 'wanghaisheng'
 cover:

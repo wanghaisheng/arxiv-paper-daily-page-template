@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Lift generation on a sphere through asymmetric roughness using active surface morphing'
-pubDate: 2024-07-09 04:43:26
+pubDate: 2024-07-09 05:09:39
 description: ''
 author: 'wanghaisheng'
 cover:

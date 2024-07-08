@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'MEET: Mixture of Experts Extra Tree-Based sEMG Hand Gesture Identification'
-pubDate: 2024-07-09 04:44:32
+pubDate: 2024-07-09 05:10:01
 description: ''
 author: 'wanghaisheng'
 cover:

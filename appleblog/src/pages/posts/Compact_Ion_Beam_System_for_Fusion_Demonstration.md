@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Compact Ion Beam System for Fusion Demonstration'
-pubDate: 2024-07-09 04:43:38
+pubDate: 2024-07-09 05:09:45
 description: ''
 author: 'wanghaisheng'
 cover:

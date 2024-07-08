@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Towards Event-oriented Long Video Understanding'
-pubDate: 2024-07-09 04:44:22
+pubDate: 2024-07-09 05:10:32
 description: ''
 author: 'wanghaisheng'
 cover:

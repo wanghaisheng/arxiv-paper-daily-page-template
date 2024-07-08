@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Data on the Move: Traffic-Oriented Data Trading Platform Powered by AI Agent with Common Sense'
-pubDate: 2024-07-09 04:43:28
+pubDate: 2024-07-09 05:09:41
 description: ''
 author: 'wanghaisheng'
 cover:

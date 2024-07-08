@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A slightly oblate dark matter halo revealed by a retrograde precessing Galactic disk warp'
-pubDate: 2024-07-09 04:44:12
+pubDate: 2024-07-09 05:10:10
 description: ''
 author: 'wanghaisheng'
 cover:

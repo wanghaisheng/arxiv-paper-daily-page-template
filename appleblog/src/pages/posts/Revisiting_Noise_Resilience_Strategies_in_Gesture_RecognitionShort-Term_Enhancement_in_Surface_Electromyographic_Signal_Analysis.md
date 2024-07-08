@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Revisiting Noise Resilience Strategies in Gesture Recognition: Short-Term Enhancement in Surface Electromyographic Signal Analysis'
-pubDate: 2024-07-09 04:44:32
+pubDate: 2024-07-09 05:10:02
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Large Language Models are Zero-Shot Recognizers for Activities of Daily Living'
-pubDate: 2024-07-09 04:43:27
+pubDate: 2024-07-09 05:09:40
 description: ''
 author: 'wanghaisheng'
 cover:

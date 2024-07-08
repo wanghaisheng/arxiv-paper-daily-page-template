@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Hyperspectral Dataset and Deep Learning methods for Waste from Electric and Electronic Equipment Identification (WEEE)'
-pubDate: 2024-07-09 04:44:30
+pubDate: 2024-07-09 05:11:15
 description: ''
 author: 'wanghaisheng'
 cover:

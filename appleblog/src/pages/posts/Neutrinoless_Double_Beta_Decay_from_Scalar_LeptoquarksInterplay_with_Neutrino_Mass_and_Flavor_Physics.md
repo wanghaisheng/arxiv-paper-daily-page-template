@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Neutrinoless Double Beta Decay from Scalar Leptoquarks: Interplay with Neutrino Mass and Flavor Physics'
-pubDate: 2024-07-09 04:44:24
+pubDate: 2024-07-09 05:11:08
 description: ''
 author: 'wanghaisheng'
 cover:

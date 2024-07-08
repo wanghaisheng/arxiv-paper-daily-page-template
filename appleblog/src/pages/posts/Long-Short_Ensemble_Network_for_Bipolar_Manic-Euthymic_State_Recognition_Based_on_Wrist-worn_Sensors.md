@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Long-Short Ensemble Network for Bipolar Manic-Euthymic State Recognition Based on Wrist-worn Sensors'
-pubDate: 2024-07-09 04:43:51
+pubDate: 2024-07-09 05:10:20
 description: ''
 author: 'wanghaisheng'
 cover:

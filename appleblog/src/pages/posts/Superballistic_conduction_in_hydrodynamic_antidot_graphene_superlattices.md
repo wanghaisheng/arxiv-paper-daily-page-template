@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Superballistic conduction in hydrodynamic antidot graphene superlattices'
-pubDate: 2024-07-09 04:44:28
+pubDate: 2024-07-09 05:11:14
 description: ''
 author: 'wanghaisheng'
 cover:

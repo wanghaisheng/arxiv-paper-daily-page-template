@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Deep learning from wristband sensor data: towards wearable, non-invasive seizure forecasting'
-pubDate: 2024-07-09 04:43:53
+pubDate: 2024-07-09 05:10:22
 description: ''
 author: 'wanghaisheng'
 cover:

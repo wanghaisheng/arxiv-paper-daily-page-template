@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'MDDD: Manifold-based Domain Adaptation with Dynamic Distribution for Non-Deep Transfer Learning in Cross-subject and Cross-session EEG-based Emotion Recognition'
-pubDate: 2024-07-09 04:44:44
+pubDate: 2024-07-09 05:10:58
 description: ''
 author: 'wanghaisheng'
 cover:

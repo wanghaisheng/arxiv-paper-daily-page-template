@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Efficient sEMG-based Cross-Subject Joint Angle Estimation via Hierarchical Spiking Attentional Feature Decomposition Network'
-pubDate: 2024-07-09 04:44:33
+pubDate: 2024-07-09 05:10:03
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Prediction of the Realisation of an Information Need: An EEG Study'
-pubDate: 2024-07-09 04:44:39
+pubDate: 2024-07-09 05:10:51
 description: ''
 author: 'wanghaisheng'
 cover:

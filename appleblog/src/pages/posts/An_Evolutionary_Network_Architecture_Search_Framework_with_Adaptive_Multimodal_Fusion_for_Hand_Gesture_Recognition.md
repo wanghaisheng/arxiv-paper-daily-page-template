@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'An Evolutionary Network Architecture Search Framework with Adaptive Multimodal Fusion for Hand Gesture Recognition'
-pubDate: 2024-07-09 04:44:33
+pubDate: 2024-07-09 05:10:03
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'KID-PPG: Knowledge Informed Deep Learning for Extracting Heart Rate from a Smartwatch'
-pubDate: 2024-07-09 04:44:05
+pubDate: 2024-07-09 05:09:53
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['Photoplethysmography', 'PPG'] 
+tags: ['PPG', 'Photoplethysmography'] 
 theme: 'light'
 featured: true
 

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'GGHead: Fast and Generalizable 3D Gaussian Heads'
-pubDate: 2024-07-09 04:44:16
+pubDate: 2024-07-09 05:10:16
 description: ''
 author: 'wanghaisheng'
 cover:

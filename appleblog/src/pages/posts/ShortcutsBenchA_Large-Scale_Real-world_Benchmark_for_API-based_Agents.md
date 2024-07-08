@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents'
-pubDate: 2024-07-09 04:44:19
+pubDate: 2024-07-09 05:10:28
 description: ''
 author: 'wanghaisheng'
 cover:

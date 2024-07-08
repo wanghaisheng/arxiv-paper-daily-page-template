@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'An autoencoder for compressing angle-resolved photoemission spectroscopy data'
-pubDate: 2024-07-09 04:44:25
+pubDate: 2024-07-09 05:11:10
 description: ''
 author: 'wanghaisheng'
 cover:

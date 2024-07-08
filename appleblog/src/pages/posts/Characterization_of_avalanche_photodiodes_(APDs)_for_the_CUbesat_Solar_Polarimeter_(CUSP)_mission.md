@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Characterization of avalanche photodiodes (APDs) for the CUbesat Solar Polarimeter (CUSP) mission'
-pubDate: 2024-07-09 04:43:39
+pubDate: 2024-07-09 05:09:46
 description: ''
 author: 'wanghaisheng'
 cover:

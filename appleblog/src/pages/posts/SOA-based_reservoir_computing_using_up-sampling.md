@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SOA-based reservoir computing using up-sampling'
-pubDate: 2024-07-09 04:44:51
+pubDate: 2024-07-09 05:10:40
 description: ''
 author: 'wanghaisheng'
 cover:

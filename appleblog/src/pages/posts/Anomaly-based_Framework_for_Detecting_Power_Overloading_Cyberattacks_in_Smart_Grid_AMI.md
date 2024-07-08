@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Anomaly-based Framework for Detecting Power Overloading Cyberattacks in Smart Grid AMI'
-pubDate: 2024-07-09 04:44:47
+pubDate: 2024-07-09 05:11:07
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['smart glass'] 
+tags: ['smart ring'] 
 theme: 'light'
 featured: true
 

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'VRBiom: A New Periocular Dataset for Biometric Applications of HMD'
-pubDate: 2024-07-09 04:44:50
+pubDate: 2024-07-09 05:10:40
 description: ''
 author: 'wanghaisheng'
 cover:

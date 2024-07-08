@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Visualization of Wearable Data and Biometrics for Analysis and Recommendations in Childhood Obesity'
-pubDate: 2024-07-09 04:43:55
+pubDate: 2024-07-09 05:10:25
 description: ''
 author: 'wanghaisheng'
 cover:

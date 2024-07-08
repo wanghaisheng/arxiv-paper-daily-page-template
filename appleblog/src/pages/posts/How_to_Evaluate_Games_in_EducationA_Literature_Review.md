@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'How to Evaluate Games in Education: A Literature Review'
-pubDate: 2024-07-09 04:44:46
+pubDate: 2024-07-09 05:11:04
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['smart glass'] 
+tags: ['smart ring'] 
 theme: 'light'
 featured: true
 

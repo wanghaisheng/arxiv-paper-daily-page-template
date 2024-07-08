@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SiNC+: Adaptive Camera-Based Vitals with Unsupervised Learning of Periodic Signals'
-pubDate: 2024-07-09 04:44:06
+pubDate: 2024-07-09 05:09:54
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['Photoplethysmography', 'PPG'] 
+tags: ['PPG', 'Photoplethysmography'] 
 theme: 'light'
 featured: true
 

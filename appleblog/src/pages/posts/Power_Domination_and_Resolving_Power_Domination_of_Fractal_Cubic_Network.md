@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Power Domination and Resolving Power Domination of Fractal Cubic Network'
-pubDate: 2024-07-09 04:44:18
+pubDate: 2024-07-09 05:10:27
 description: ''
 author: 'wanghaisheng'
 cover:

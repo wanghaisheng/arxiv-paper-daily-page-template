@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SincVAE: a New Approach to Improve Anomaly Detection on EEG Data Using SincNet and Variational Autoencoder'
-pubDate: 2024-07-09 04:44:38
+pubDate: 2024-07-09 05:10:51
 description: ''
 author: 'wanghaisheng'
 cover:

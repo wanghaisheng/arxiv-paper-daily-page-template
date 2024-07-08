@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Subject-Adaptive Transfer Learning Using Resting State EEG Signals for Cross-Subject EEG Motor Imagery Classification'
-pubDate: 2024-07-09 04:44:42
+pubDate: 2024-07-09 05:10:55
 description: ''
 author: 'wanghaisheng'
 cover:

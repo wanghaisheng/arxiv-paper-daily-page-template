@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Fatigue Assessment using ECG and Actigraphy Sensors'
-pubDate: 2024-07-09 04:43:52
+pubDate: 2024-07-09 05:10:22
 description: ''
 author: 'wanghaisheng'
 cover:

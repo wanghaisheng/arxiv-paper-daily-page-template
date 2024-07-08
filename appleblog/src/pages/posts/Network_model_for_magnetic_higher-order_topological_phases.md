@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Network model for magnetic higher-order topological phases'
-pubDate: 2024-07-09 04:44:02
+pubDate: 2024-07-09 05:11:05
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Towards Non-contact Muscle Activity Estimation using FMCW Radar'
-pubDate: 2024-07-09 04:44:37
+pubDate: 2024-07-09 05:10:08
 description: ''
 author: 'wanghaisheng'
 cover:

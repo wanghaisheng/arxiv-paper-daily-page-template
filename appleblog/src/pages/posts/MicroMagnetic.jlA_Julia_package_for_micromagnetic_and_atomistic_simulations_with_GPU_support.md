@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'MicroMagnetic.jl: A Julia package for micromagnetic and atomistic simulations with GPU support'
-pubDate: 2024-07-09 04:44:21
+pubDate: 2024-07-09 05:10:29
 description: ''
 author: 'wanghaisheng'
 cover:

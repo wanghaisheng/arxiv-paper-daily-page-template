@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Optimizing Rescoring Rules with Interpretable Representations of Long-Term Information'
-pubDate: 2024-07-09 04:43:52
+pubDate: 2024-07-09 05:10:21
 description: ''
 author: 'wanghaisheng'
 cover:

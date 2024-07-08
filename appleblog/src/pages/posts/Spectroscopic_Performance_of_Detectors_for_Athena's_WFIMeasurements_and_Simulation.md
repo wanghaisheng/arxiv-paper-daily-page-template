@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Spectroscopic Performance of Detectors for Athena's WFI: Measurements and Simulation'
-pubDate: 2024-07-09 04:44:57
+pubDate: 2024-07-09 05:11:22
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['all search terms'] 
+tags: ['camera', 'wearable camera'] 
 theme: 'light'
 featured: true
 

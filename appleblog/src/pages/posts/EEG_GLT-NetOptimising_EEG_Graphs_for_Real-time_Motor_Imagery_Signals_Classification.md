@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EEG_GLT-Net: Optimising EEG Graphs for Real-time Motor Imagery Signals Classification'
-pubDate: 2024-07-09 04:44:44
+pubDate: 2024-07-09 05:10:58
 description: ''
 author: 'wanghaisheng'
 cover:

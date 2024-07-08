@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Classifying attention deficit hyperactivity disorder in children with non-linearities in actigraphy'
-pubDate: 2024-07-09 04:43:53
+pubDate: 2024-07-09 05:10:23
 description: ''
 author: 'wanghaisheng'
 cover:

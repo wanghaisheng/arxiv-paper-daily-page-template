@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Empowering Mobility: Brain-Computer Interface for Enhancing Wheelchair Control for Individuals with Physical Disabilities'
-pubDate: 2024-07-09 04:44:43
+pubDate: 2024-07-09 05:10:57
 description: ''
 author: 'wanghaisheng'
 cover:

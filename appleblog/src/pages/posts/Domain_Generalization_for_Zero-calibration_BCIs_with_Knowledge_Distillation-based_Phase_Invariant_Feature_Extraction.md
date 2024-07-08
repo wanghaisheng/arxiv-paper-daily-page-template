@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction'
-pubDate: 2024-07-09 04:44:42
+pubDate: 2024-07-09 05:10:55
 description: ''
 author: 'wanghaisheng'
 cover:

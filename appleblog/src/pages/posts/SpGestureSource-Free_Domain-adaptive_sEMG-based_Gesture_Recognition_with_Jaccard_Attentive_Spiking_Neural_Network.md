@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SpGesture: Source-Free Domain-adaptive sEMG-based Gesture Recognition with Jaccard Attentive Spiking Neural Network'
-pubDate: 2024-07-09 04:44:31
+pubDate: 2024-07-09 05:10:01
 description: ''
 author: 'wanghaisheng'
 cover:

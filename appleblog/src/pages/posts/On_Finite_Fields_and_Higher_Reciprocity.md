@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'On Finite Fields and Higher Reciprocity'
-pubDate: 2024-07-09 04:44:01
+pubDate: 2024-07-09 05:11:05
 description: ''
 author: 'wanghaisheng'
 cover:

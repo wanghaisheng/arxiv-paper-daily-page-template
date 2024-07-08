@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Leveraging Hyperscanning EEG and VR Omnidirectional Treadmill to Explore Inter-Brain Synchrony in Collaborative Spatial Navigation'
-pubDate: 2024-07-09 04:44:39
+pubDate: 2024-07-09 05:10:52
 description: ''
 author: 'wanghaisheng'
 cover:

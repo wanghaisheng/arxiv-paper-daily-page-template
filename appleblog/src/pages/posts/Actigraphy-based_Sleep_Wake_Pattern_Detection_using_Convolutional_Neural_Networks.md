@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Actigraphy-based Sleep/Wake Pattern Detection using Convolutional Neural Networks'
-pubDate: 2024-07-09 04:43:54
+pubDate: 2024-07-09 05:10:24
 description: ''
 author: 'wanghaisheng'
 cover:

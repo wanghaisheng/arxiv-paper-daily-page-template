@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Conditional Gumbel-Softmax for constrained feature selection with application to node selection in wireless sensor networks'
-pubDate: 2024-07-09 04:44:40
+pubDate: 2024-07-09 05:10:54
 description: ''
 author: 'wanghaisheng'
 cover:

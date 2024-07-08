@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'On multifractals: a non-linear study of actigraphy data'
-pubDate: 2024-07-09 04:43:55
+pubDate: 2024-07-09 05:10:26
 description: ''
 author: 'wanghaisheng'
 cover:

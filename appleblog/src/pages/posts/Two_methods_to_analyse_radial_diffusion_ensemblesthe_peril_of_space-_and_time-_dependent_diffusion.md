@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Two methods to analyse radial diffusion ensembles: the peril of space- and time- dependent diffusion'
-pubDate: 2024-07-09 04:44:24
+pubDate: 2024-07-09 05:11:09
 description: ''
 author: 'wanghaisheng'
 cover:

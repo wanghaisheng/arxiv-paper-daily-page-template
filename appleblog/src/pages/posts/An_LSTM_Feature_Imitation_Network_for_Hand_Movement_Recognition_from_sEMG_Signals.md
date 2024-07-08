@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'An LSTM Feature Imitation Network for Hand Movement Recognition from sEMG Signals'
-pubDate: 2024-07-09 04:44:31
+pubDate: 2024-07-09 05:10:00
 description: ''
 author: 'wanghaisheng'
 cover:

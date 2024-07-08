@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'MAD: Multi-Alignment MEG-to-Text Decoding'
-pubDate: 2024-07-09 04:44:40
+pubDate: 2024-07-09 05:10:53
 description: ''
 author: 'wanghaisheng'
 cover:

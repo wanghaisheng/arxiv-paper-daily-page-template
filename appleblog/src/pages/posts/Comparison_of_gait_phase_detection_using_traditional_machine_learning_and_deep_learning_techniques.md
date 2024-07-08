@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Comparison of gait phase detection using traditional machine learning and deep learning techniques'
-pubDate: 2024-07-09 04:44:34
+pubDate: 2024-07-09 05:10:04
 description: ''
 author: 'wanghaisheng'
 cover:

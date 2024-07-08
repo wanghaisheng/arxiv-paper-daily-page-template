@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Non-Contact Acquisition of PPG Signal using Chest Movement-Modulated Radio Signals'
-pubDate: 2024-07-09 04:44:10
+pubDate: 2024-07-09 05:09:59
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['Photoplethysmography', 'PPG'] 
+tags: ['PPG', 'Photoplethysmography'] 
 theme: 'light'
 featured: true
 

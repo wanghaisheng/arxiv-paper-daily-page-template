@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Rings of simple range 2'
-pubDate: 2024-07-09 04:44:03
+pubDate: 2024-07-09 05:11:07
 description: ''
 author: 'wanghaisheng'
 cover:

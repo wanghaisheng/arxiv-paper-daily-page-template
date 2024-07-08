@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Two-dimensional to bulk crossover of the WSe$_2$ electronic band structure'
-pubDate: 2024-07-09 04:43:41
+pubDate: 2024-07-09 05:09:50
 description: ''
 author: 'wanghaisheng'
 cover:

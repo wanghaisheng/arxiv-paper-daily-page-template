@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Multimodal wearable EEG, EMG and accelerometry measurements improve the accuracy of tonic-clonic seizure detection in-hospital'
-pubDate: 2024-07-09 04:44:33
+pubDate: 2024-07-09 05:10:03
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Suitability of Common Ingestible Antennas for Multiplexed Gastrointestinal Biosensing'
-pubDate: 2024-07-09 04:44:27
+pubDate: 2024-07-09 05:11:12
 description: ''
 author: 'wanghaisheng'
 cover:

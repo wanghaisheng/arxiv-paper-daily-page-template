@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Bayesian Circadian Hidden Markov Model to Infer Rest-Activity Rhythms Using 24-hour Actigraphy Data'
-pubDate: 2024-07-09 04:43:49
+pubDate: 2024-07-09 05:10:18
 description: ''
 author: 'wanghaisheng'
 cover:

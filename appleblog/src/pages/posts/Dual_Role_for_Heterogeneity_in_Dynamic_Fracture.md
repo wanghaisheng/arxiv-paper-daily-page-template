@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Dual Role for Heterogeneity in Dynamic Fracture'
-pubDate: 2024-07-09 04:44:50
+pubDate: 2024-07-09 05:10:39
 description: ''
 author: 'wanghaisheng'
 cover:

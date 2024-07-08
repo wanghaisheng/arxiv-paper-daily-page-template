@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Volume Transfer: A New Design Concept for Fabric-Based Pneumatic Exosuits'
-pubDate: 2024-07-09 04:44:36
+pubDate: 2024-07-09 05:10:06
 description: ''
 author: 'wanghaisheng'
 cover:

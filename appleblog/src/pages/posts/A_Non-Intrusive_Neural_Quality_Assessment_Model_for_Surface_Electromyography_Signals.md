@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Non-Intrusive Neural Quality Assessment Model for Surface Electromyography Signals'
-pubDate: 2024-07-09 04:44:35
+pubDate: 2024-07-09 05:10:05
 description: ''
 author: 'wanghaisheng'
 cover:

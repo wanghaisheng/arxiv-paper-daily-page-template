@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Understanding the Landscape of Leveraging IoT for Sustainable Growth in Saudi Arabia'
-pubDate: 2024-07-09 04:44:45
+pubDate: 2024-07-09 05:11:01
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: ['smart glass'] 
+tags: ['smart ring'] 
 theme: 'light'
 featured: true
 

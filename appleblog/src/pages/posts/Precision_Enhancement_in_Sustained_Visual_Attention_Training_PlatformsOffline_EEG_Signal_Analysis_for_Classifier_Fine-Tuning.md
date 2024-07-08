@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Precision Enhancement in Sustained Visual Attention Training Platforms: Offline EEG Signal Analysis for Classifier Fine-Tuning'
-pubDate: 2024-07-09 04:44:42
+pubDate: 2024-07-09 05:10:56
 description: ''
 author: 'wanghaisheng'
 cover:

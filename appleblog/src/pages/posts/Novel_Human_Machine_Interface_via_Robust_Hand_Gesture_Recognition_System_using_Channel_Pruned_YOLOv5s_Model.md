@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Novel Human Machine Interface via Robust Hand Gesture Recognition System using Channel Pruned YOLOv5s Model'
-pubDate: 2024-07-09 04:44:49
+pubDate: 2024-07-09 05:10:38
 description: ''
 author: 'wanghaisheng'
 cover:

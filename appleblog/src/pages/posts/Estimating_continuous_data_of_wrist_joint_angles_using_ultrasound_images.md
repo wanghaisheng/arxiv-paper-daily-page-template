@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Estimating continuous data of wrist joint angles using ultrasound images'
-pubDate: 2024-07-09 04:44:36
+pubDate: 2024-07-09 05:10:07
 description: ''
 author: 'wanghaisheng'
 cover:

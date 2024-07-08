@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SelfEEG: A Python library for Self-Supervised Learning in Electroencephalography'
-pubDate: 2024-07-09 04:44:37
+pubDate: 2024-07-09 05:10:08
 description: ''
 author: 'wanghaisheng'
 cover:

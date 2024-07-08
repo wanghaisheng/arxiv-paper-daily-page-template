@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EEG-ImageNet: An Electroencephalogram Dataset and Benchmarks with Image Visual Stimuli of Multi-Granularity Labels'
-pubDate: 2024-07-09 04:44:39
+pubDate: 2024-07-09 05:10:52
 description: ''
 author: 'wanghaisheng'
 cover:

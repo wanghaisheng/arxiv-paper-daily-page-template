@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Unified Anomaly Detection methods on Edge Device using Knowledge Distillation and Quantization'
-pubDate: 2024-07-09 04:44:48
+pubDate: 2024-07-09 05:10:37
 description: ''
 author: 'wanghaisheng'
 cover:

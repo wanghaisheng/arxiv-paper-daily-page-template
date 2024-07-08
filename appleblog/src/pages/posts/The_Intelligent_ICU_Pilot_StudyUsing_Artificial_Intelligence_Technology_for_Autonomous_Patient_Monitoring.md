@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The Intelligent ICU Pilot Study: Using Artificial Intelligence Technology for Autonomous Patient Monitoring'
-pubDate: 2024-07-09 04:43:54
+pubDate: 2024-07-09 05:10:24
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Optimal Mixing for Randomly Sampling Edge Colorings on Trees Down to the Max Degree'
-pubDate: 2024-07-09 04:43:31
+pubDate: 2024-07-09 05:09:28
 description: ''
 author: 'wanghaisheng'
 cover:

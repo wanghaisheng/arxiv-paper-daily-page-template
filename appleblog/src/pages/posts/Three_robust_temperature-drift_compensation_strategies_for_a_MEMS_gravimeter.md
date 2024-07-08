@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Three robust temperature-drift compensation strategies for a MEMS gravimeter'
-pubDate: 2024-07-09 04:44:22
+pubDate: 2024-07-09 05:10:31
 description: ''
 author: 'wanghaisheng'
 cover:

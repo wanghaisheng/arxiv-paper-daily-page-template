@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Existence of a maximum flow rate in electro-osmotic systems'
-pubDate: 2024-07-09 04:43:33
+pubDate: 2024-07-09 05:09:31
 description: ''
 author: 'wanghaisheng'
 cover:

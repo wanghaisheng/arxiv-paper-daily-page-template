@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Smart Textile-Driven Soft Spine Exosuit for Lifting Tasks in Industrial Applications'
-pubDate: 2024-07-09 04:44:35
+pubDate: 2024-07-09 05:10:06
 description: ''
 author: 'wanghaisheng'
 cover:

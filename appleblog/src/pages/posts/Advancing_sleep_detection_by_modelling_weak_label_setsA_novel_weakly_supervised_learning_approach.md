@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Advancing sleep detection by modelling weak label sets: A novel weakly supervised learning approach'
-pubDate: 2024-07-09 04:43:49
+pubDate: 2024-07-09 05:10:18
 description: ''
 author: 'wanghaisheng'
 cover:

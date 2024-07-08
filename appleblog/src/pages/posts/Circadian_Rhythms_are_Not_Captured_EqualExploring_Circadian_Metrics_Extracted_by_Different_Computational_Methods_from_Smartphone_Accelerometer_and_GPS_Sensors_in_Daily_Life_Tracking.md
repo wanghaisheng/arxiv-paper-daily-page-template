@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Circadian Rhythms are Not Captured Equal: Exploring Circadian Metrics Extracted by Different Computational Methods from Smartphone Accelerometer and GPS Sensors in Daily Life Tracking'
-pubDate: 2024-07-09 04:43:51
+pubDate: 2024-07-09 05:10:20
 description: ''
 author: 'wanghaisheng'
 cover:

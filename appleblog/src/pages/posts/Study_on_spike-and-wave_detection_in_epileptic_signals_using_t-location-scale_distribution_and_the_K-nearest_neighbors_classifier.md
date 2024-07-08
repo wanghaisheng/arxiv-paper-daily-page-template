@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Study on spike-and-wave detection in epileptic signals using t-location-scale distribution and the K-nearest neighbors classifier'
-pubDate: 2024-07-09 04:44:41
+pubDate: 2024-07-09 05:10:55
 description: ''
 author: 'wanghaisheng'
 cover:

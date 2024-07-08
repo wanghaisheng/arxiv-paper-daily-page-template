@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The Fall of ROME: Understanding the Collapse of LLMs in Model Editing'
-pubDate: 2024-07-09 04:44:15
+pubDate: 2024-07-09 05:10:14
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'An AI-Based System Utilizing IoT-Enabled Ambient Sensors and LLMs for Complex Activity Tracking'
-pubDate: 2024-07-09 04:44:49
+pubDate: 2024-07-09 05:10:38
 description: ''
 author: 'wanghaisheng'
 cover:

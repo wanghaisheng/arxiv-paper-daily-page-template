@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The extended zero-divisor graph of the amalgamated duplication of a ring along an ideal'
-pubDate: 2024-07-09 04:44:03
+pubDate: 2024-07-09 05:11:07
 description: ''
 author: 'wanghaisheng'
 cover:

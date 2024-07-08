@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EIT-1M: One Million EEG-Image-Text Pairs for Human Visual-textual Recognition and More'
-pubDate: 2024-07-09 04:44:38
+pubDate: 2024-07-09 05:10:50
 description: ''
 author: 'wanghaisheng'
 cover:

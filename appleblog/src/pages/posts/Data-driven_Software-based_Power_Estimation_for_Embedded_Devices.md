@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Data-driven Software-based Power Estimation for Embedded Devices'
-pubDate: 2024-07-09 04:44:49
+pubDate: 2024-07-09 05:10:38
 description: ''
 author: 'wanghaisheng'
 cover:

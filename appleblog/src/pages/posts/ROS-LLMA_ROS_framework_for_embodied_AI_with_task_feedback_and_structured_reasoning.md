@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'ROS-LLM: A ROS framework for embodied AI with task feedback and structured reasoning'
-pubDate: 2024-07-09 04:44:12
+pubDate: 2024-07-09 05:10:11
 description: ''
 author: 'wanghaisheng'
 cover:

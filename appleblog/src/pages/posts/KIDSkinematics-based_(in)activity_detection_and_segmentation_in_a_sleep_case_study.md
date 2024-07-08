@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'KIDS: kinematics-based (in)activity detection and segmentation in a sleep case study'
-pubDate: 2024-07-09 04:43:50
+pubDate: 2024-07-09 05:10:19
 description: ''
 author: 'wanghaisheng'
 cover:

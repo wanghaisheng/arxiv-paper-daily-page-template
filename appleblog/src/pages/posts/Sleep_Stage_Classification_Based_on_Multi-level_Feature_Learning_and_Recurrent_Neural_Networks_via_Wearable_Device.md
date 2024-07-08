@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Sleep Stage Classification Based on Multi-level Feature Learning and Recurrent Neural Networks via Wearable Device'
-pubDate: 2024-07-09 04:43:55
+pubDate: 2024-07-09 05:10:25
 description: ''
 author: 'wanghaisheng'
 cover:

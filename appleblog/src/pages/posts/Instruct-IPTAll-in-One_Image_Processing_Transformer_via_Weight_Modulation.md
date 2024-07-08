@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Instruct-IPT: All-in-One Image Processing Transformer via Weight Modulation'
-pubDate: 2024-07-09 04:44:12
+pubDate: 2024-07-09 05:10:10
 description: ''
 author: 'wanghaisheng'
 cover:

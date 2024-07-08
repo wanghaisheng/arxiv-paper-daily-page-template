@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'UWBAD: Towards Effective and Imperceptible Jamming Attacks Against UWB Ranging Systems with COTS Chips'
-pubDate: 2024-07-09 04:44:19
+pubDate: 2024-07-09 05:10:27
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'L-SFAN: Lightweight Spatially-focused Attention Network for Pain Behavior Detection'
-pubDate: 2024-07-09 04:44:30
+pubDate: 2024-07-09 05:10:00
 description: ''
 author: 'wanghaisheng'
 cover:

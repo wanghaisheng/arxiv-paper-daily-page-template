@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'FedPot: A Quality-Aware Collaborative and Incentivized Honeypot-Based Detector for Smart Grid Networks'
-pubDate: 2024-07-09 04:44:48
+pubDate: 2024-07-09 05:10:37
 description: ''
 author: 'wanghaisheng'
 cover:

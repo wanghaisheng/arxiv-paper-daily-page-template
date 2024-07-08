@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Implications of the abundance of halo coronal mass ejections for the strength of solar cycle 25'
-pubDate: 2024-07-09 04:43:31
+pubDate: 2024-07-09 05:09:29
 description: ''
 author: 'wanghaisheng'
 cover:

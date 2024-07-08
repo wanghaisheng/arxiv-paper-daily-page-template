@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Convergence Rate Maximization for Split Learning-based Control of EMG Prosthetic Devices'
-pubDate: 2024-07-09 04:44:36
+pubDate: 2024-07-09 05:10:07
 description: ''
 author: 'wanghaisheng'
 cover:

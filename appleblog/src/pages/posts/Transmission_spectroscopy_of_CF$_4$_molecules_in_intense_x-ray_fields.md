@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Transmission spectroscopy of CF$_4$ molecules in intense x-ray fields'
-pubDate: 2024-07-09 04:43:37
+pubDate: 2024-07-09 05:09:45
 description: ''
 author: 'wanghaisheng'
 cover:

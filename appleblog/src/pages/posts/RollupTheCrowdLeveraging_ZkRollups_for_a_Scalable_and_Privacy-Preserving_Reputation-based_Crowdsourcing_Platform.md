@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'RollupTheCrowd: Leveraging ZkRollups for a Scalable and Privacy-Preserving Reputation-based Crowdsourcing Platform'
-pubDate: 2024-07-09 04:44:50
+pubDate: 2024-07-09 05:10:39
 description: ''
 author: 'wanghaisheng'
 cover:

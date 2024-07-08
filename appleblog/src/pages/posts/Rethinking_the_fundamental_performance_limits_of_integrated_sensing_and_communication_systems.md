@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Rethinking the fundamental performance limits of integrated sensing and communication systems'
-pubDate: 2024-07-09 04:43:40
+pubDate: 2024-07-09 05:09:48
 description: ''
 author: 'wanghaisheng'
 cover:

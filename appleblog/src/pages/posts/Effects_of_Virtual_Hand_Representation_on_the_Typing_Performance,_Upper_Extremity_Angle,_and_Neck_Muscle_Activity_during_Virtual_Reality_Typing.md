@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Effects of Virtual Hand Representation on the Typing Performance, Upper Extremity Angle, and Neck Muscle Activity during Virtual Reality Typing'
-pubDate: 2024-07-09 04:44:35
+pubDate: 2024-07-09 05:10:06
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Mediation analysis with densities as mediators with an application to iCOMPARE trial'
-pubDate: 2024-07-09 04:43:51
+pubDate: 2024-07-09 05:10:19
 description: ''
 author: 'wanghaisheng'
 cover:

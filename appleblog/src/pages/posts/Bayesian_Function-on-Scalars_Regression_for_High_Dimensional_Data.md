@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Bayesian Function-on-Scalars Regression for High Dimensional Data'
-pubDate: 2024-07-09 04:43:54
+pubDate: 2024-07-09 05:10:23
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EMG-based Control Strategies of a Supernumerary Robotic Hand for the Rehabilitation of Sub-Acute Stroke Patients: Proof of Concept'
-pubDate: 2024-07-09 04:44:37
+pubDate: 2024-07-09 05:10:08
 description: ''
 author: 'wanghaisheng'
 cover:

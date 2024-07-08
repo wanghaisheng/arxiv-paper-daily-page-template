@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Theory of coherent phonons coupled to excitons'
-pubDate: 2024-07-09 04:44:21
+pubDate: 2024-07-09 05:10:30
 description: ''
 author: 'wanghaisheng'
 cover:

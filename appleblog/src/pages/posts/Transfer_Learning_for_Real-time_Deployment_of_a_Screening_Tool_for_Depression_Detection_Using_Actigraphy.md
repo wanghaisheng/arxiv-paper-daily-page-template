@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Transfer Learning for Real-time Deployment of a Screening Tool for Depression Detection Using Actigraphy'
-pubDate: 2024-07-09 04:43:50
+pubDate: 2024-07-09 05:10:18
 description: ''
 author: 'wanghaisheng'
 cover:

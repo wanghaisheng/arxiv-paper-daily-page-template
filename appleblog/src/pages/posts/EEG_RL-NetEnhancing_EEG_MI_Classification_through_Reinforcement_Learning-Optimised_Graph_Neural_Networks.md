@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EEG_RL-Net: Enhancing EEG MI Classification through Reinforcement Learning-Optimised Graph Neural Networks'
-pubDate: 2024-07-09 04:44:43
+pubDate: 2024-07-09 05:10:58
 description: ''
 author: 'wanghaisheng'
 cover:

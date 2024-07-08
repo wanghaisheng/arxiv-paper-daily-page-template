@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Wireless Spectrum in Rural Farmlands: Status, Challenges and Opportunities'
-pubDate: 2024-07-09 04:43:36
+pubDate: 2024-07-09 05:09:43
 description: ''
 author: 'wanghaisheng'
 cover:

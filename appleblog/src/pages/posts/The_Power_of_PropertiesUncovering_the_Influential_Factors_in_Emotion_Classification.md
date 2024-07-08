@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The Power of Properties: Uncovering the Influential Factors in Emotion Classification'
-pubDate: 2024-07-09 04:44:32
+pubDate: 2024-07-09 05:10:02
 description: ''
 author: 'wanghaisheng'
 cover:

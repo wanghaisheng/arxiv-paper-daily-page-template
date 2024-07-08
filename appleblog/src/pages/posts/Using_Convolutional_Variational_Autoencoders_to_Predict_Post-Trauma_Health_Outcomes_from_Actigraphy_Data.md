@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Using Convolutional Variational Autoencoders to Predict Post-Trauma Health Outcomes from Actigraphy Data'
-pubDate: 2024-07-09 04:43:52
+pubDate: 2024-07-09 05:10:21
 description: ''
 author: 'wanghaisheng'
 cover:

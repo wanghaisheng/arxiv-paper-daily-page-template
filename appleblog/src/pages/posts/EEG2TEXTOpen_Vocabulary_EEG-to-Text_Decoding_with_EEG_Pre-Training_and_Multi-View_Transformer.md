@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'EEG2TEXT: Open Vocabulary EEG-to-Text Decoding with EEG Pre-Training and Multi-View Transformer'
-pubDate: 2024-07-09 04:44:42
+pubDate: 2024-07-09 05:10:56
 description: ''
 author: 'wanghaisheng'
 cover:

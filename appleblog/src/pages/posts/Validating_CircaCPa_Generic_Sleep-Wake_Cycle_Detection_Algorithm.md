@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Validating CircaCP: a Generic Sleep-Wake Cycle Detection Algorithm'
-pubDate: 2024-07-09 04:43:51
+pubDate: 2024-07-09 05:10:20
 description: ''
 author: 'wanghaisheng'
 cover:

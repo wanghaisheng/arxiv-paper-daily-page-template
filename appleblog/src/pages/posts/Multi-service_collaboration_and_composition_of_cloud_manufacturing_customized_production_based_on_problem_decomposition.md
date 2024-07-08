@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Multi-service collaboration and composition of cloud manufacturing customized production based on problem decomposition'
-pubDate: 2024-07-09 04:43:28
+pubDate: 2024-07-09 05:09:42
 description: ''
 author: 'wanghaisheng'
 cover:

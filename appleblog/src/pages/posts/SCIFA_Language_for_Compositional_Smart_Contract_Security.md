@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SCIF: A Language for Compositional Smart Contract Security'
-pubDate: 2024-07-09 04:43:27
+pubDate: 2024-07-09 05:09:41
 description: ''
 author: 'wanghaisheng'
 cover:

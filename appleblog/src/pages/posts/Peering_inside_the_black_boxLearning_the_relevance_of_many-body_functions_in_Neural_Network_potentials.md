@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Peering inside the black box: Learning the relevance of many-body functions in Neural Network potentials'
-pubDate: 2024-07-09 04:44:28
+pubDate: 2024-07-09 05:11:14
 description: ''
 author: 'wanghaisheng'
 cover:

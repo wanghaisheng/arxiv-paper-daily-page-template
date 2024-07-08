@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Feature Fusion Based on Mutual-Cross-Attention Mechanism for EEG Emotion Recognition'
-pubDate: 2024-07-09 04:44:38
+pubDate: 2024-07-09 05:10:51
 description: ''
 author: 'wanghaisheng'
 cover:

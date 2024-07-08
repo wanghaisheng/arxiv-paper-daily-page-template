@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Neutral atomic and molecular gas dynamics in the nearby spiral galaxies NGC 1512, NGC 4535, and NGC 7496'
-pubDate: 2024-07-09 04:43:56
+pubDate: 2024-07-09 05:10:59
 description: ''
 author: 'wanghaisheng'
 cover:

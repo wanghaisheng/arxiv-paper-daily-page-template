@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'MVGT: A Multi-view Graph Transformer Based on Spatial Relations for EEG Emotion Recognition'
-pubDate: 2024-07-09 04:44:38
+pubDate: 2024-07-09 05:10:50
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'DrugWatch: A Comprehensive Multi-Source Data Visualisation Platform for Drug Safety Information'
-pubDate: 2024-07-09 04:44:15
+pubDate: 2024-07-09 05:10:14
 description: ''
 author: 'wanghaisheng'
 cover:

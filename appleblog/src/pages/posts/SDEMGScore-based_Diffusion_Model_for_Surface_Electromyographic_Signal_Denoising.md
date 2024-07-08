@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'SDEMG: Score-based Diffusion Model for Surface Electromyographic Signal Denoising'
-pubDate: 2024-07-09 04:44:35
+pubDate: 2024-07-09 05:10:05
 description: ''
 author: 'wanghaisheng'
 cover:

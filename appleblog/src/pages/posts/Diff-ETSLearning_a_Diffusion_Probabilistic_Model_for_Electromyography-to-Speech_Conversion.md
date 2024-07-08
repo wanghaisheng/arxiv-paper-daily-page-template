@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Diff-ETS: Learning a Diffusion Probabilistic Model for Electromyography-to-Speech Conversion'
-pubDate: 2024-07-09 04:44:31
+pubDate: 2024-07-09 05:10:01
 description: ''
 author: 'wanghaisheng'
 cover:

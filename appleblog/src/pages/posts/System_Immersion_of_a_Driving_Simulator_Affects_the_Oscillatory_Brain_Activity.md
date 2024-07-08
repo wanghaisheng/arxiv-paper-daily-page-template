@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'System Immersion of a Driving Simulator Affects the Oscillatory Brain Activity'
-pubDate: 2024-07-09 04:44:39
+pubDate: 2024-07-09 05:10:51
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'The regularity of ODEs and thimble integrals with respect to Borel summation'
-pubDate: 2024-07-09 04:44:18
+pubDate: 2024-07-09 05:10:27
 description: ''
 author: 'wanghaisheng'
 cover:

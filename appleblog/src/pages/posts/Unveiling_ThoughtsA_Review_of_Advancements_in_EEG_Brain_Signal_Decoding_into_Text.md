@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Unveiling Thoughts: A Review of Advancements in EEG Brain Signal Decoding into Text'
-pubDate: 2024-07-09 04:44:43
+pubDate: 2024-07-09 05:10:57
 description: ''
 author: 'wanghaisheng'
 cover:

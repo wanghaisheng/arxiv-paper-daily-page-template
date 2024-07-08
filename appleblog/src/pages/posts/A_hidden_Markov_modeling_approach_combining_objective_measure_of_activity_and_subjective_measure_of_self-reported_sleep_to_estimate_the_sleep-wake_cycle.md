@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A hidden Markov modeling approach combining objective measure of activity and subjective measure of self-reported sleep to estimate the sleep-wake cycle'
-pubDate: 2024-07-09 04:43:50
+pubDate: 2024-07-09 05:10:19
 description: ''
 author: 'wanghaisheng'
 cover:

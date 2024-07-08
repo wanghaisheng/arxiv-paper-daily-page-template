@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'A Hidden Markov Model Based Unsupervised Algorithm for Sleep/Wake Identification Using Actigraphy'
-pubDate: 2024-07-09 04:43:53
+pubDate: 2024-07-09 05:10:23
 description: ''
 author: 'wanghaisheng'
 cover:

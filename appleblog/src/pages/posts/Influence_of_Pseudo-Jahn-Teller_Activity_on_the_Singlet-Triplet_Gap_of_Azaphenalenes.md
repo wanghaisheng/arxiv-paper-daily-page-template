@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'Influence of Pseudo-Jahn-Teller Activity on the Singlet-Triplet Gap of Azaphenalenes'
-pubDate: 2024-07-09 04:44:27
+pubDate: 2024-07-09 05:11:12
 description: ''
 author: 'wanghaisheng'
 cover:

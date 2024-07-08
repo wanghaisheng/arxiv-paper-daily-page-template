@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: 'High-speed Low-consumption sEMG-based Transient-state micro-Gesture Recognition'
-pubDate: 2024-07-09 04:44:34
+pubDate: 2024-07-09 05:10:04
 description: ''
 author: 'wanghaisheng'
 cover:
