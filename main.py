@@ -378,8 +378,9 @@ class _OverloadTasks:
         paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')
-        
-        
+        post_title=paper["title"]
+        post_pubdate=str(datetime.now(TIME_ZONE_CN)).split('.')[0]
+        post_tags=paper['keywords']
         QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
         if paper['QA_md_contents']==None:
@@ -389,15 +390,15 @@ class _OverloadTasks:
             # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        f"title: {paper["title"]}\n" \
-        f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
+        f"title: '{post_title}'\n" \
+        f"pubDate: '{post_pubdate}'\n" \
         f"description: ''\n" \
         f"author: '{editor_name}'\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f"tags: {paper['keywords']} \n" \
+        f"tags: '{post_tags}' \n" \
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
