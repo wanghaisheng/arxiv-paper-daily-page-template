@@ -17,7 +17,7 @@ os.makedirs(SERVER_PATH_DOCS, exist_ok=True)
 
 editor_name='wanghaisheng'
 
-
+site_name='smart watch latest research evidence'
 # 风格选择
 render_style1='weekly'
 render_style2='appleblog'
