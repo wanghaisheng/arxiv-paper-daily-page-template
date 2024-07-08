@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Exploring Diachronic and Diatopic Changes in Dialect Continua: Tasks, Datasets and Challenges**'
-pubDate: '2024-07-09 06:43:49'
+pubDate: '2024-07-09 06:57:52'
 description: ''
 author: 'wanghaisheng'
 cover:

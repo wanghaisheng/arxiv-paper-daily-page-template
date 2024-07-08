@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**TIM: Temporal Interaction Model in Notification System**'
-pubDate: '2024-07-09 06:43:35'
+pubDate: '2024-07-09 06:57:46'
 description: ''
 author: 'wanghaisheng'
 cover:

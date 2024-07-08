@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Audio2Rig: Artist-oriented deep learning tool for facial animation**'
-pubDate: '2024-07-09 06:43:37'
+pubDate: '2024-07-09 06:57:48'
 description: ''
 author: 'wanghaisheng'
 cover:

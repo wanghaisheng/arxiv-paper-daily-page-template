@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Sampling from the Continuous Random Energy Model in Total Variation Distance**'
-pubDate: '2024-07-09 06:43:45'
+pubDate: '2024-07-09 06:58:08'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Position and Altitude of the Nao Camera Head from Two Points on the Soccer Field plus the Gravitational Direction**'
-pubDate: '2024-07-09 06:43:52'
+pubDate: '2024-07-09 06:57:56'
 description: ''
 author: 'wanghaisheng'
 cover:

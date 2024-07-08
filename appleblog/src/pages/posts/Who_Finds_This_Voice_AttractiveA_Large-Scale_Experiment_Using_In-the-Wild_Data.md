@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Who Finds This Voice Attractive? A Large-Scale Experiment Using In-the-Wild Data**'
-pubDate: '2024-07-09 06:43:28'
+pubDate: '2024-07-09 06:58:39'
 description: ''
 author: 'wanghaisheng'
 cover:

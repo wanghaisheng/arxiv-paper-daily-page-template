@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Thermal and mechanical study of a parametrised cryostat model for optical characterisation of upcoming CMB experiments**'
-pubDate: '2024-07-09 06:43:46'
+pubDate: '2024-07-09 06:57:49'
 description: ''
 author: 'wanghaisheng'
 cover:

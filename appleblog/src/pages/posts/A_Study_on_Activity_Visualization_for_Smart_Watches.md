@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**A Study on Activity Visualization for Smart Watches**'
-pubDate: '2024-07-09 06:43:56'
+pubDate: '2024-07-09 06:58:22'
 description: ''
 author: 'wanghaisheng'
 cover:

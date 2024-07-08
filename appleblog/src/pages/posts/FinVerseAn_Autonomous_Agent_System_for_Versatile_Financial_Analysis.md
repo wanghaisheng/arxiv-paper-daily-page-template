@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**FinVerse: An Autonomous Agent System for Versatile Financial Analysis**'
-pubDate: '2024-07-09 06:43:35'
+pubDate: '2024-07-09 06:57:47'
 description: ''
 author: 'wanghaisheng'
 cover:

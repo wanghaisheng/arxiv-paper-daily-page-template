@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**EHR-Based Mobile and Web Platform for Chronic Disease Risk Prediction Using Large Language Multimodal Models**'
-pubDate: '2024-07-09 06:43:58'
+pubDate: '2024-07-09 06:58:25'
 description: ''
 author: 'wanghaisheng'
 cover:

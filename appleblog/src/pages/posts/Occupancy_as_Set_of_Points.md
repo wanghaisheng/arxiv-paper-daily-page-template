@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Occupancy as Set of Points**'
-pubDate: '2024-07-09 06:43:49'
+pubDate: '2024-07-09 06:57:51'
 description: ''
 author: 'wanghaisheng'
 cover:

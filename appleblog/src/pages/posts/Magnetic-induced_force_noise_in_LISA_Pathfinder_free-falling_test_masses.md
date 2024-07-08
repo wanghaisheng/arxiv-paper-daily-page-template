@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Magnetic-induced force noise in LISA Pathfinder free-falling test masses**'
-pubDate: '2024-07-09 06:44:11'
+pubDate: '2024-07-09 06:57:00'
 description: ''
 author: 'wanghaisheng'
 cover:

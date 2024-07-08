@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Arbitrary Waveform Generated Metasurface: A New Paradigm for Direct Modulation and Beamforming Decoupling**'
-pubDate: '2024-07-09 06:43:17'
+pubDate: '2024-07-09 06:57:26'
 description: ''
 author: 'wanghaisheng'
 cover:

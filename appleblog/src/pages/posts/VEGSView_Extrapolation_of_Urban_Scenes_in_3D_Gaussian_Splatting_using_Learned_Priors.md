@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**VEGS: View Extrapolation of Urban Scenes in 3D Gaussian Splatting using Learned Priors**'
-pubDate: '2024-07-09 06:43:53'
+pubDate: '2024-07-09 06:57:57'
 description: ''
 author: 'wanghaisheng'
 cover:

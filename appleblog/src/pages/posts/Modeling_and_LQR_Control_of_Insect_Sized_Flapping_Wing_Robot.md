@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Modeling and LQR Control of Insect Sized Flapping Wing Robot**'
-pubDate: '2024-07-09 06:43:57'
+pubDate: '2024-07-09 06:58:23'
 description: ''
 author: 'wanghaisheng'
 cover:

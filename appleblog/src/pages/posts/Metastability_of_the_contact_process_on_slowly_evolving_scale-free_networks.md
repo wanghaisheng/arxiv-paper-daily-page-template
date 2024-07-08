@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Metastability of the contact process on slowly evolving scale-free networks**'
-pubDate: '2024-07-09 06:43:21'
+pubDate: '2024-07-09 06:58:30'
 description: ''
 author: 'wanghaisheng'
 cover:

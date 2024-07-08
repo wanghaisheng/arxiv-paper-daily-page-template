@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Stability of correlated insulating states in molecular conductors from first-principles calculation**'
-pubDate: '2024-07-09 06:44:18'
+pubDate: '2024-07-09 06:57:09'
 description: ''
 author: 'wanghaisheng'
 cover:

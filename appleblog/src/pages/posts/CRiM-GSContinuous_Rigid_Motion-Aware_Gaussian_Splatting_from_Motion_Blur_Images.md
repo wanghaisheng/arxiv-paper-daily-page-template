@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**CRiM-GS: Continuous Rigid Motion-Aware Gaussian Splatting from Motion Blur Images**'
-pubDate: '2024-07-09 06:43:49'
+pubDate: '2024-07-09 06:57:52'
 description: ''
 author: 'wanghaisheng'
 cover:

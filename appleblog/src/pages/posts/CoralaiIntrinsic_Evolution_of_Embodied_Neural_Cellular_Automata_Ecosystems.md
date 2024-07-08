@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Coralai: Intrinsic Evolution of Embodied Neural Cellular Automata Ecosystems**'
-pubDate: '2024-07-09 06:43:33'
+pubDate: '2024-07-09 06:57:45'
 description: ''
 author: 'wanghaisheng'
 cover:

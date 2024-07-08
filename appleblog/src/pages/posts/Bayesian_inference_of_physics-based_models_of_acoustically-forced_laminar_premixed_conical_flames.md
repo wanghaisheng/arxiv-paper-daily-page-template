@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Bayesian inference of physics-based models of acoustically-forced laminar premixed conical flames**'
-pubDate: '2024-07-09 06:43:51'
+pubDate: '2024-07-09 06:57:54'
 description: ''
 author: 'wanghaisheng'
 cover:

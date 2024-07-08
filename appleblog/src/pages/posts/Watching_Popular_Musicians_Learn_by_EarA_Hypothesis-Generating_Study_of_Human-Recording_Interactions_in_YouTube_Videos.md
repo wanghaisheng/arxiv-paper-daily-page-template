@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Watching Popular Musicians Learn by Ear: A Hypothesis-Generating Study of Human-Recording Interactions in YouTube Videos**'
-pubDate: '2024-07-09 06:43:36'
+pubDate: '2024-07-09 06:57:47'
 description: ''
 author: 'wanghaisheng'
 cover:

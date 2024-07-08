@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Make Your Actor Talk: Generalizable and High-Fidelity Lip Sync with Motion and Appearance Disentanglement**'
-pubDate: '2024-07-09 06:43:34'
+pubDate: '2024-07-09 06:57:45'
 description: ''
 author: 'wanghaisheng'
 cover:

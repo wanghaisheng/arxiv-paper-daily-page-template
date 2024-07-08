@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**An Edge-on Regular Disk Galaxy at z=5.289**'
-pubDate: '2024-07-09 06:44:12'
+pubDate: '2024-07-09 06:57:02'
 description: ''
 author: 'wanghaisheng'
 cover:

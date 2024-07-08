@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Global dynamics for the generalized chemotaxis-Navier-Stokes system in $\mathbb{R}^3$**'
-pubDate: '2024-07-09 06:43:24'
+pubDate: '2024-07-09 06:58:35'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**StableNormal: Reducing Diffusion Variance for Stable and Sharp Normal**'
-pubDate: '2024-07-09 06:43:59'
+pubDate: '2024-07-09 06:58:26'
 description: ''
 author: 'wanghaisheng'
 cover:

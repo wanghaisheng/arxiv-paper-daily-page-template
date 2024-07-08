@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Observations of the 2024 May 14 X8.7 Solar Flare with the Goldstone-Apple Valley Radio Telescope (GAVRT)**'
-pubDate: '2024-07-09 06:42:56'
+pubDate: '2024-07-09 06:57:31'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['apple', 'apple watch']' 
+tags: '['apple watch', 'apple']' 
 theme: 'light'
 featured: true
 

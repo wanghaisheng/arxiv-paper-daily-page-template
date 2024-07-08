@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Cosmological constraints from the cross-correlation of DESI Luminous Red Galaxies with CMB lensing from Planck PR4 and ACT DR6**'
-pubDate: '2024-07-09 06:43:22'
+pubDate: '2024-07-09 06:58:32'
 description: ''
 author: 'wanghaisheng'
 cover:

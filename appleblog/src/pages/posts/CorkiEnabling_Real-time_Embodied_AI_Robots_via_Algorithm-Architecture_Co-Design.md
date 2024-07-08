@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Corki: Enabling Real-time Embodied AI Robots via Algorithm-Architecture Co-Design**'
-pubDate: '2024-07-09 06:43:28'
+pubDate: '2024-07-09 06:58:39'
 description: ''
 author: 'wanghaisheng'
 cover:

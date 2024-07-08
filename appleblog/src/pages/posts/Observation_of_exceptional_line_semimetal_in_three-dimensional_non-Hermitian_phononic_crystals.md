@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Observation of exceptional line semimetal in three-dimensional non-Hermitian phononic crystals**'
-pubDate: '2024-07-09 06:44:15'
+pubDate: '2024-07-09 06:58:15'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei', 'huawei band']' 
+tags: '['smart ring']' 
 theme: 'light'
 featured: true
 

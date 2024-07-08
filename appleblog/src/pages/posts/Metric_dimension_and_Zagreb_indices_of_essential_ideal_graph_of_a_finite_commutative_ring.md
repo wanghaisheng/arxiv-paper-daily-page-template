@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Metric dimension and Zagreb indices of essential ideal graph of a finite commutative ring**'
-pubDate: '2024-07-09 06:44:08'
+pubDate: '2024-07-09 06:58:19'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Mott-glass phase induced by long-range correlated disorder in a one-dimensional Bose gas**'
-pubDate: '2024-07-09 06:43:39'
+pubDate: '2024-07-09 06:58:01'
 description: ''
 author: 'wanghaisheng'
 cover:

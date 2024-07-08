@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Investigating Event-Based Cameras for Video Frame Interpolation in Sports**'
-pubDate: '2024-07-09 06:43:54'
+pubDate: '2024-07-09 06:57:59'
 description: ''
 author: 'wanghaisheng'
 cover:

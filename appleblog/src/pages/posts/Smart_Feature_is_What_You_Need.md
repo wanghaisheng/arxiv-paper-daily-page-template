@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Smart Feature is What You Need**'
-pubDate: '2024-07-09 06:44:01'
+pubDate: '2024-07-09 06:58:28'
 description: ''
 author: 'wanghaisheng'
 cover:

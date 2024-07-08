@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Real Time Emotion Analysis Using Deep Learning for Education, Entertainment, and Beyond**'
-pubDate: '2024-07-09 06:43:47'
+pubDate: '2024-07-09 06:57:49'
 description: ''
 author: 'wanghaisheng'
 cover:

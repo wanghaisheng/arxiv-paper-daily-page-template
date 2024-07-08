@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Preliminary results of the Single Event Effect testing for the ULTRASAT sensors**'
-pubDate: '2024-07-09 06:43:50'
+pubDate: '2024-07-09 06:57:53'
 description: ''
 author: 'wanghaisheng'
 cover:

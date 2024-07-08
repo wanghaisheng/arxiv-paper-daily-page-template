@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Solutions to Deepfakes: Can Camera Hardware, Cryptography, and Deep Learning Verify Real Images?**'
-pubDate: '2024-07-09 06:43:48'
+pubDate: '2024-07-09 06:57:51'
 description: ''
 author: 'wanghaisheng'
 cover:

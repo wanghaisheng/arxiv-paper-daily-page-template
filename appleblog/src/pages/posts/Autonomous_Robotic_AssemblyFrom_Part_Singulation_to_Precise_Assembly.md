@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Autonomous Robotic Assembly: From Part Singulation to Precise Assembly**'
-pubDate: '2024-07-09 06:43:36'
+pubDate: '2024-07-09 06:57:47'
 description: ''
 author: 'wanghaisheng'
 cover:

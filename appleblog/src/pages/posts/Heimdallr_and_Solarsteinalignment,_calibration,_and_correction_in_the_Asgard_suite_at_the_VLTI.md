@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Heimdallr and Solarstein: alignment, calibration, and correction in the Asgard suite at the VLTI**'
-pubDate: '2024-07-09 06:44:13'
+pubDate: '2024-07-09 06:57:03'
 description: ''
 author: 'wanghaisheng'
 cover:

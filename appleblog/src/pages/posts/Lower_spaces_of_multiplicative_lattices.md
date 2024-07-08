@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Lower spaces of multiplicative lattices**'
-pubDate: '2024-07-09 06:44:02'
+pubDate: '2024-07-09 06:58:09'
 description: ''
 author: 'wanghaisheng'
 cover:

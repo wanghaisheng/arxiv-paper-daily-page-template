@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Quantized circular dichroism on the edge of quantum Hall systems: The many-body Chern number as seen from the edge**'
-pubDate: '2024-07-09 06:43:21'
+pubDate: '2024-07-09 06:58:31'
 description: ''
 author: 'wanghaisheng'
 cover:

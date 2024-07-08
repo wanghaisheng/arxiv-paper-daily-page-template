@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Research, Applications and Prospects of Event-Based Pedestrian Detection: A Survey**'
-pubDate: '2024-07-09 06:43:48'
+pubDate: '2024-07-09 06:57:50'
 description: ''
 author: 'wanghaisheng'
 cover:
