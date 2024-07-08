@@ -21,6 +21,11 @@ more to add
 
 
 
+https://github.com/mahsaSH717/research_assistant
+
+
+
+
 翻译
 
 https://github.com/binary-husky/gpt_academic/blob/31304f481a1c4d3e07d92348cb698bfcb57bcc16/crazy_functions/pdf_fns/parse_pdf.py#L14
