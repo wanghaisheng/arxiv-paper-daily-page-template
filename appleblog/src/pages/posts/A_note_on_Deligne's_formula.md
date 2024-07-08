@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'A note on Deligne's formula'
+title: "A note on Deligne's formula"
 pubDate: 2024-07-09 05:10:29
 description: ''
 author: 'wanghaisheng'
