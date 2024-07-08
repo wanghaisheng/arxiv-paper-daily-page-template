@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Real Time Emotion Analysis Using Deep Learning for Education, Entertainment, and Beyond**'
-pubDate: '2024-07-09 06:20:25'
+pubDate: '2024-07-09 06:26:38'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['all search terms']' 
+tags: '['wearable device']' 
 theme: 'light'
 featured: true
 

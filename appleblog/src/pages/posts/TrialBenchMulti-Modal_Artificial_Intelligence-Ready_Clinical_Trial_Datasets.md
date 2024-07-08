@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**TrialBench: Multi-Modal Artificial Intelligence-Ready Clinical Trial Datasets**'
-pubDate: '2024-07-09 06:20:25'
+pubDate: '2024-07-09 06:26:04'
 description: ''
 author: 'wanghaisheng'
 cover:

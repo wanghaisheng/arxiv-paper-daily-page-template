@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**TIM: Temporal Interaction Model in Notification System**'
-pubDate: '2024-07-09 06:20:14'
+pubDate: '2024-07-09 06:26:27'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei watch', 'huawei']' 
+tags: '['apple', 'apple watch']' 
 theme: 'light'
 featured: true
 

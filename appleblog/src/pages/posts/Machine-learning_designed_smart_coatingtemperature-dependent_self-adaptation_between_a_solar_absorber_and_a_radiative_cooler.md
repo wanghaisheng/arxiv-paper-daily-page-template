@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Machine-learning designed smart coating: temperature-dependent self-adaptation between a solar absorber and a radiative cooler**'
-pubDate: '2024-07-09 06:20:21'
+pubDate: '2024-07-09 06:26:03'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Multi-wavelength properties of three new radio-powerful $z\sim5.6$ QSOs discovered from RACS**'
-pubDate: '2024-07-09 06:19:48'
+pubDate: '2024-07-09 06:26:21'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Universal mechanism of shear thinning in supercooled liquids**'
-pubDate: '2024-07-09 06:20:22'
+pubDate: '2024-07-09 06:26:03'
 description: ''
 author: 'wanghaisheng'
 cover:

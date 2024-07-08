@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**LFT modelling and $μ$-based robust performance analysis of hybrid multi-rate control systems**'
-pubDate: '2024-07-09 06:19:57'
+pubDate: '2024-07-09 06:26:32'
 description: ''
 author: 'wanghaisheng'
 cover:

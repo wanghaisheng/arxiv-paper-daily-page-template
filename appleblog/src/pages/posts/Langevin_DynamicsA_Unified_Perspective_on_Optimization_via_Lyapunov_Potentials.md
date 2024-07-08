@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Langevin Dynamics: A Unified Perspective on Optimization via Lyapunov Potentials**'
-pubDate: '2024-07-09 06:19:59'
+pubDate: '2024-07-09 06:26:34'
 description: ''
 author: 'wanghaisheng'
 cover:

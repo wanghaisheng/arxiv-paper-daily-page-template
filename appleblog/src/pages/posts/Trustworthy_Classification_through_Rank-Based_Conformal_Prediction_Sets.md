@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Trustworthy Classification through Rank-Based Conformal Prediction Sets**'
-pubDate: '2024-07-09 06:19:58'
+pubDate: '2024-07-09 06:26:32'
 description: ''
 author: 'wanghaisheng'
 cover:

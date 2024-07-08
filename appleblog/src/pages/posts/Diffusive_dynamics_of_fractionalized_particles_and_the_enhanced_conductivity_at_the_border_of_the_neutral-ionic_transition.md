@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Diffusive dynamics of fractionalized particles and the enhanced conductivity at the border of the neutral-ionic transition**'
-pubDate: '2024-07-09 06:19:49'
+pubDate: '2024-07-09 06:26:24'
 description: ''
 author: 'wanghaisheng'
 cover:

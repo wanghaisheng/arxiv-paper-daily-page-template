@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Improved Long-Term Prediction of Chaos Using Reservoir Computing Based on Stochastic Spin-Orbit Torque Devices**'
-pubDate: '2024-07-09 06:20:20'
+pubDate: '2024-07-09 06:26:01'
 description: ''
 author: 'wanghaisheng'
 cover:

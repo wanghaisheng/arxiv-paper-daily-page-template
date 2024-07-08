@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Voxel-Based Point Cloud Localization for Smart Spaces Management**'
-pubDate: '2024-07-09 06:19:54'
+pubDate: '2024-07-09 06:25:53'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Gaussian Eigen Models for Human Heads**'
-pubDate: '2024-07-09 06:20:17'
+pubDate: '2024-07-09 06:26:38'
 description: ''
 author: 'wanghaisheng'
 cover:

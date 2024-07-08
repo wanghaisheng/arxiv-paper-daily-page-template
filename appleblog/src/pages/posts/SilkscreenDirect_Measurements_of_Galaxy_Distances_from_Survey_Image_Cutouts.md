@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Silkscreen: Direct Measurements of Galaxy Distances from Survey Image Cutouts**'
-pubDate: '2024-07-09 06:19:48'
+pubDate: '2024-07-09 06:26:22'
 description: ''
 author: 'wanghaisheng'
 cover:

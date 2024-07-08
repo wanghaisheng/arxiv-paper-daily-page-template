@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Policy-guided Monte Carlo on general state spaces: Application to glass-forming mixtures**'
-pubDate: '2024-07-09 06:20:20'
+pubDate: '2024-07-09 06:26:01'
 description: ''
 author: 'wanghaisheng'
 cover:

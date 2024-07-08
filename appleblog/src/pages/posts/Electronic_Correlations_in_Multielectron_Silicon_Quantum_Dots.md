@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Electronic Correlations in Multielectron Silicon Quantum Dots**'
-pubDate: '2024-07-09 06:19:46'
+pubDate: '2024-07-09 06:26:19'
 description: ''
 author: 'wanghaisheng'
 cover:

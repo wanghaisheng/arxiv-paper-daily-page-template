@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Smart Casual Verification of CCF's Distributed Consensus and Consistency Protocols**'
-pubDate: '2024-07-09 06:19:53'
+pubDate: '2024-07-09 06:25:51'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Weighted basic parallel processes and combinatorial enumeration**'
-pubDate: '2024-07-09 06:20:02'
+pubDate: '2024-07-09 06:25:44'
 description: ''
 author: 'wanghaisheng'
 cover:

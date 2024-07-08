@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Median Mishaps between Chirality and Spin-Orbit Torques via Asymmetric Hysteresis**'
-pubDate: '2024-07-09 06:20:16'
+pubDate: '2024-07-09 06:26:37'
 description: ''
 author: 'wanghaisheng'
 cover:

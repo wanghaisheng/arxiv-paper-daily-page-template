@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Effective Targeted Testing of Smart Contracts**'
-pubDate: '2024-07-09 06:20:19'
+pubDate: '2024-07-09 06:26:00'
 description: ''
 author: 'wanghaisheng'
 cover:

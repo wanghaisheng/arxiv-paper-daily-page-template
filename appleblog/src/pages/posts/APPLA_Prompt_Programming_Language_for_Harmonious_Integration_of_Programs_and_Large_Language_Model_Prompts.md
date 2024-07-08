@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**APPL: A Prompt Programming Language for Harmonious Integration of Programs and Large Language Model Prompts**'
-pubDate: '2024-07-09 06:20:10'
+pubDate: '2024-07-09 06:26:26'
 description: ''
 author: 'wanghaisheng'
 cover:

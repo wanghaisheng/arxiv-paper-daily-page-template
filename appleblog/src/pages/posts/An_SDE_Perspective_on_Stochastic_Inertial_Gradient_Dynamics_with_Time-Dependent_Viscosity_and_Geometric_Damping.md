@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**An SDE Perspective on Stochastic Inertial Gradient Dynamics with Time-Dependent Viscosity and Geometric Damping**'
-pubDate: '2024-07-09 06:19:56'
+pubDate: '2024-07-09 06:26:30'
 description: ''
 author: 'wanghaisheng'
 cover:
