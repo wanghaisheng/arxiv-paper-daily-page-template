@@ -391,15 +391,15 @@ class _OverloadTasks:
             # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        f"title: '{post_title}'\n" \
-        f"pubDate: '{post_pubdate}'\n" \
+        f"title: "{post_title}"\n" \
+        f"pubDate: "{post_pubdate}"\n" \
         f"description: ''\n" \
-        f"author: '{editor_name}'\n" \
+        f"author: "{editor_name}"\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f"tags: '{post_tags}' \n" \
+        f'tags: "{post_tags}" \n' \
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
