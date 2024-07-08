@@ -138,7 +138,7 @@ class CoroutineSpeedup:
         # cols = ("id", "title", "categories", "abstract", "doi", "created", "updated", "authors")
         # df = pd.DataFrame(output, columns=cols)
         res = arxiv.Search(
-            query="ti:"+keyword_+"AND+abs:"+keyword_,
+            query="ti:"+keyword_+"OR+abs:"+keyword_,
             max_results=self.max_results,
             sort_by=arxiv.SortCriterion.SubmittedDate
         ).results()
