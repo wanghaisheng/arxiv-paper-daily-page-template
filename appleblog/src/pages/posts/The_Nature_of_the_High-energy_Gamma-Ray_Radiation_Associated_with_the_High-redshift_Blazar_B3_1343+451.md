@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**The Nature of the High-energy Gamma-Ray Radiation Associated with the High-redshift Blazar B3 1343+451**'
-pubDate: '2024-07-09 06:41:47'
+pubDate: '2024-07-09 06:44:10'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei band', 'huawei']' 
+tags: '['huawei', 'huawei band']' 
 theme: 'light'
 featured: true
 

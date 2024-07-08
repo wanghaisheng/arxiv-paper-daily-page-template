@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Thermal Phase Fluctuations in Narrow Superfluid Rings**'
-pubDate: '2024-07-09 06:41:13'
+pubDate: '2024-07-09 06:44:04'
 description: ''
 author: 'wanghaisheng'
 cover:

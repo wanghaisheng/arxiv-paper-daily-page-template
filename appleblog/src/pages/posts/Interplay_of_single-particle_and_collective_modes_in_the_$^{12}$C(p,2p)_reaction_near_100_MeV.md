@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Interplay of single-particle and collective modes in the $^{12}$C(p,2p) reaction near 100 MeV**'
-pubDate: '2024-07-09 06:41:52'
+pubDate: '2024-07-09 06:44:16'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei band', 'huawei']' 
+tags: '['huawei', 'huawei band']' 
 theme: 'light'
 featured: true
 

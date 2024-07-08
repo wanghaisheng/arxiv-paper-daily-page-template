@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**As Advertised? Understanding the Impact of Influencer VPN Ads**'
-pubDate: '2024-07-09 06:41:39'
+pubDate: '2024-07-09 06:43:32'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei watch', 'huawei']' 
+tags: '['huawei', 'huawei watch']' 
 theme: 'light'
 featured: true
 

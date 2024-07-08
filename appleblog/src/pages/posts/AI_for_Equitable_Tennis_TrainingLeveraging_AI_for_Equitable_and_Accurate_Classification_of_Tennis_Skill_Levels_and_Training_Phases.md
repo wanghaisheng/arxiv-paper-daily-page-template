@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**AI for Equitable Tennis Training: Leveraging AI for Equitable and Accurate Classification of Tennis Skill Levels and Training Phases**'
-pubDate: '2024-07-09 06:41:38'
+pubDate: '2024-07-09 06:44:00'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei watch', 'huawei']' 
+tags: '['smart watch']' 
 theme: 'light'
 featured: true
 

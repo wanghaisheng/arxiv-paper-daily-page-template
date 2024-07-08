@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Tunable kHz distributed feedback fiber laser enabled by glass additive-manufacturing**'
-pubDate: '2024-07-09 06:41:56'
+pubDate: '2024-07-09 06:43:37'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['wearable device']' 
+tags: '['smart glass']' 
 theme: 'light'
 featured: true
 

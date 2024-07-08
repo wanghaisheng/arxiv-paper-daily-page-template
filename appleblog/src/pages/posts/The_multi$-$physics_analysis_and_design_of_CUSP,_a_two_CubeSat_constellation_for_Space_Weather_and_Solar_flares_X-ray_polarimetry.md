@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**The multi$-$physics analysis and design of CUSP, a two CubeSat constellation for Space Weather and Solar flares X-ray polarimetry**'
-pubDate: '2024-07-09 06:41:50'
+pubDate: '2024-07-09 06:44:14'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei band', 'huawei']' 
+tags: '['huawei', 'huawei band']' 
 theme: 'light'
 featured: true
 

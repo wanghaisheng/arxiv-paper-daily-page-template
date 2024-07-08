@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**A combinatorial formula for the coefficients of multidimensional resultants**'
-pubDate: '2024-07-09 06:41:12'
+pubDate: '2024-07-09 06:44:03'
 description: ''
 author: 'wanghaisheng'
 cover:

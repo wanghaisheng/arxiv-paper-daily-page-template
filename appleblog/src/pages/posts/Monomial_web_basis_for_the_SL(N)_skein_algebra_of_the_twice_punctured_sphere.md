@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Monomial web basis for the SL(N) skein algebra of the twice punctured sphere**'
-pubDate: '2024-07-09 06:41:14'
+pubDate: '2024-07-09 06:44:05'
 description: ''
 author: 'wanghaisheng'
 cover:

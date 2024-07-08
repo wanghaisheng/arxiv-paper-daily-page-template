@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Discovering Local Hidden-Variable Models for Arbitrary Multipartite Entangled States and Arbitrary Measurements**'
-pubDate: '2024-07-09 06:41:54'
+pubDate: '2024-07-09 06:43:13'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**EAGERx: Graph-Based Framework for Sim2real Robot Learning**'
-pubDate: '2024-07-09 06:41:36'
+pubDate: '2024-07-09 06:43:55'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei watch', 'huawei']' 
+tags: '['smart watch']' 
 theme: 'light'
 featured: true
 

@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Projections of the uncertainty on the compact binary population background using popstock**'
-pubDate: '2024-07-09 06:41:53'
+pubDate: '2024-07-09 06:44:17'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei band', 'huawei']' 
+tags: '['huawei', 'huawei band']' 
 theme: 'light'
 featured: true
 

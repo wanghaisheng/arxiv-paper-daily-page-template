@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Cohomology and K-theory of generalized Dold manifolds fibred by complex flag manifolds**'
-pubDate: '2024-07-09 06:41:15'
+pubDate: '2024-07-09 06:44:06'
 description: ''
 author: 'wanghaisheng'
 cover:

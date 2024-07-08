@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**The regularity of ODEs and thimble integrals with respect to Borel summation**'
-pubDate: '2024-07-09 06:41:37'
+pubDate: '2024-07-09 06:43:56'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei watch', 'huawei']' 
+tags: '['smart watch']' 
 theme: 'light'
 featured: true
 

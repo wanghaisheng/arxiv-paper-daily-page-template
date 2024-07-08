@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Asymptotic Analysis of a bi-monomeric nonlinear Becker-D{ö}ring system**'
-pubDate: '2024-07-09 06:42:05'
+pubDate: '2024-07-09 06:43:27'
 description: ''
 author: 'wanghaisheng'
 cover:
