@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Spin glasses and percolation**"
-pubDate: "2024-07-09 07:03:28"
+pubDate: "2024-07-09 07:15:22"
 description: ''
 author: "wanghaisheng"
 cover:

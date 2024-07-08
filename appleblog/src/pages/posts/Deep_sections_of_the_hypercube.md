@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Deep sections of the hypercube**"
-pubDate: "2024-07-09 07:03:10"
+pubDate: "2024-07-09 07:15:53"
 description: ''
 author: "wanghaisheng"
 cover:

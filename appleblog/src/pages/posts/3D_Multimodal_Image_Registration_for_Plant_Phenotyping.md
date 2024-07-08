@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**3D Multimodal Image Registration for Plant Phenotyping**"
-pubDate: "2024-07-09 07:03:46"
+pubDate: "2024-07-09 07:16:22"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['camera', 'wearable camera']" 
+tags: "['wearable camera', 'camera']" 
 theme: 'light'
 featured: true
 

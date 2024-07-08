@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Quantum effects and temperature dependence of the free energy barrier and shear frequency in bilayer graphene**"
-pubDate: "2024-07-09 07:03:35"
+pubDate: "2024-07-09 07:15:29"
 description: ''
 author: "wanghaisheng"
 cover:

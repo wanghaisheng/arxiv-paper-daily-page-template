@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Conditioning the complexity of random landscapes on marginal optima**"
-pubDate: "2024-07-09 07:03:27"
+pubDate: "2024-07-09 07:15:20"
 description: ''
 author: "wanghaisheng"
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Linear Partial Differential Equations in Module of Copolynomials of Several Variables over a Commutative Ring**"
-pubDate: "2024-07-09 07:03:40"
+pubDate: "2024-07-09 07:16:29"
 description: ''
 author: "wanghaisheng"
 cover:

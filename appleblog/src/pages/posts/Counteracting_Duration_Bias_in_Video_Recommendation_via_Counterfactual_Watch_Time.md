@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Counteracting Duration Bias in Video Recommendation via Counterfactual Watch Time**"
-pubDate: "2024-07-09 07:03:38"
+pubDate: "2024-07-09 07:15:50"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['apple', 'apple watch']" 
+tags: "['huawei', 'huawei watch']" 
 theme: 'light'
 featured: true
 

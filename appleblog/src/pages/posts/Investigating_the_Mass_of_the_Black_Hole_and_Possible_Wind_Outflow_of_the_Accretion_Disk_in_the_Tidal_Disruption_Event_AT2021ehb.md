@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Investigating the Mass of the Black Hole and Possible Wind Outflow of the Accretion Disk in the Tidal Disruption Event AT2021ehb**"
-pubDate: "2024-07-09 07:03:09"
+pubDate: "2024-07-09 07:15:52"
 description: ''
 author: "wanghaisheng"
 cover:
