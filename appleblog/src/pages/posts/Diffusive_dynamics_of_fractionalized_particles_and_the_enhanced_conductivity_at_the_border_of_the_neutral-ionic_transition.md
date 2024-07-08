@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Diffusive dynamics of fractionalized particles and the enhanced conductivity at the border of the neutral-ionic transition**'
-pubDate: '2024-07-09 06:57:08'
+title: "**Diffusive dynamics of fractionalized particles and the enhanced conductivity at the border of the neutral-ionic transition**"
+pubDate: "2024-07-09 07:03:08"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei', 'huawei band']' 
+tags: "['huawei', 'huawei band']" 
 theme: 'light'
 featured: true
 

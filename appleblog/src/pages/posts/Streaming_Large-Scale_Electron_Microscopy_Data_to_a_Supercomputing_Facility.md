@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Streaming Large-Scale Electron Microscopy Data to a Supercomputing Facility**'
-pubDate: '2024-07-09 06:57:56'
+title: "**Streaming Large-Scale Electron Microscopy Data to a Supercomputing Facility**"
+pubDate: "2024-07-09 07:03:46"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['camera', 'wearable camera']' 
+tags: "['camera', 'wearable camera']" 
 theme: 'light'
 featured: true
 

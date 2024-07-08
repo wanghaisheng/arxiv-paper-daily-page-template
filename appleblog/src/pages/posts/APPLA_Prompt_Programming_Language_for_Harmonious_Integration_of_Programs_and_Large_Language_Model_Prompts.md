@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**APPL: A Prompt Programming Language for Harmonious Integration of Programs and Large Language Model Prompts**'
-pubDate: '2024-07-09 06:57:35'
+title: "**APPL: A Prompt Programming Language for Harmonious Integration of Programs and Large Language Model Prompts**"
+pubDate: "2024-07-09 07:03:37"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['apple watch', 'apple']' 
+tags: "['apple', 'apple watch']" 
 theme: 'light'
 featured: true
 

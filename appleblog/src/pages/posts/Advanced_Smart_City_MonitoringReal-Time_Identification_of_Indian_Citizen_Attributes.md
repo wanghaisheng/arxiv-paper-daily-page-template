@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Advanced Smart City Monitoring: Real-Time Identification of Indian Citizen Attributes**'
-pubDate: '2024-07-09 06:58:21'
+title: "**Advanced Smart City Monitoring: Real-Time Identification of Indian Citizen Attributes**"
+pubDate: "2024-07-09 07:03:46"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart watch']' 
+tags: "['camera', 'wearable camera']" 
 theme: 'light'
 featured: true
 

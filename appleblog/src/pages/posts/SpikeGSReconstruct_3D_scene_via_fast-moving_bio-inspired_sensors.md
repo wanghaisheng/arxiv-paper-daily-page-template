@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**SpikeGS: Reconstruct 3D scene via fast-moving bio-inspired sensors**'
-pubDate: '2024-07-09 06:57:53'
+title: "**SpikeGS: Reconstruct 3D scene via fast-moving bio-inspired sensors**"
+pubDate: "2024-07-09 07:03:45"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['camera', 'wearable camera']' 
+tags: "['camera', 'wearable camera']" 
 theme: 'light'
 featured: true
 

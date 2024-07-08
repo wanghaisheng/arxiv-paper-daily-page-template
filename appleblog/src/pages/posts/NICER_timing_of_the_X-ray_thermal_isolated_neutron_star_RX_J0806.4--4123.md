@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**NICER timing of the X-ray thermal isolated neutron star RX J0806.4--4123**'
-pubDate: '2024-07-09 06:58:37'
+title: "**NICER timing of the X-ray thermal isolated neutron star RX J0806.4--4123**"
+pubDate: "2024-07-09 07:03:13"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['heart rate']' 
+tags: "['heart rate']" 
 theme: 'light'
 featured: true
 

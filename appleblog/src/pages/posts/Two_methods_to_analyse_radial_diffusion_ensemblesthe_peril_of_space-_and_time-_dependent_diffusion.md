@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Two methods to analyse radial diffusion ensembles: the peril of space- and time- dependent diffusion**'
-pubDate: '2024-07-09 06:58:30'
+title: "**Two methods to analyse radial diffusion ensembles: the peril of space- and time- dependent diffusion**"
+pubDate: "2024-07-09 07:03:33"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['heart rate']' 
+tags: "['wearable device']" 
 theme: 'light'
 featured: true
 

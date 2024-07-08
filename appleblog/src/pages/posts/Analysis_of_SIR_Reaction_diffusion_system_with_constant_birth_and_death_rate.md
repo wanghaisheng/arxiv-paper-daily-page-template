@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Analysis of SIR Reaction diffusion system with constant birth and death rate**'
-pubDate: '2024-07-09 06:58:34'
+title: "**Analysis of SIR Reaction diffusion system with constant birth and death rate**"
+pubDate: "2024-07-09 07:03:11"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['heart rate']' 
+tags: "['heart rate']" 
 theme: 'light'
 featured: true
 

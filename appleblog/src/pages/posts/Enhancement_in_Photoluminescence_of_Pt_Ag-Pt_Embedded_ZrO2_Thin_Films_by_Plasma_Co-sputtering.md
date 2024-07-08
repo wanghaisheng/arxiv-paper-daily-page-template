@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Enhancement in Photoluminescence of Pt/Ag-Pt Embedded ZrO2 Thin Films by Plasma Co-sputtering**'
-pubDate: '2024-07-09 06:58:09'
+title: "**Enhancement in Photoluminescence of Pt/Ag-Pt Embedded ZrO2 Thin Films by Plasma Co-sputtering**"
+pubDate: "2024-07-09 07:03:29"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart glass']' 
+tags: "['smart glass']" 
 theme: 'light'
 featured: true
 

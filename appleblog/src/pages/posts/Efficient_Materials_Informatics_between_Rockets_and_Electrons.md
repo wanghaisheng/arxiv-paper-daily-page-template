@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Efficient Materials Informatics between Rockets and Electrons**'
-pubDate: '2024-07-09 06:57:22'
+title: "**Efficient Materials Informatics between Rockets and Electrons**"
+pubDate: "2024-07-09 07:03:33"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['wearable device']' 
+tags: "['wearable device']" 
 theme: 'light'
 featured: true
 

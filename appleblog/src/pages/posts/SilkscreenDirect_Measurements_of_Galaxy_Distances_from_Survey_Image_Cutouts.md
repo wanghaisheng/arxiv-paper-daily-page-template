@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Silkscreen: Direct Measurements of Galaxy Distances from Survey Image Cutouts**'
-pubDate: '2024-07-09 06:57:05'
+title: "**Silkscreen: Direct Measurements of Galaxy Distances from Survey Image Cutouts**"
+pubDate: "2024-07-09 07:03:07"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei', 'huawei band']' 
+tags: "['huawei', 'huawei band']" 
 theme: 'light'
 featured: true
 

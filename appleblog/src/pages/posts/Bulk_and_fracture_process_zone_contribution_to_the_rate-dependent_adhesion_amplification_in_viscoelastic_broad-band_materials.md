@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Bulk and fracture process zone contribution to the rate-dependent adhesion amplification in viscoelastic broad-band materials**'
-pubDate: '2024-07-09 06:58:07'
+title: "**Bulk and fracture process zone contribution to the rate-dependent adhesion amplification in viscoelastic broad-band materials**"
+pubDate: "2024-07-09 07:03:28"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart glass']' 
+tags: "['smart glass']" 
 theme: 'light'
 featured: true
 

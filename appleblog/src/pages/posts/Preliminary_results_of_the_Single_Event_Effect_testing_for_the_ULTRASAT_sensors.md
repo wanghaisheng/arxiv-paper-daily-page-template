@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Preliminary results of the Single Event Effect testing for the ULTRASAT sensors**'
-pubDate: '2024-07-09 06:57:53'
+title: "**Preliminary results of the Single Event Effect testing for the ULTRASAT sensors**"
+pubDate: "2024-07-09 07:03:44"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['camera', 'wearable camera']' 
+tags: "['camera', 'wearable camera']" 
 theme: 'light'
 featured: true
 

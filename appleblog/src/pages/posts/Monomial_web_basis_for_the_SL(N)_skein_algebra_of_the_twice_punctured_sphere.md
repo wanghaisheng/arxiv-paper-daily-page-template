@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Monomial web basis for the SL(N) skein algebra of the twice punctured sphere**'
-pubDate: '2024-07-09 06:58:13'
+title: "**Monomial web basis for the SL(N) skein algebra of the twice punctured sphere**"
+pubDate: "2024-07-09 07:03:40"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart ring']' 
+tags: "['smart ring']" 
 theme: 'light'
 featured: true
 

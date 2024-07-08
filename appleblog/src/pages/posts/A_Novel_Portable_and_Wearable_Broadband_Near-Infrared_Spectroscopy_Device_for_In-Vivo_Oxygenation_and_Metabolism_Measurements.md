@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**A Novel Portable and Wearable Broadband Near-Infrared Spectroscopy Device for In-Vivo Oxygenation and Metabolism Measurements**'
-pubDate: '2024-07-09 06:58:34'
+title: "**A Novel Portable and Wearable Broadband Near-Infrared Spectroscopy Device for In-Vivo Oxygenation and Metabolism Measurements**"
+pubDate: "2024-07-09 07:03:43"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['heart rate']' 
+tags: "['camera', 'wearable camera']" 
 theme: 'light'
 featured: true
 

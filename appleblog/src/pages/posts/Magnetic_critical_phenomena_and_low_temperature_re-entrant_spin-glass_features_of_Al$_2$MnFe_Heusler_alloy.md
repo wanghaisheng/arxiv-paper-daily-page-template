@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Magnetic critical phenomena and low temperature re-entrant spin-glass features of Al$_2$MnFe Heusler alloy**'
-pubDate: '2024-07-09 06:58:05'
+title: "**Magnetic critical phenomena and low temperature re-entrant spin-glass features of Al$_2$MnFe Heusler alloy**"
+pubDate: "2024-07-09 07:03:27"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart glass']' 
+tags: "['smart glass']" 
 theme: 'light'
 featured: true
 

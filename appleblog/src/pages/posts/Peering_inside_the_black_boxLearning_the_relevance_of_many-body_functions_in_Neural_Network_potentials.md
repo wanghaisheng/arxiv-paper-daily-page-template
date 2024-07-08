@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Peering inside the black box: Learning the relevance of many-body functions in Neural Network potentials**'
-pubDate: '2024-07-09 06:57:27'
+title: "**Peering inside the black box: Learning the relevance of many-body functions in Neural Network potentials**"
+pubDate: "2024-07-09 07:03:36"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['wearable device']' 
+tags: "['wearable device']" 
 theme: 'light'
 featured: true
 

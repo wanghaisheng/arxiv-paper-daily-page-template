@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: '**Machine-learning designed smart coating: temperature-dependent self-adaptation between a solar absorber and a radiative cooler**'
-pubDate: '2024-07-09 06:58:21'
+title: "**Machine-learning designed smart coating: temperature-dependent self-adaptation between a solar absorber and a radiative cooler**"
+pubDate: "2024-07-09 07:03:29"
 description: ''
-author: 'wanghaisheng'
+author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['smart watch']' 
+tags: "['smart watch']" 
 theme: 'light'
 featured: true
 
