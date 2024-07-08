@@ -387,15 +387,15 @@ class _OverloadTasks:
             # https://github.com/Nipun1212/Claude_api
         paper_contents= f"---\n" \
         f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        f'title: "{post_title}"\n' \
-        f'pubDate: "{post_pubdate}"\n' \
+        f"title: '{post_title}'\n" \
+        f"pubDate: '{post_pubdate}'\n" \
         f"description: ''\n" \
-        f'author: "{editor_name}"\n' \
+        f"author: '{editor_name}'\n" \
         f"cover:\n" \
         f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
         f"    alt: 'cover'\n" \
-        f'tags: "{post_tags}"\n' \
+        f"tags: '{post_tags}' \n" \
         f"theme: 'light'\n" \
         f"featured: true\n" \
         f"\n" \
@@ -417,32 +417,6 @@ class _OverloadTasks:
         f"## QA:\n" \
         f"{paper['QA_md_contents']}\n" 
         
-        
-        
-        # paper_contents= f"---\n" \
-        # f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        # f"title: '{paper['title'].replace('**','')}'\n" \
-        # f"pubDate: {str(datetime.now(TIME_ZONE_CN)).split('.')[0]}\n" \
-        # f"description: 'Automated track arxiv-daily latest papers around {topic}'\n" \
-        # f"author: 'wanghaisheng'\n" \
-        # f"cover:\n" \
-        # f"    url: '../../public/assets/{randint(1, 100)}.jpg'\n" \
-        # f"    square: '../../public/assets/{randint(1, 100)}.jpg'\n" \
-        # f"    alt: 'cover'\n" \
-        # f"tags: ['brand','brand monitor']\n" \
-        # f"theme: 'light'\n" \
-        # f"featured: true\n" \
-        # f"meta:\n" \
-        # f" - name: author\n" \
-        # f"   content: 作者是我\n" \
-        # f" - name: keywords\n" \
-        # f"   content: key3, key4\n" \
-        # f"keywords: key1, key2, key3\n" \
-        # f"---" \
-        # f"\n" \
-        # f"## authors:\r{paper['authors']} \r" \
-        # f"## publish_time:\r{paper['publish_time']} \r" \
-        # f"## abstract:\r{paper['abstract']}\n"
         if not os.path.exists(SERVER_DIR_STORAGE):
             os.makedirs(SERVER_DIR_STORAGE)
             print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
