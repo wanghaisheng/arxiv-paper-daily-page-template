@@ -150,19 +150,14 @@ class CoroutineSpeedup:
     def clean_paper_title(self,title):
         """
         Cleans the paper title by removing non-meaningful characters, supporting Unicode characters from various languages.
-        
-        Parameters:
-        title (str): The paper title string to be cleaned.
-        
-        Returns:
-        str: The cleaned paper title.
         """
         # Normalize the Unicode string to decompose any combined characters
         normalized_title = unicodedata.normalize('NFKD', title)
         
         # Remove non-alphanumeric characters (including non-Latin scripts)
-        # \p{L} matches any kind of letter from any language
-        cleaned_title = re.sub(r'[^\p{L}\s\d]', '', normalized_title)
+        # Using \w to match any word character (equivalent to [a-zA-Z0-9_])
+        # and adding \s to match any whitespace character.
+        cleaned_title = re.sub(r'[^\w\s]', '', normalized_title)
         
         # Replace multiple spaces with a single space
         cleaned_title = re.sub(r'\s+', ' ', cleaned_title)
@@ -171,6 +166,7 @@ class CoroutineSpeedup:
         cleaned_title = cleaned_title.strip()
         
         return cleaned_title
+
 
     def parse(self, context):
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
@@ -183,7 +179,7 @@ class CoroutineSpeedup:
 
             paper_id = result.get_short_id()
             paper_title = result.title
-            # paper_title=self.clean_paper_title(paper_title)
+            paper_title=self.clean_paper_title(paper_title)
             paper_title=paper_title.replace("'","\'")
             paper_url = result.entry_id
             paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
