@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Feynman checkers through the lookingglass**"
-pubDate: "2024-07-09 07:37:51"
+pubDate: "2024-07-09 07:47:04"
 description: ''
 author: "wanghaisheng"
 cover:

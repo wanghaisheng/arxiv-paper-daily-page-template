@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Hadronuclear interactions in AGN jets as the origin of the diffuse highenergy neutrino background**"
-pubDate: "2024-07-09 07:37:20"
+pubDate: "2024-07-09 07:46:35"
 description: ''
 author: "wanghaisheng"
 cover:

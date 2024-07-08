@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Entropy Computing A Paradigm for Optimization in an Open Quantum System**"
-pubDate: "2024-07-09 07:38:02"
+pubDate: "2024-07-09 07:47:17"
 description: ''
 author: "wanghaisheng"
 cover:

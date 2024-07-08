@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**A nonlinear room mode determines the operating conditions of a largecavity synthetic jet actuator at low frequencies**"
-pubDate: "2024-07-09 07:37:59"
+pubDate: "2024-07-09 07:47:13"
 description: ''
 author: "wanghaisheng"
 cover:

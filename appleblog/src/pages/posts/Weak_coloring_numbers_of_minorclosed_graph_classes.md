@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Weak coloring numbers of minorclosed graph classes**"
-pubDate: "2024-07-09 07:38:21"
+pubDate: "2024-07-09 07:46:26"
 description: ''
 author: "wanghaisheng"
 cover:

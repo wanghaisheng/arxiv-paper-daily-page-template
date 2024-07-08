@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Mottglass phase induced by longrange correlated disorder in a onedimensional Bose gas**"
-pubDate: "2024-07-09 07:37:50"
+pubDate: "2024-07-09 07:47:04"
 description: ''
 author: "wanghaisheng"
 cover:

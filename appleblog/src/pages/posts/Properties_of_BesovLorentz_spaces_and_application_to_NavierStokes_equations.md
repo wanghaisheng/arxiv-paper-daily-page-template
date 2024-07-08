@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Properties of BesovLorentz spaces and application to NavierStokes equations**"
-pubDate: "2024-07-09 07:37:12"
+pubDate: "2024-07-09 07:46:58"
 description: ''
 author: "wanghaisheng"
 cover:

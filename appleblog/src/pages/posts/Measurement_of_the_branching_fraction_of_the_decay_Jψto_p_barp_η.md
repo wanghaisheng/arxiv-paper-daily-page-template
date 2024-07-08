@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Measurement of the branching fraction of the decay Jψto p barp η**"
-pubDate: "2024-07-09 07:37:16"
+pubDate: "2024-07-09 07:47:02"
 description: ''
 author: "wanghaisheng"
 cover:

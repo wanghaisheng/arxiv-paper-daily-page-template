@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**On the nature of yrast states in neutronrich polonium isotopes**"
-pubDate: "2024-07-09 07:37:23"
+pubDate: "2024-07-09 07:46:37"
 description: ''
 author: "wanghaisheng"
 cover:

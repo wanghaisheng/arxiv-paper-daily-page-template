@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Glass formation in mechanically interlocked ring polymers the role of induced chain stiffness**"
-pubDate: "2024-07-09 07:37:49"
+pubDate: "2024-07-09 07:47:03"
 description: ''
 author: "wanghaisheng"
 cover:

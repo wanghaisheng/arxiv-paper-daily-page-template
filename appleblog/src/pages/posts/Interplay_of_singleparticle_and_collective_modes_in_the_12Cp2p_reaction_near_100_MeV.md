@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Interplay of singleparticle and collective modes in the 12Cp2p reaction near 100 MeV**"
-pubDate: "2024-07-09 07:37:23"
+pubDate: "2024-07-09 07:46:38"
 description: ''
 author: "wanghaisheng"
 cover:

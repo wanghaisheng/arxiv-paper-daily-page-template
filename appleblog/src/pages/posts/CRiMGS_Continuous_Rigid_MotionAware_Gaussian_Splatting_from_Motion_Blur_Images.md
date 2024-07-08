@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**CRiMGS Continuous Rigid MotionAware Gaussian Splatting from Motion Blur Images**"
-pubDate: "2024-07-09 07:38:14"
+pubDate: "2024-07-09 07:47:33"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['all search terms']"
+tags: "['wearable camera', 'camera']"
 theme: 'light'
 featured: true
 

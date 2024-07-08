@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Automatic Dance Video Segmentation for Understanding Choreography**"
-pubDate: "2024-07-09 07:37:41"
+pubDate: "2024-07-09 07:46:46"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['huawei watch', 'huawei']"
+tags: "['huawei', 'huawei watch']"
 theme: 'light'
 featured: true
 

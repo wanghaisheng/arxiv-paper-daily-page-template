@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**SurfaceFunctionalization of OleateCapped NanoEmitters for Stable Dispersion in 3DPrintable Polymers**"
-pubDate: "2024-07-09 07:37:57"
+pubDate: "2024-07-09 07:47:11"
 description: ''
 author: "wanghaisheng"
 cover:

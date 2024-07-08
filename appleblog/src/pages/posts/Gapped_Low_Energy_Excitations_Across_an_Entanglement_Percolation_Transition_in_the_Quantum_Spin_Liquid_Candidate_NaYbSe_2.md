@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Gapped Low Energy Excitations Across an Entanglement Percolation Transition in the Quantum Spin Liquid Candidate NaYbSe_2**"
-pubDate: "2024-07-09 07:37:55"
+pubDate: "2024-07-09 07:47:09"
 description: ''
 author: "wanghaisheng"
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**More is Different Mobile Ions Improve the Design Tolerances of Perovskite Solar Cells**"
-pubDate: "2024-07-09 07:38:01"
+pubDate: "2024-07-09 07:47:16"
 description: ''
 author: "wanghaisheng"
 cover:

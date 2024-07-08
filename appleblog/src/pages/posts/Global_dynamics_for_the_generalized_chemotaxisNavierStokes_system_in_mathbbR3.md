@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Global dynamics for the generalized chemotaxisNavierStokes system in mathbbR3**"
-pubDate: "2024-07-09 07:38:24"
+pubDate: "2024-07-09 07:46:28"
 description: ''
 author: "wanghaisheng"
 cover:

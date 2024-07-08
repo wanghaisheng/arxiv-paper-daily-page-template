@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Tunable kHz distributed feedback fiber laser enabled by glass additivemanufacturing**"
-pubDate: "2024-07-09 07:37:58"
+pubDate: "2024-07-09 07:47:12"
 description: ''
 author: "wanghaisheng"
 cover:

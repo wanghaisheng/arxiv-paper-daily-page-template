@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**NICER timing of the Xray thermal isolated neutron star RX J080644123**"
-pubDate: "2024-07-09 07:38:26"
+pubDate: "2024-07-09 07:46:30"
 description: ''
 author: "wanghaisheng"
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**SmartState Detecting StateReverting Vulnerabilities in Smart Contracts via FineGrained StateDependency Analysis**"
-pubDate: "2024-07-09 07:37:47"
+pubDate: "2024-07-09 07:47:24"
 description: ''
 author: "wanghaisheng"
 cover:

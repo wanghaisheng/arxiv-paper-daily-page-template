@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Speedaccuracy tradeoff for the diffusion models Wisdom from nonequlibrium thermodynamics and optimal transport**"
-pubDate: "2024-07-09 07:38:24"
+pubDate: "2024-07-09 07:46:29"
 description: ''
 author: "wanghaisheng"
 cover:

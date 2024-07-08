@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**ForceMatching Based Polarizable and NonPolarizable Force Fields for Perovskite and NonPerovskite Phases of CsPbI_3**"
-pubDate: "2024-07-09 07:37:22"
+pubDate: "2024-07-09 07:46:37"
 description: ''
 author: "wanghaisheng"
 cover:

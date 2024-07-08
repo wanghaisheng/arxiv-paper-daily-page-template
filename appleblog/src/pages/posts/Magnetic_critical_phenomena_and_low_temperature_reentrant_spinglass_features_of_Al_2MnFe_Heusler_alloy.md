@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Magnetic critical phenomena and low temperature reentrant spinglass features of Al_2MnFe Heusler alloy**"
-pubDate: "2024-07-09 07:37:52"
+pubDate: "2024-07-09 07:47:05"
 description: ''
 author: "wanghaisheng"
 cover:

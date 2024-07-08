@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Decoupling NO production and UV emission intensity over the EH mode transition in a lowpressure inductively coupled plasma device**"
-pubDate: "2024-07-09 07:38:25"
+pubDate: "2024-07-09 07:46:29"
 description: ''
 author: "wanghaisheng"
 cover:

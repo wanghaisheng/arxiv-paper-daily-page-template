@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Active Polar Ring Polymer in Shear Flow An Analytical Study**"
-pubDate: "2024-07-09 07:37:16"
+pubDate: "2024-07-09 07:47:02"
 description: ''
 author: "wanghaisheng"
 cover:

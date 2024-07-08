@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Quantized circular dichroism on the edge of quantum Hall systems The manybody Chern number as seen from the edge**"
-pubDate: "2024-07-09 07:38:20"
+pubDate: "2024-07-09 07:47:11"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['heart rate']"
+tags: "['wearable device']"
 theme: 'light'
 featured: true
 

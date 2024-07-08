@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Making Tax Smart Feasibility of Distributed Ledger Technology for building tax compliance functionality to Central Bank Digital Currency**"
-pubDate: "2024-07-09 07:37:46"
+pubDate: "2024-07-09 07:47:22"
 description: ''
 author: "wanghaisheng"
 cover:

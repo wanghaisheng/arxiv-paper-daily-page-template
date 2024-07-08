@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Analysis of SIR Reaction diffusion system with constant birth and death rate**"
-pubDate: "2024-07-09 07:38:23"
+pubDate: "2024-07-09 07:46:28"
 description: ''
 author: "wanghaisheng"
 cover:

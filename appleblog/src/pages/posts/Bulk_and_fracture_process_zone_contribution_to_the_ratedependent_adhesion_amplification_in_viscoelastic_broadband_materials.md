@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Bulk and fracture process zone contribution to the ratedependent adhesion amplification in viscoelastic broadband materials**"
-pubDate: "2024-07-09 07:37:53"
+pubDate: "2024-07-09 07:47:07"
 description: ''
 author: "wanghaisheng"
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Towards Physically Talented Aerial Robots with Tactically Smart Swarm Behavior thereof An Efficient Codesign Approach**"
-pubDate: "2024-07-09 07:37:46"
+pubDate: "2024-07-09 07:47:23"
 description: ''
 author: "wanghaisheng"
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Spontaneous Reward Hacking in Iterative SelfRefinement**"
-pubDate: "2024-07-09 07:38:22"
+pubDate: "2024-07-09 07:46:27"
 description: ''
 author: "wanghaisheng"
 cover:

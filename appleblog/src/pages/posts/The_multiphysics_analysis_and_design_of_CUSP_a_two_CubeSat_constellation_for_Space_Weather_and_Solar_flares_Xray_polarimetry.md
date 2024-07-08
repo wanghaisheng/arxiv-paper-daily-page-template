@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**The multiphysics analysis and design of CUSP a two CubeSat constellation for Space Weather and Solar flares Xray polarimetry**"
-pubDate: "2024-07-09 07:37:21"
+pubDate: "2024-07-09 07:46:36"
 description: ''
 author: "wanghaisheng"
 cover:

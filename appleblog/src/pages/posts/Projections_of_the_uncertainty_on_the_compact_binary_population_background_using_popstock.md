@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Projections of the uncertainty on the compact binary population background using popstock**"
-pubDate: "2024-07-09 07:37:24"
+pubDate: "2024-07-09 07:46:38"
 description: ''
 author: "wanghaisheng"
 cover:

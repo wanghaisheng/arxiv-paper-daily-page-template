@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**StableNormal Reducing Diffusion Variance for Stable and Sharp Normal**"
-pubDate: "2024-07-09 07:38:05"
+pubDate: "2024-07-09 07:47:26"
 description: ''
 author: "wanghaisheng"
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: "['apple', 'apple watch']"
+tags: "['apple watch', 'apple']"
 theme: 'light'
 featured: true
 

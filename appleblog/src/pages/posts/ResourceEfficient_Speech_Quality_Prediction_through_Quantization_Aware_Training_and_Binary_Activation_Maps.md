@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**ResourceEfficient Speech Quality Prediction through Quantization Aware Training and Binary Activation Maps**"
-pubDate: "2024-07-09 07:37:58"
+pubDate: "2024-07-09 07:47:12"
 description: ''
 author: "wanghaisheng"
 cover:

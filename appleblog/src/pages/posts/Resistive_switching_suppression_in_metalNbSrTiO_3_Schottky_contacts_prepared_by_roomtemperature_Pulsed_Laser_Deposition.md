@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: "**Resistive switching suppression in metalNbSrTiO_3 Schottky contacts prepared by roomtemperature Pulsed Laser Deposition**"
-pubDate: "2024-07-09 07:37:56"
+pubDate: "2024-07-09 07:47:10"
 description: ''
 author: "wanghaisheng"
 cover:
