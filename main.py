@@ -32,6 +32,7 @@ from config import (
     SERVER_DIR_STORAGE,
     SERVER_PATH_README,
     SERVER_PATH_DOCS,
+    SERVER_DIR_STORAGE,
     SERVER_PATH_STORAGE_MD,
     SERVER_PATH_STORAGE_BACKUP,
     TIME_ZONE_CN,
@@ -446,11 +447,11 @@ class _OverloadTasks:
         # f"## authors:\r{paper['authors']} \r" \
         # f"## publish_time:\r{paper['publish_time']} \r" \
         # f"## abstract:\r{paper['abstract']}\n"
-        if not os.path.exists(paper_path_appleblog):
-            os.makedirs(paper_path_appleblog)
-            print(f"Directory '{paper_path_appleblog}' was created.")
+        if not os.path.exists(SERVER_DIR_STORAGE):
+            os.makedirs(SERVER_DIR_STORAGE)
+            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
         else:
-            print(f"Directory '{paper_path_appleblog}' already exists.")
+            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
