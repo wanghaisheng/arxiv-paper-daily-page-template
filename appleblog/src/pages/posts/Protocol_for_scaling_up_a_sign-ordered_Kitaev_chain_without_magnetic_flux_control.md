@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Protocol for scaling up a sign-ordered Kitaev chain without magnetic flux control**'
-pubDate: '2024-07-09 06:26:36'
+pubDate: '2024-07-09 06:30:48'
 description: ''
 author: 'wanghaisheng'
 cover:

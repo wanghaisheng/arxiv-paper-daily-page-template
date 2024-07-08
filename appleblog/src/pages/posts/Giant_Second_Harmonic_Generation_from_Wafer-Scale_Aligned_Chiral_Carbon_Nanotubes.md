@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Giant Second Harmonic Generation from Wafer-Scale Aligned Chiral Carbon Nanotubes**'
-pubDate: '2024-07-09 06:26:40'
+pubDate: '2024-07-09 06:30:51'
 description: ''
 author: 'wanghaisheng'
 cover:

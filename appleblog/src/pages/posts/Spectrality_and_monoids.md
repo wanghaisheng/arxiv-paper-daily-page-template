@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Spectrality and monoids**'
-pubDate: '2024-07-09 06:25:40'
+pubDate: '2024-07-09 06:30:16'
 description: ''
 author: 'wanghaisheng'
 cover:

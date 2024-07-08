@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Division Algebras and Quadratic Reciprocity**'
-pubDate: '2024-07-09 06:25:45'
+pubDate: '2024-07-09 06:30:19'
 description: ''
 author: 'wanghaisheng'
 cover:

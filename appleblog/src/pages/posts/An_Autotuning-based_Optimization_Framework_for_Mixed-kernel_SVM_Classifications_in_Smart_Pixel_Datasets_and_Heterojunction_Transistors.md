@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**An Autotuning-based Optimization Framework for Mixed-kernel SVM Classifications in Smart Pixel Datasets and Heterojunction Transistors**'
-pubDate: '2024-07-09 06:25:50'
+pubDate: '2024-07-09 06:30:53'
 description: ''
 author: 'wanghaisheng'
 cover:

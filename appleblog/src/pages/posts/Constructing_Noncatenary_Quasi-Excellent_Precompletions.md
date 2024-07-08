@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Constructing Noncatenary Quasi-Excellent Precompletions**'
-pubDate: '2024-07-09 06:25:41'
+pubDate: '2024-07-09 06:30:16'
 description: ''
 author: 'wanghaisheng'
 cover:

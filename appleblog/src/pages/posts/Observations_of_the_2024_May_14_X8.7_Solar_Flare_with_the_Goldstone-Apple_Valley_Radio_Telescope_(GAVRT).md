@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Observations of the 2024 May 14 X8.7 Solar Flare with the Goldstone-Apple Valley Radio Telescope (GAVRT)**'
-pubDate: '2024-07-09 06:26:25'
+pubDate: '2024-07-09 06:30:42'
 description: ''
 author: 'wanghaisheng'
 cover:

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**A Novel Portable and Wearable Broadband Near-Infrared Spectroscopy Device for In-Vivo Oxygenation and Metabolism Measurements**'
-pubDate: '2024-07-09 06:26:40'
+pubDate: '2024-07-09 06:30:50'
 description: ''
 author: 'wanghaisheng'
 cover:

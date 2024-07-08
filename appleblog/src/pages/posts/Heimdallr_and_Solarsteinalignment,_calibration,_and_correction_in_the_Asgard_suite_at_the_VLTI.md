@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Heimdallr and Solarstein: alignment, calibration, and correction in the Asgard suite at the VLTI**'
-pubDate: '2024-07-09 06:26:20'
+pubDate: '2024-07-09 06:30:28'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['huawei', 'huawei band']' 
+tags: '['huawei band', 'huawei']' 
 theme: 'light'
 featured: true
 

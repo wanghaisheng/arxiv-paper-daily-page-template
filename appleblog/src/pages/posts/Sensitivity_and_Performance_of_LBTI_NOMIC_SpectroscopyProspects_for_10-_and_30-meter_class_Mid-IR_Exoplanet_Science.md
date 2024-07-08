@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Sensitivity and Performance of LBTI/NOMIC Spectroscopy: Prospects for 10- and 30-meter class Mid-IR Exoplanet Science**'
-pubDate: '2024-07-09 06:26:07'
+pubDate: '2024-07-09 06:30:41'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['wearable camera', 'camera']' 
+tags: '['all search terms']' 
 theme: 'light'
 featured: true
 

@@ -1,14 +1,14 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Plant Doctor: A hybrid machine learning and image segmentation software to quantify plant damage in video footage**'
-pubDate: '2024-07-09 06:26:10'
+pubDate: '2024-07-09 06:30:42'
 description: ''
 author: 'wanghaisheng'
 cover:
     url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'
     alt: 'cover'
-tags: '['wearable camera', 'camera']' 
+tags: '['all search terms']' 
 theme: 'light'
 featured: true
 

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '**Indirect stabilization of semilinear coupled wave systems**'
-pubDate: '2024-07-09 06:26:33'
+pubDate: '2024-07-09 06:30:26'
 description: ''
 author: 'wanghaisheng'
 cover:
