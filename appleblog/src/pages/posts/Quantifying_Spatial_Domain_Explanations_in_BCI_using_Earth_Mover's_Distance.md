@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
-title: 'Quantifying Spatial Domain Explanations in BCI using Earth Mover's Distance'
+title: "Quantifying Spatial Domain Explanations in BCI using Earth Mover's Distance"
 pubDate: 2024-07-09 05:10:56
 description: ''
 author: 'wanghaisheng'
