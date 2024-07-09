@@ -477,7 +477,7 @@ class _OverloadTasks:
 
         return markdown_content
 
-    def _generate_markdown_table_content(self, paper: dict, editor_name: str) -> str:
+    def _generate_markdown_table_content(self, paper: dict,tags=None):
         # Formatting fields
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
