@@ -464,7 +464,6 @@ class _OverloadTasks:
             f"# title: {paper['title']} \n"
             f"## publish date: \n{paper['publish_time']} \n"
             f"## authors: \n  {paper['authors']} \n"
-            f"## abstract: \n  {paper['abstract']} \n"
             f"## paper id\n"
             f"{paper['id']}\n"
             f"## download\n"
