@@ -107,7 +107,7 @@ class CoroutineSpeedup:
 
         self.cache_space = []
 
-        self.max_results = 30
+        self.max_results = 2000
 
     def _adaptor(self):
         while not self.worker.empty():
@@ -422,9 +422,9 @@ class _OverloadTasks:
             print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
         else:
             print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
-
-        with open(paper_path_appleblog, "w", encoding="utf8") as f:
-                f.write(paper_contents)      
+        if not os.path.exists(paper_path_appleblog):
+            with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                    f.write(paper_contents)      
 
 
         return line
