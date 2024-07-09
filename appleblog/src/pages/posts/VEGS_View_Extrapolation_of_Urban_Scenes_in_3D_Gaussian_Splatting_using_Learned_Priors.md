@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:20:02'
+pubDate: '2024-07-09 08:25:42'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**VEGS View Extrapolation of Urban Scenes in 3D Gaussian Splatting using Learned
-  Priors**'
+title: VEGS View Extrapolation of Urban Scenes in 3D Gaussian Splatting using Learned
+  Priors
 ---
 
-# title: **VEGS View Extrapolation of Urban Scenes in 3D Gaussian Splatting using Learned Priors** 
+# title: VEGS View Extrapolation of Urban Scenes in 3D Gaussian Splatting using Learned Priors 
 ## publish date: 
 **2024-07-03** 
 ## authors: 

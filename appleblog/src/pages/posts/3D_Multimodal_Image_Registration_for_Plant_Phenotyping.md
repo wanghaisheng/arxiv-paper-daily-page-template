@@ -13,15 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:20:02'
+pubDate: '2024-07-09 08:25:42'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**3D Multimodal Image Registration for Plant Phenotyping**'
+title: 3D Multimodal Image Registration for Plant Phenotyping
 ---
 
-# title: **3D Multimodal Image Registration for Plant Phenotyping** 
+# title: 3D Multimodal Image Registration for Plant Phenotyping 
 ## publish date: 
 **2024-07-03** 
 ## authors: 

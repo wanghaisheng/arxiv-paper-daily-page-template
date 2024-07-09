@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:53'
+pubDate: '2024-07-09 08:25:33'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Thermal and mechanical study of a parametrised cryostat model for optical
-  characterisation of upcoming CMB experiments**'
+title: Thermal and mechanical study of a parametrised cryostat model for optical characterisation
+  of upcoming CMB experiments
 ---
 
-# title: **Thermal and mechanical study of a parametrised cryostat model for optical characterisation of upcoming CMB experiments** 
+# title: Thermal and mechanical study of a parametrised cryostat model for optical characterisation of upcoming CMB experiments 
 ## publish date: 
 **2024-07-05** 
 ## authors: 

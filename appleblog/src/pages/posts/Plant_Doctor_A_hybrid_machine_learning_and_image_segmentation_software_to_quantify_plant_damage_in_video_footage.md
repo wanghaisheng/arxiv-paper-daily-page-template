@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:20:03'
+pubDate: '2024-07-09 08:25:43'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Plant Doctor A hybrid machine learning and image segmentation software to
-  quantify plant damage in video footage**'
+title: Plant Doctor A hybrid machine learning and image segmentation software to quantify
+  plant damage in video footage
 ---
 
-# title: **Plant Doctor A hybrid machine learning and image segmentation software to quantify plant damage in video footage** 
+# title: Plant Doctor A hybrid machine learning and image segmentation software to quantify plant damage in video footage 
 ## publish date: 
 **2024-07-03** 
 ## authors: 

@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:53'
+pubDate: '2024-07-09 08:25:34'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Real Time Emotion Analysis Using Deep Learning for Education Entertainment
-  and Beyond**'
+title: Real Time Emotion Analysis Using Deep Learning for Education Entertainment
+  and Beyond
 ---
 
-# title: **Real Time Emotion Analysis Using Deep Learning for Education Entertainment and Beyond** 
+# title: Real Time Emotion Analysis Using Deep Learning for Education Entertainment and Beyond 
 ## publish date: 
 **2024-07-05** 
 ## authors: 

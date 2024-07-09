@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:59'
+pubDate: '2024-07-09 08:25:39'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Sensitivity and Performance of LBTINOMIC Spectroscopy Prospects for 10 and
-  30meter class MidIR Exoplanet Science**'
+title: Sensitivity and Performance of LBTINOMIC Spectroscopy Prospects for 10 and
+  30meter class MidIR Exoplanet Science
 ---
 
-# title: **Sensitivity and Performance of LBTINOMIC Spectroscopy Prospects for 10 and 30meter class MidIR Exoplanet Science** 
+# title: Sensitivity and Performance of LBTINOMIC Spectroscopy Prospects for 10 and 30meter class MidIR Exoplanet Science 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

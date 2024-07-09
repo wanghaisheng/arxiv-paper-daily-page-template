@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:20:00'
+pubDate: '2024-07-09 08:25:40'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Terrain Classification Enhanced with Uncertainty for Space Exploration Robots
-  from Proprioceptive Data**'
+title: Terrain Classification Enhanced with Uncertainty for Space Exploration Robots
+  from Proprioceptive Data
 ---
 
-# title: **Terrain Classification Enhanced with Uncertainty for Space Exploration Robots from Proprioceptive Data** 
+# title: Terrain Classification Enhanced with Uncertainty for Space Exploration Robots from Proprioceptive Data 
 ## publish date: 
 **2024-07-03** 
 ## authors: 

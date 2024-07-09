@@ -13,16 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:57'
+pubDate: '2024-07-09 08:25:37'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**CRiMGS Continuous Rigid MotionAware Gaussian Splatting from Motion Blur
-  Images**'
+title: CRiMGS Continuous Rigid MotionAware Gaussian Splatting from Motion Blur Images
 ---
 
-# title: **CRiMGS Continuous Rigid MotionAware Gaussian Splatting from Motion Blur Images** 
+# title: CRiMGS Continuous Rigid MotionAware Gaussian Splatting from Motion Blur Images 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

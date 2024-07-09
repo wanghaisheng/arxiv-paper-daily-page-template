@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:56'
+pubDate: '2024-07-09 08:25:37'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Exploring Diachronic and Diatopic Changes in Dialect Continua Tasks Datasets
-  and Challenges**'
+title: Exploring Diachronic and Diatopic Changes in Dialect Continua Tasks Datasets
+  and Challenges
 ---
 
-# title: **Exploring Diachronic and Diatopic Changes in Dialect Continua Tasks Datasets and Challenges** 
+# title: Exploring Diachronic and Diatopic Changes in Dialect Continua Tasks Datasets and Challenges 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

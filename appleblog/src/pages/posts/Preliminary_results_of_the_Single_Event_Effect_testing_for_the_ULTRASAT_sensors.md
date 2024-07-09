@@ -13,16 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:57'
+pubDate: '2024-07-09 08:25:38'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Preliminary results of the Single Event Effect testing for the ULTRASAT
-  sensors**'
+title: Preliminary results of the Single Event Effect testing for the ULTRASAT sensors
 ---
 
-# title: **Preliminary results of the Single Event Effect testing for the ULTRASAT sensors** 
+# title: Preliminary results of the Single Event Effect testing for the ULTRASAT sensors 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

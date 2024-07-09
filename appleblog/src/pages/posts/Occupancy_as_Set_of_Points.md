@@ -13,15 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:56'
+pubDate: '2024-07-09 08:25:36'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Occupancy as Set of Points**'
+title: Occupancy as Set of Points
 ---
 
-# title: **Occupancy as Set of Points** 
+# title: Occupancy as Set of Points 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

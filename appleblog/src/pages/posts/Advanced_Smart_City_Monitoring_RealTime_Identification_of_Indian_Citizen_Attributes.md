@@ -13,16 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:20:00'
+pubDate: '2024-07-09 08:25:40'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Advanced Smart City Monitoring RealTime Identification of Indian Citizen
-  Attributes**'
+title: Advanced Smart City Monitoring RealTime Identification of Indian Citizen Attributes
 ---
 
-# title: **Advanced Smart City Monitoring RealTime Identification of Indian Citizen Attributes** 
+# title: Advanced Smart City Monitoring RealTime Identification of Indian Citizen Attributes 
 ## publish date: 
 **2024-07-03** 
 ## authors: 

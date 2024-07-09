@@ -13,16 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:55'
+pubDate: '2024-07-09 08:25:35'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Research Applications and Prospects of EventBased Pedestrian Detection A
-  Survey**'
+title: Research Applications and Prospects of EventBased Pedestrian Detection A Survey
 ---
 
-# title: **Research Applications and Prospects of EventBased Pedestrian Detection A Survey** 
+# title: Research Applications and Prospects of EventBased Pedestrian Detection A Survey 
 ## publish date: 
 **2024-07-05** 
 ## authors: 

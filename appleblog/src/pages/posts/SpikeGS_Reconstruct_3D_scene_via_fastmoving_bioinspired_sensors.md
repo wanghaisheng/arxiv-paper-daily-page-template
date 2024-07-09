@@ -13,15 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:58'
+pubDate: '2024-07-09 08:25:38'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**SpikeGS Reconstruct 3D scene via fastmoving bioinspired sensors**'
+title: SpikeGS Reconstruct 3D scene via fastmoving bioinspired sensors
 ---
 
-# title: **SpikeGS Reconstruct 3D scene via fastmoving bioinspired sensors** 
+# title: SpikeGS Reconstruct 3D scene via fastmoving bioinspired sensors 
 ## publish date: 
 **2024-07-04** 
 ## authors: 

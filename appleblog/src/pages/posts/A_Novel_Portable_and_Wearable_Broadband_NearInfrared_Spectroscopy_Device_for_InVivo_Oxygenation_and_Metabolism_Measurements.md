@@ -13,16 +13,16 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:54'
+pubDate: '2024-07-09 08:25:34'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**A Novel Portable and Wearable Broadband NearInfrared Spectroscopy Device
-  for InVivo Oxygenation and Metabolism Measurements**'
+title: A Novel Portable and Wearable Broadband NearInfrared Spectroscopy Device for
+  InVivo Oxygenation and Metabolism Measurements
 ---
 
-# title: **A Novel Portable and Wearable Broadband NearInfrared Spectroscopy Device for InVivo Oxygenation and Metabolism Measurements** 
+# title: A Novel Portable and Wearable Broadband NearInfrared Spectroscopy Device for InVivo Oxygenation and Metabolism Measurements 
 ## publish date: 
 **2024-07-05** 
 ## authors: 

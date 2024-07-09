@@ -13,15 +13,15 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:19:59'
+pubDate: '2024-07-09 08:25:40'
 tags:
 - wearable camera
 - camera
 theme: light
-title: '**Corvus A A lowmass isolated galaxy at 35 Mpc**'
+title: Corvus A A lowmass isolated galaxy at 35 Mpc
 ---
 
-# title: **Corvus A A lowmass isolated galaxy at 35 Mpc** 
+# title: Corvus A A lowmass isolated galaxy at 35 Mpc 
 ## publish date: 
 **2024-07-03** 
 ## authors: 
