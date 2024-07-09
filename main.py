@@ -481,6 +481,8 @@ class _OverloadTasks:
         # Formatting fields
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
+        paper['keywords'] = list(set(tags))
+        
         pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
 
         # Generate YAML front matter
