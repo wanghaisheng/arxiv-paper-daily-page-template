@@ -482,7 +482,13 @@ class _OverloadTasks:
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
         paper['keywords'] = list(set(tags))
-        
+        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
+        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
+        if paper['QA_md_contents']==None:
+            print('gen realtime')
+            paper['QA_md_contents']='coming soon'
+            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
+            # https://github.com/Nipun1212/Claude_api        
         pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
 
         # Generate YAML front matter
@@ -491,7 +497,24 @@ class _OverloadTasks:
         # Generate Markdown content
         markdown_content = self._generate_markdown_content(paper, pdf_link)
 
-        return f"{yaml_front_matter}\n{markdown_content}"
+        paper_contents= f"{yaml_front_matter}\n{markdown_content}"
+        postname=self._check_for_illegal_char(paper['title'])
+        postname=postname.replace(' ','_')
+        ## if filename start with __ ,astro post will 404
+        if postname.startswith('__'):
+            postname=postname.replace('__',"")
+        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
+        repo_url=os.getenv('repo')
+        repo_name=repo_url.split('/')[-1].replace('-',' ')        
+        if not os.path.exists(SERVER_DIR_STORAGE):
+            os.makedirs(SERVER_DIR_STORAGE)
+            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
+        else:
+            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
+
+        with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                f.write(paper_contents)      
+
 
 
     @staticmethod
