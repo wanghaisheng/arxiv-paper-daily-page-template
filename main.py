@@ -345,7 +345,7 @@ class _OverloadTasks:
 
         return output_str
         
-    def _generate_markdown_table_content(self, paper: dict,tags=None):
+    def _generate_markdown_table_content_old(self, paper: dict,tags=None):
         paper['publish_time'] = f"**{paper['publish_time']}**"
         paper['title'] = f"**{paper['title']}**"
         _pdf = self._set_markdown_hyperlink(
@@ -428,6 +428,69 @@ class _OverloadTasks:
 
 
         return line
+    import yaml
+    
+    def _generate_yaml_front_matter(self, paper: dict, editor_name: str) -> str:
+        post_title = paper["title"]
+        post_pubdate = str(datetime.now(TIME_ZONE_CN)).split('.')[0]
+        post_tags = paper['keywords']
+    
+        front_matter = {
+            "layout": "../../layouts/MarkdownPost.astro",
+            "title": post_title,
+            "pubDate": post_pubdate,
+            "description": "",
+            "author": editor_name,
+            "cover": {
+                "url": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
+                "square": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
+                "alt": "cover"
+            },
+            "tags": post_tags,
+            "theme": "light",
+            "featured": True,
+            "meta": [
+                {"name": "author", "content": paper['authors']},
+                {"name": "keywords", "content": "key3, key4"}
+            ],
+            "keywords": "key1, key2, key3"
+        }
+    
+        yaml_front_matter = yaml.safe_dump(front_matter, default_flow_style=False)
+    
+        return f"---\n{yaml_front_matter}---\n"
+    def _generate_markdown_content(self, paper: dict, pdf_link: str) -> str:
+        markdown_content = (
+            f"# title: {paper['title']} \n"
+            f"## publish date: \n{paper['publish_time']} \n"
+            f"## authors: \n  {paper['authors']} \n"
+            f"## abstract: \n  {paper['abstract']} \n"
+            f"## paper id\n"
+            f"{paper['id']}\n"
+            f"## download\n"
+            f"{pdf_link}\n"
+            f"## abstracts:\n"
+            f"{paper['abstract']}\n"
+            f"## QA:\n"
+            f"{paper['QA_md_contents']}\n"
+        )
+
+        return markdown_content
+
+    def _generate_markdown_table_content(self, paper: dict, editor_name: str) -> str:
+        # Formatting fields
+        paper['publish_time'] = f"**{paper['publish_time']}**"
+        paper['title'] = f"**{paper['title']}**"
+        pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
+
+        # Generate YAML front matter
+        yaml_front_matter = self._generate_yaml_front_matter(paper, editor_name)
+
+        # Generate Markdown content
+        markdown_content = self._generate_markdown_content(paper, pdf_link)
+
+        return f"{yaml_front_matter}\n{markdown_content}"
+
 
     @staticmethod
     def _set_style_to(style: str = "center"):
