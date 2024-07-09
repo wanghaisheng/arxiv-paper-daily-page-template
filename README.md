@@ -1,4 +1,4 @@
-
+# todo
 find link in paper html and check link url title, description to verify a dataset link
 
 
@@ -7,6 +7,10 @@ prompt to dig paper
 
 
 
+https://github.com/wanghaisheng/paper-to-video
+
+
+paper to podcast ...ask and question 
 
 
 
