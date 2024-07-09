@@ -1,4 +1,42 @@
+`Create a concise, engaging script for a 30-second YouTube Short about the following research paper. Your task is to distill the paper's key points into a clear, accessible narrative for a general audience with some technical background.
+
+Paper Title: ${paper.title}
+Abstract: ${paper.abstract}
+
+Instructions:
+1. Begin with a hook that captures the essence of the research or its potential impact.
+2. Summarize the main problem or question the research addresses.
+3. Briefly explain the methodology or approach used, focusing on what makes it novel or interesting.
+4. Highlight 2-3 key findings or insights from the research.
+5. Conclude with the potential implications or future directions of this work.
+
+Style Guidelines:
+- Use clear, concise language suitable for verbal narration. Avoid clunky phrases.
+- Aim for a conversational tone, similar to popular science YouTube channels.
+- Break down complex ideas into simpler terms, but don't oversimplify.
+- Use analogies or real-world examples where appropriate to illustrate concepts.
+- Each sentence or phrase should be on a new line for easier reading during narration.
+- The entire script should be tightly written and take about 60 seconds to read aloud at a natural pace.
+
+Additionally, provide 15-20 visually illustrative keywords that match with the script in a chronological order to "illustrate" the narration. These keywords will be used to search for relevant background videos and must be unambiguous but still broad enough to return results. Think of them more like director's instructions for the visuals.
+
+Format your response as follows:
+SCRIPT:
+(Your generated script here)
+
+KEYWORDS:
+keyword1, keyword2, keyword3, ...
+
+Do not use any introductory or concluding phrases. Start directly with the SCRIPT: heading.`,
+      },
+    ],
+  });
+
+
+  
+
 //https://github.com/mahsaSH717/research_assistant/blob/master/src/constants/PromptData.js
+```
 const PROMPT_TEMP = {
     '1': {
         activatePrompts:['5','6','8','9','12'],
@@ -148,6 +186,6 @@ const PROMPT_TEMP = {
     
 
 };
-
+```
 
 export default PROMPT_TEMP;
