@@ -13,10 +13,9 @@ meta:
   name: author
 - content: key3, key4
   name: keywords
-pubDate: '2024-07-09 08:25:40'
+pubDate: '2024-07-09 08:29:30'
 tags:
-- wearable camera
-- camera
+- smart watch
 theme: light
 title: Advanced Smart City Monitoring RealTime Identification of Indian Citizen Attributes
 ---
@@ -26,8 +25,6 @@ title: Advanced Smart City Monitoring RealTime Identification of Indian Citizen 
 **2024-07-03** 
 ## authors: 
   Shubham Kale et.al. 
-## abstract: 
-  This project focuses on creating a smart surveillance system for Indian cities that can identify and analyze people's attributes in real time. Using advanced technologies like artificial intelligence and machine learning, the system can recognize attributes such as upper body color, what the person is wearing, accessories they are wearing, headgear, etc., and analyze behavior through cameras installed around the city. 
 ## paper id
 2407.03305v2
 ## download
