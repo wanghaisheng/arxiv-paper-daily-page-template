@@ -480,7 +480,7 @@ class _OverloadTasks:
     def _generate_markdown_table_content(self, paper: dict,tags=None):
         # Formatting fields
         paper['publish_time'] = f"**{paper['publish_time']}**"
-        paper['title'] = f"**{paper['title']}**"
+        # paper['title'] = f"**{paper['title']}"
         paper['keywords'] = list(set(tags))
         QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
