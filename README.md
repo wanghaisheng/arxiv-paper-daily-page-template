@@ -4,6 +4,8 @@ https://github.com/Cherry/placeholders.dev
 
 find link in paper html and check link url title, description to verify a dataset link
 
+pdf to md https://github.com/opendatalab/MinerU
+
 
 
 prompt to dig paper 
