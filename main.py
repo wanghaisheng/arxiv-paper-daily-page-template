@@ -183,7 +183,7 @@ class CoroutineSpeedup:
             paper_title=paper_title.replace("'","\'")
             paper_url = result.entry_id
             paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
-            print(paper_title)
+            # print(paper_title)
             code_url = base_url + paper_id
             paper_first_author = result.authors[0]
 
@@ -360,7 +360,7 @@ class _OverloadTasks:
                f"|{_pdf}" \
                f"|{_repo}" \
                f"|{paper['abstract']}|\n"
-        print(':::',line)
+        # print(':::',line)
         paper_contents= f"# title:{paper['title']} \r " \
                         f"## publish date: \r{paper['publish_time']} \r" \
                         f"## authors: \r  {paper['authors']} \r" \
@@ -481,7 +481,8 @@ class _OverloadTasks:
         paper['publish_time'] = f"**{paper['publish_time']}**"
         # paper['title'] = f"**{paper['title']}"
         if not paper['keywords']:
-            paper['keywords'] = list(set(tags))
+            if not tags:
+                paper['keywords'] = list(set(tags))
             
         QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
