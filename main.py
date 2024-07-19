@@ -520,7 +520,12 @@ class _OverloadTasks:
             old=json.load(open(SERVER_DIR_STORAGE.dirname()+'/tags.json'),encoding='utf8').get('tags',[])
             new=old+            paper['keywords'] + list(set(tags))
             new=list(set(new))
+        else:
             data={}
+            new=           paper['keywords'] + list(set(tags))
+
+            new=list(set(new))
+
             data['tags']=new
 
             with open('data.json', 'w', encoding='utf-8') as file:
