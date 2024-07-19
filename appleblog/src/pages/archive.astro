@@ -1,8 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ArchivePostList from "../layouts/ArchivePostList.astro";
+const Astro = await import('astro');
 const allPosts = await Astro.glob("./posts/*.md");
-const tags = ['smart watch','smart band','smart ring'];
+const { tags } = await import('../data/tags.json'); // Load tags from JSON file
 const posts = [];
 
 tags.forEach((tag) => {
