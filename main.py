@@ -480,7 +480,9 @@ class _OverloadTasks:
         # Formatting fields
         paper['publish_time'] = f"**{paper['publish_time']}**"
         # paper['title'] = f"**{paper['title']}"
-        paper['keywords'] = list(set(tags))
+        if not paper['keywords']:
+            paper['keywords'] = list(set(tags))
+            
         QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
         if paper['QA_md_contents']==None:
@@ -513,7 +515,17 @@ class _OverloadTasks:
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
+        
+        if os.path.exists(SERVER_DIR_STORAGE.dirname()+'/tags.json'):
+            old=json.load(open(SERVER_DIR_STORAGE.dirname()+'/tags.json'),encoding='utf8').get('tags',[])
+            new=old+            paper['keywords'] + list(set(tags))
+            new=list(set(new))
+            data={}
+            data['tags']=new
 
+            with open('data.json', 'w', encoding='utf-8') as file:
+                json.dump(data, file, ensure_ascii=False, indent=2)
+            
 
 
     @staticmethod
