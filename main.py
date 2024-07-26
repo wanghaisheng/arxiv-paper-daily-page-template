@@ -86,6 +86,8 @@ class CoroutineSpeedup:
         self.max_results = 2000
 
     async def _adaptor(self):
+        print("Starting _adaptor...")
+
         while not self.worker.empty():
             task: dict = await self.worker.get()
             print(f"Processing task: {task}")  # Debugging
