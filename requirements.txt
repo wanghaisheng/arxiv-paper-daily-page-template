@@ -1,6 +1,6 @@
 arxiv
 requests
-
+aiohttp
 gevent
 pyyaml
 loguru
