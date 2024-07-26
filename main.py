@@ -94,7 +94,7 @@ class CoroutineSpeedup:
                     print("Worker queue is empty. break...")
                     break
                 else:
-                    task: dict = await self.worker.get()
+                    task: dict = self.worker.get_nowait()
                     print(f"Got task: {task}")
                     if task.get("pending"):
                         print("Handling pending task...")
@@ -112,7 +112,7 @@ class CoroutineSpeedup:
         return p
 
     async def runtime(self, context: dict):
-        keyword_ = context.get("keyword")
+        keyword_ = context.get("keyword").lower()
         print(f"Searching for keyword: {keyword_}")
         try:
             res = arxiv.Search(
