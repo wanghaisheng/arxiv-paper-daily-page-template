@@ -121,7 +121,7 @@ class CoroutineSpeedup:
                 max_results=self.max_results,
                 sort_by=arxiv.SortCriterion.SubmittedDate
             ).results()
-            print(f"Query results: {list(res)}")
+            # print(f"Query results: {list(res)}")
             context.update({"response": res, "hook": context})
             await self.worker.put(context)
         except Exception as e:
