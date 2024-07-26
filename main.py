@@ -84,7 +84,7 @@ class CoroutineSpeedup:
         self.power = 32
         self.max_queue_size = 0
         self.cache_space = []
-        self.max_results = 2000
+        self.max_results = 20
 
     async def _adaptor(self):
         try:
