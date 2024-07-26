@@ -38,7 +38,7 @@ from config import (
     TIME_ZONE_CN,
     topic,
 
-render_style
+render_style,
 editor_name,
     logger
 )
