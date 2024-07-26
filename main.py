@@ -60,6 +60,7 @@ class ToolBox:
                 return data_
             except json.JSONDecodeError as e:
                 logger.error(f"JSON decode error: {e}")
+                return None
 
     @staticmethod
     async def handle_md(session, url: str):
@@ -73,6 +74,7 @@ class ToolBox:
                 return data_
             except Exception as e:
                 logger.error(f"Error fetching MD content: {e}")
+                return None
 
 class CoroutineSpeedup:
     def __init__(self, work_q: asyncio.Queue = None, task_docker=None):
@@ -100,9 +102,8 @@ class CoroutineSpeedup:
                     elif task.get("response"):
                         print("Handling response task...")
                         await self.parse(context=task)
-                # Uncomment if you want to break the loop when all tasks are done
-                # if self.worker.empty() and self.channel.empty():
-                #     break
+                if self.worker.empty() and self.channel.empty():
+                    break
             print("Adaptor loop completed.")
         except Exception as e:
             print(f"Error in _adaptor: {e}")
@@ -121,7 +122,7 @@ class CoroutineSpeedup:
                 max_results=self.max_results,
                 sort_by=arxiv.SortCriterion.SubmittedDate
             ).results()
-            # print(f"Query results: {list(res)}")
+            print(f"Query results: {list(res)}")
             context.update({"response": res, "hook": context})
             await self.worker.put(context)
         except Exception as e:
@@ -202,40 +203,34 @@ class CoroutineSpeedup:
             file_obj[md_obj["hook"]] += md_obj["content"]
 
             os.makedirs(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}'), exist_ok=True)
-            with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
+            with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{md_obj["hook"]}.md'), "w",
+                      encoding="utf8") as f:
                 f.write(md_obj["content"])
 
-            template_ = ot.generate_markdown_template("".join(list(file_obj.values())))
-            ot.storage(template_, obj_="database")
+        if file_obj:
+            for key, val in file_obj.items():
+                path = os.path.join(SERVER_PATH_DOCS, f"{key}.md")
+                with open(path, "w", encoding="utf8") as f:
+                    f.write(val)
 
-        return template_
+        ot.storage(
+            content=ot.generate_markdown_template(file_obj),
+            obj_="Update"
+        )
 
-    async def go(self, power: int):
-        print("Starting go...")
+    async def go(self, power: int = 1):
+        self.power = power
         self.offload_tasks()
-        if self.max_queue_size != 0:
-            self.power = self.max_queue_size if power > self.max_queue_size else power
-        print(f"Creating {self.power} tasks.")
-        tasks = [asyncio.create_task(self._adaptor()) for _ in range(self.power)]
-        await asyncio.gather(*tasks)
-        print("Go completed.")
+        self.max_queue_size = self.worker.qsize()
+        await asyncio.gather(*(self._adaptor() for _ in range(self.power)))
+        await self.overload_tasks()
 
 class _OverloadTasks:
     def __init__(self):
-        self._build()
-        self.update_time = ToolBox.log_date(mode="log")
-        self.storage_path_by_date = SERVER_PATH_STORAGE_BACKUP.format(ToolBox.log_date('file'))
-        self.storage_path_readme = SERVER_PATH_README
+        self.update_time = ToolBox.log_date()
+        self.storage_path_by_date = os.path.join(SERVER_DIR_STORAGE, self.update_time)
         self.storage_path_docs = SERVER_PATH_DOCS
-
-    @staticmethod
-    def _build():
-        if not os.path.exists(SERVER_DIR_STORAGE):
-            os.mkdir(SERVER_DIR_STORAGE)
-
-    @staticmethod
-    def _set_markdown_hyperlink(text, link):
-        return f"[{text}]({link})"
+        self.storage_path_readme = SERVER_PATH_README
 
     def to_markdown(self, context):
         # Mock implementation of to_markdown
