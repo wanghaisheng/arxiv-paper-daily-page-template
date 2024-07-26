@@ -170,14 +170,15 @@ class CoroutineSpeedup:
         logger.success(
             f"handle [{self.channel.qsize()}/{self.max_queue_size}]"
             f" | topic=`{context['topic']}` subtopic=`{context['hook']['subtopic']}`")
-
+    
     def offload_tasks(self):
         if self.task_docker:
             for task in self.task_docker:
                 print(f"Offloading task: {task}")
-
                 self.worker.put_nowait({"pending": task})
         self.max_queue_size = self.worker.qsize()
+        print(f"Queue size after offloading tasks: {self.max_queue_size}")
+    
 
     async def overload_tasks(self):
         ot = _OverloadTasks()
@@ -202,13 +203,15 @@ class CoroutineSpeedup:
         return template_
 
     async def go(self, power: int):
+        print("Starting go...")
         self.offload_tasks()
         if self.max_queue_size != 0:
             self.power = self.max_queue_size if power > self.max_queue_size else power
         print(f"Creating {self.power} tasks.")
-
         tasks = [asyncio.create_task(self._adaptor()) for _ in range(self.power)]
         await asyncio.gather(*tasks)
+        print("Go completed.")
+
 
 class _OverloadTasks:
     def __init__(self):
