@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# -*- encoding: utf-8 -*-
-"""
-@File    :   daily_arxiv.py
-@Time    :   2021-10-29 22:34:09
-@Author  :   wanghaisheng
-@Email   :   edwin_uestc@163.com
-@License :   Apache License 2.0
-"""
-
 import json
 import os
 import shutil
@@ -17,7 +7,6 @@ import asyncio
 from datetime import datetime
 import arxiv
 import yaml
-from random import randint
 import unicodedata
 from config import (
     SERVER_PATH_TOPIC,
@@ -96,12 +85,20 @@ class CoroutineSpeedup:
                 else:
                     task: dict = await self.worker.get()
                     print(f"Got task: {task}")
-                    if task.get("pending"):
+                    
+                    if not task:
+                        print("Received empty task.")
+                        continue
+                    
+                    if 'pending' in task:
                         print("Handling pending task...")
-                        await self.runtime(context=task.get("pending"))
-                    elif task.get("response"):
+                        await self.runtime(context=task['pending'])
+                    elif 'response' in task:
                         print("Handling response task...")
                         await self.parse(context=task)
+                    else:
+                        print("Invalid task format. Missing 'pending' or 'response'.")
+
                 if self.worker.empty() and self.channel.empty():
                     break
             print("Adaptor loop completed.")
@@ -115,6 +112,10 @@ class CoroutineSpeedup:
 
     async def runtime(self, context: dict):
         keyword_ = context.get("keyword")
+        if not keyword_:
+            print("No keyword found in context.")
+            return
+
         print(f"Searching for keyword: {keyword_}")
         try:
             res = arxiv.Search(
@@ -140,6 +141,10 @@ class CoroutineSpeedup:
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
         _paper = {}
         arxiv_res = context.get("response")
+        if not arxiv_res:
+            print("No response found in context.")
+            return
+
         async with aiohttp.ClientSession() as session:
             for result in arxiv_res:
                 paper_id = result.get_short_id()
@@ -173,13 +178,13 @@ class CoroutineSpeedup:
                 })
         await self.channel.put({
             "paper": _paper,
-            "topic": context["hook"]["topic"],
-            "subtopic": context["hook"]["subtopic"],
+            "topic": context["hook"].get("topic", "unknown"),
+            "subtopic": context["hook"].get("subtopic", "unknown"),
             "fields": ["Publish Date", "Title", "Authors", "PDF", "Code", "Abstract"]
         })
         logger.success(
             f"handle [{self.channel.qsize()}/{self.max_queue_size}]"
-            f" | topic=`{context['topic']}` subtopic=`{context['hook']['subtopic']}`")
+            f" | topic=`{context['hook'].get('topic', 'unknown')}` subtopic=`{context['hook'].get('subtopic', 'unknown')}`")
     
     def offload_tasks(self):
         if self.task_docker:
@@ -221,57 +226,4 @@ class CoroutineSpeedup:
     async def go(self, power: int = 1):
         self.power = power
         self.offload_tasks()
-        self.max_queue_size = self.worker.qsize()
-        await asyncio.gather(*(self._adaptor() for _ in range(self.power)))
-        await self.overload_tasks()
-
-class _OverloadTasks:
-    def __init__(self):
-        self.update_time = ToolBox.log_date()
-        self.storage_path_by_date = os.path.join(SERVER_DIR_STORAGE, self.update_time)
-        self.storage_path_docs = SERVER_PATH_DOCS
-        self.storage_path_readme = SERVER_PATH_README
-
-    def to_markdown(self, context):
-        # Mock implementation of to_markdown
-        return {
-            "hook": context["topic"],
-            "content": f"# {context['topic']} - {context['subtopic']}\n\n" +
-                       f"**Publish Time:** {context['paper']['publish_time']}\n" +
-                       f"**Title:** {context['paper']['title']}\n" +
-                       f"**Authors:** {context['paper']['authors']}\n" +
-                       f"**PDF Link:** {context['paper']['paper_url']}\n" +
-                       f"**Code Repo:** {context['paper']['repo']}\n" +
-                       f"**Abstract:** {context['paper']['abstract']}\n"
-        }
-
-    def generate_markdown_template(self, content):
-        # Mock implementation of generate_markdown_template
-        return f"# Daily ArXiv Updates\n\n{content}"
-
-    def storage(self, content, obj_=""):
-        if not os.path.exists(self.storage_path_by_date):
-            os.makedirs(self.storage_path_by_date)
-
-        # Save markdown content
-        with open(os.path.join(self.storage_path_by_date, f"updates_{self.update_time}.md"), "w", encoding="utf8") as f:
-            f.write(content)
-
-        # Save readme if it doesn't exist
-        if not os.path.exists(self.storage_path_readme):
-            with open(self.storage_path_readme, "w", encoding="utf8") as f:
-                f.write(f"# Daily Updates\n\nUpdates saved in {self.storage_path_by_date}\n")
-
-        # Copy latest updates to docs directory
-        shutil.copytree(self.storage_path_by_date, self.storage_path_docs, dirs_exist_ok=True)
-
-async def main():
-    toolbox = ToolBox()
-    data = toolbox.get_yaml_data()
-    example_task = {"keyword": "machine learning"}
-
-    cs = CoroutineSpeedup(task_docker=[example_task])
-    await cs.go(power=1)  # Using power=1 for simplicity
-
-if __name__ == "__main__":
-    asyncio.run(main())
+       
