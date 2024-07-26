@@ -88,6 +88,8 @@ class CoroutineSpeedup:
     async def _adaptor(self):
         while not self.worker.empty():
             task: dict = await self.worker.get()
+            print(f"Processing task: {task}")  # Debugging
+
             if task.get("pending"):
                 await self.runtime(context=task.get("pending"))
             elif task.get("response"):
@@ -165,6 +167,8 @@ class CoroutineSpeedup:
     def offload_tasks(self):
         if self.task_docker:
             for task in self.task_docker:
+                print(f"Offloading task: {task}")
+
                 self.worker.put_nowait({"pending": task})
         self.max_queue_size = self.worker.qsize()
 
@@ -194,6 +198,8 @@ class CoroutineSpeedup:
         self.offload_tasks()
         if self.max_queue_size != 0:
             self.power = self.max_queue_size if power > self.max_queue_size else power
+        print(f"Creating {self.power} tasks.")
+
         tasks = [asyncio.create_task(self._adaptor()) for _ in range(self.power)]
         await asyncio.gather(*tasks)
 
