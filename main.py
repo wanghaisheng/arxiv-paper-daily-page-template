@@ -8,6 +8,7 @@
 @License :   Apache License 2.0
 """
 
+
 import json
 import os
 import shutil
@@ -24,7 +25,6 @@ from config import (
     SERVER_DIR_STORAGE,
     SERVER_PATH_README,
     SERVER_PATH_DOCS,
-    SERVER_DIR_STORAGE,
     SERVER_PATH_STORAGE_MD,
     SERVER_PATH_STORAGE_BACKUP,
     TIME_ZONE_CN,
@@ -179,8 +179,8 @@ class CoroutineSpeedup:
             with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
                 f.write(md_obj["content"])
 
-            # template_ = ot.generate_markdown_template("".join(list(file_obj.values())))
-            # ot.storage(template_, obj_="database")
+            template_ = ot.generate_markdown_template("".join(list(file_obj.values())))
+            ot.storage(template_, obj_="database")
 
         return template_
 
@@ -219,25 +219,129 @@ class _OverloadTasks:
         output_str = output_str[:-1] if output_str[-1] == '.' else output_str
         return output_str
 
-    def to_markdown(self, context):
-        topic = context.get("topic")
-        subtopic = context.get("subtopic")
-        papers = context.get("paper")
-        headers = context.get("fields")
-
-        content = f"# {topic}\n\n## {subtopic}\n\n"
-        content += f"**Update Time**: {self.update_time}\n\n"
-        for paper_key, paper in papers.items():
-            content += f"### {self._set_markdown_hyperlink(paper['title'], paper['paper_url'])}\n"
-            content += f"- **Authors**: {paper['authors']}\n"
-            content += f"- **Published Time**: {paper['publish_time']}\n"
-            content += f"- **Abstract**: {paper['abstract']}\n"
-            content += f"- **Code**: {paper['repo']}\n\n"
-
-        return {
-            "hook": f"{topic}_{subtopic}",
-            "content": content
+    import yaml
+    
+    def _generate_yaml_front_matter(self, paper: dict, editor_name: str) -> str:
+        post_title = paper["title"]
+        post_pubdate = str(datetime.now(TIME_ZONE_CN)).split('.')[0]
+        post_tags = paper['keywords']
+    
+        front_matter = {
+            "layout": "../../layouts/MarkdownPost.astro",
+            "title": post_title,
+            "pubDate": post_pubdate,
+            "description": "",
+            "author": editor_name,
+            "cover": {
+                "url": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
+                "square": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
+                "alt": "cover"
+            },
+            "tags": post_tags,
+            "theme": "light",
+            "featured": True,
+            "meta": [
+                {"name": "author", "content": paper['authors']},
+                {"name": "keywords", "content": "key3, key4"}
+            ],
+            "keywords": "key1, key2, key3"
         }
+    
+        yaml_front_matter = yaml.safe_dump(front_matter, default_flow_style=False)
+    
+        return f"---\n{yaml_front_matter}---\n"
+    def _generate_markdown_content(self, paper: dict, pdf_link: str) -> str:
+        markdown_content = (
+            f"# title: {paper['title']} \n"
+            f"## publish date: \n{paper['publish_time']} \n"
+            f"## authors: \n  {paper['authors']} \n"
+            f"## paper id\n"
+            f"{paper['id']}\n"
+            f"## download\n"
+            f"{pdf_link}\n"
+            f"## abstracts:\n"
+            f"{paper['abstract']}\n"
+            f"## QA:\n"
+            f"{paper['QA_md_contents']}\n"
+        )
+
+        return markdown_content
+
+    def _generate_markdown_table_content(self, paper: dict,tags=None):
+        # Formatting fields
+        paper['publish_time'] = f"**{paper['publish_time']}**"
+        # paper['title'] = f"**{paper['title']}"
+        if not paper['keywords']:
+            if not tags:
+                paper['keywords'] = list(set(tags))
+            
+        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
+        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
+        if paper['QA_md_contents']==None:
+            print('gen realtime')
+            paper['QA_md_contents']='coming soon'
+            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
+            # https://github.com/Nipun1212/Claude_api        
+        pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
+
+        # Generate YAML front matter
+        yaml_front_matter = self._generate_yaml_front_matter(paper, editor_name)
+
+        # Generate Markdown content
+        markdown_content = self._generate_markdown_content(paper, pdf_link)
+
+        paper_contents= f"{yaml_front_matter}\n{markdown_content}"
+        postname=self._check_for_illegal_char(paper['title'])
+        postname=postname.replace(' ','_')
+        ## if filename start with __ ,astro post will 404
+        if postname.startswith('__'):
+            postname=postname.replace('__',"")
+        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
+        repo_url=os.getenv('repo')
+        repo_name=repo_url.split('/')[-1].replace('-',' ')        
+        if not os.path.exists(SERVER_DIR_STORAGE):
+            os.makedirs(SERVER_DIR_STORAGE)
+            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
+        else:
+            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
+
+        with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                f.write(paper_contents)      
+        
+        if os.path.exists(SERVER_DIR_STORAGE.dirname()+'/tags.json'):
+            old=json.load(open(SERVER_DIR_STORAGE.dirname()+'/tags.json'),encoding='utf8').get('tags',[])
+            new=old+            paper['keywords'] + list(set(tags))
+            new=list(set(new))
+        else:
+            data={}
+            new=           paper['keywords'] + list(set(tags))
+
+            new=list(set(new))
+
+            data['tags']=new
+
+            with open('data.json', 'w', encoding='utf-8') as file:
+                json.dump(data, file, ensure_ascii=False, indent=2)
+            
+
+    def to_markdown(self, context: dict) -> dict:
+        _fields = context["fields"]
+        _topic = context["topic"]
+        _subtopic = context["subtopic"]
+        _paper_obj = context["paper"]
+
+        _topic_md = f"\n## {_topic}\n"
+        _subtopic_md = f"\n### {_subtopic}\n"
+        _fields_md = f"|{'|'.join(_fields)}|\n"
+        _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
+        table_lines = "".join([self._generate_markdown_table_content(
+            paper,tags=[_topic,_subtopic]) for paper in _paper_obj.values()])
+
+        _content_md = _subtopic_md + _fields_md + _style_md + table_lines
+
+        return {"hook": _topic_md, "content": _content_md}
+
+
 
     def generate_markdown_template(self, content):
         template = f"# Arxiv Daily Update\n\n{content}"
@@ -249,13 +353,13 @@ class _OverloadTasks:
         with open(file_path, "w") as f:
             f.write(content)
 
-def main():
+async def main():
     toolbox = ToolBox()
     data = toolbox.get_yaml_data()
-    
+
     cs = CoroutineSpeedup()
     tasks = [asyncio.create_task(cs.go(power=10)) for _ in range(1)]
-    asyncio.run(asyncio.gather(*tasks))
+    await asyncio.gather(*tasks)
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
