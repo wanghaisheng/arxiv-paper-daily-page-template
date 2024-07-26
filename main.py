@@ -86,16 +86,21 @@ class CoroutineSpeedup:
         self.max_results = 2000
 
     async def _adaptor(self):
-        print("Starting _adaptor...")
+        try:
+            print("Starting _adaptor...")
+            while not self.worker.empty():
+                task: dict = await self.worker.get()
+                print(f"Got task: {task}")
+                if task.get("pending"):
+                    print("Handling pending task...")
+                    await self.runtime(context=task.get("pending"))
+                elif task.get("response"):
+                    print("Handling response task...")
+                    await self.parse(context=task)
+            print("Adaptor loop completed.")
+        except Exception as e:
+            print(f"Error in _adaptor: {e}")
 
-        while not self.worker.empty():
-            task: dict = await self.worker.get()
-            print(f"Processing task: {task}")  # Debugging
-
-            if task.get("pending"):
-                await self.runtime(context=task.get("pending"))
-            elif task.get("response"):
-                await self.parse(context=task)
 
     def _progress(self):
         p = self.max_queue_size - self.worker.qsize() - self.power
