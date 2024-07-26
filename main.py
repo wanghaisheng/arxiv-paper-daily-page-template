@@ -138,7 +138,7 @@ class CoroutineSpeedup:
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
         _paper = {}
         arxiv_res = context.get("response")
-        if len(arxiv_res)==0:
+        if len(list(arxiv_res))==0:
             print('no respomsr data')
             return
         async with aiohttp.ClientSession() as session:
