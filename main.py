@@ -267,9 +267,11 @@ class _OverloadTasks:
 
 async def main():
     toolbox = ToolBox()
-    data = toolbox.get_yaml_data()
-    example_task = {"keyword": "machine learning"}
-
+    context = toolbox.get_yaml_data()
+    # example_task = {"keyword": "machine learning"}
+        # Set tasks
+    pending_atomic = [{"subtopic": subtopic, "keyword": keyword.replace('"', ""), "topic": topic}
+                          for topic, subtopics in context.items() for subtopic, keyword in subtopics.items()]
     cs = CoroutineSpeedup(task_docker=[example_task])
     await cs.go(power=1)  # Using power=1 for simplicity
 
