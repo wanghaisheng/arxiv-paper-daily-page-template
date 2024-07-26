@@ -100,6 +100,8 @@ class CoroutineSpeedup:
 
     async def runtime(self, context: dict):
         keyword_ = context.get("keyword")
+        print(f"Searching for keyword: {keyword_}")
+        
         res = arxiv.Search(
             query="ti:"+keyword_+"+OR+abs:"+keyword_,
             max_results=self.max_results,
