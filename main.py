@@ -90,9 +90,9 @@ class CoroutineSpeedup:
         try:
             print("Starting _adaptor...")
             while True:
-                if self.worker.empty():
-                    print("Worker queue is empty. Waiting...")
-                    await asyncio.sleep(1)  # Sleep to prevent tight loop
+                if self.worker.empty() and self.channel.empty():
+                    print("Worker queue is empty. break...")
+                    break
                 else:
                     task: dict = await self.worker.get()
                     print(f"Got task: {task}")
@@ -102,8 +102,6 @@ class CoroutineSpeedup:
                     elif task.get("response"):
                         print("Handling response task...")
                         await self.parse(context=task)
-                if self.worker.empty() and self.channel.empty():
-                    break
             print("Adaptor loop completed.")
         except Exception as e:
             print(f"Error in _adaptor: {e}")
