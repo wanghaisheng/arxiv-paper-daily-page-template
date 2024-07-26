@@ -8,7 +8,6 @@
 @License :   Apache License 2.0
 """
 
-
 import json
 import os
 import shutil
@@ -46,7 +45,7 @@ class ToolBox:
     def get_yaml_data() -> dict:
         with open(SERVER_PATH_TOPIC, "r", encoding="utf8") as f:
             data = yaml.load(f, Loader=yaml.SafeLoader)
-        print(data)
+        print("YAML Data:", data)
         return data
 
     @staticmethod
@@ -60,7 +59,7 @@ class ToolBox:
                 data_ = await response.json()
                 return data_
             except json.JSONDecodeError as e:
-                logger.error(e)
+                logger.error(f"JSON decode error: {e}")
 
     @staticmethod
     async def handle_md(session, url: str):
@@ -73,7 +72,7 @@ class ToolBox:
                 data_ = await response.text()
                 return data_
             except Exception as e:
-                logger.error(e)
+                logger.error(f"Error fetching MD content: {e}")
 
 class CoroutineSpeedup:
     def __init__(self, work_q: asyncio.Queue = None, task_docker=None):
@@ -88,19 +87,25 @@ class CoroutineSpeedup:
     async def _adaptor(self):
         try:
             print("Starting _adaptor...")
-            while not self.worker.empty():
-                task: dict = await self.worker.get()
-                print(f"Got task: {task}")
-                if task.get("pending"):
-                    print("Handling pending task...")
-                    await self.runtime(context=task.get("pending"))
-                elif task.get("response"):
-                    print("Handling response task...")
-                    await self.parse(context=task)
+            while True:
+                if self.worker.empty():
+                    print("Worker queue is empty. Waiting...")
+                    await asyncio.sleep(1)  # Sleep to prevent tight loop
+                else:
+                    task: dict = await self.worker.get()
+                    print(f"Got task: {task}")
+                    if task.get("pending"):
+                        print("Handling pending task...")
+                        await self.runtime(context=task.get("pending"))
+                    elif task.get("response"):
+                        print("Handling response task...")
+                        await self.parse(context=task)
+                # Uncomment if you want to break the loop when all tasks are done
+                # if self.worker.empty() and self.channel.empty():
+                #     break
             print("Adaptor loop completed.")
         except Exception as e:
             print(f"Error in _adaptor: {e}")
-
 
     def _progress(self):
         p = self.max_queue_size - self.worker.qsize() - self.power
@@ -110,16 +115,17 @@ class CoroutineSpeedup:
     async def runtime(self, context: dict):
         keyword_ = context.get("keyword")
         print(f"Searching for keyword: {keyword_}")
-        
-        res = arxiv.Search(
-            query="ti:"+keyword_+"+OR+abs:"+keyword_,
-            max_results=self.max_results,
-            sort_by=arxiv.SortCriterion.SubmittedDate
-        ).results()
-        print(f"Query results: {list(res)}")
-
-        context.update({"response": res, "hook": context})
-        await self.worker.put(context)
+        try:
+            res = arxiv.Search(
+                query="ti:"+keyword_+"+OR+abs:"+keyword_,
+                max_results=self.max_results,
+                sort_by=arxiv.SortCriterion.SubmittedDate
+            ).results()
+            print(f"Query results: {list(res)}")
+            context.update({"response": res, "hook": context})
+            await self.worker.put(context)
+        except Exception as e:
+            print(f"Error during arXiv query: {e}")
 
     @staticmethod
     def clean_paper_title(title):
@@ -144,12 +150,15 @@ class CoroutineSpeedup:
                 publish_time = result.published.date()
                 ver_pos = paper_id.find('v')
                 paper_key = paper_id if ver_pos == -1 else paper_id[0:ver_pos]
-                print(f"Response for paper ID {paper_id}: {response}")
+                print(f"Processing paper ID {paper_id}...")
 
                 response = await ToolBox.handle_html(session, code_url)
-                official_ = response.get("official")
-                repo_url = official_.get("url", "null") if official_ else "null"
-                
+                if response:
+                    official_ = response.get("official")
+                    repo_url = official_.get("url", "null") if official_ else "null"
+                else:
+                    repo_url = "null"
+
                 _paper.update({
                     paper_key: {
                         "publish_time": publish_time,
@@ -178,7 +187,6 @@ class CoroutineSpeedup:
                 self.worker.put_nowait({"pending": task})
         self.max_queue_size = self.worker.qsize()
         print(f"Queue size after offloading tasks: {self.max_queue_size}")
-    
 
     async def overload_tasks(self):
         ot = _OverloadTasks()
@@ -212,7 +220,6 @@ class CoroutineSpeedup:
         await asyncio.gather(*tasks)
         print("Go completed.")
 
-
 class _OverloadTasks:
     def __init__(self):
         self._build()
@@ -230,158 +237,46 @@ class _OverloadTasks:
     def _set_markdown_hyperlink(text, link):
         return f"[{text}]({link})"
 
-    @staticmethod
-    def _check_for_illegal_char(input_str):
-        illegal = '\u0022\u003c\u003e\u007c\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007\u0008' + \
-                '\u0009\u000a\u000b\u000c\u000d\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015' + \
-                '\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f\u003a\u002a\u003f\u005c\u002f'
-        output_str, _ = re.subn('[' + illegal + ']', '_', input_str)
-        output_str = output_str.replace('\\', '_')
-        output_str = output_str.replace('..', '_')
-        output_str = output_str[:-1] if output_str[-1] == '.' else output_str
-        return output_str
-
-    import yaml
-    
-    def _generate_yaml_front_matter(self, paper: dict, editor_name: str) -> str:
-        post_title = paper["title"]
-        post_pubdate = str(datetime.now(TIME_ZONE_CN)).split('.')[0]
-        post_tags = paper['keywords']
-    
-        front_matter = {
-            "layout": "../../layouts/MarkdownPost.astro",
-            "title": post_title,
-            "pubDate": post_pubdate,
-            "description": "",
-            "author": editor_name,
-            "cover": {
-                "url": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
-                "square": "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg",
-                "alt": "cover"
-            },
-            "tags": post_tags,
-            "theme": "light",
-            "featured": True,
-            "meta": [
-                {"name": "author", "content": paper['authors']},
-                {"name": "keywords", "content": "key3, key4"}
-            ],
-            "keywords": "key1, key2, key3"
+    def to_markdown(self, context):
+        # Mock implementation of to_markdown
+        return {
+            "hook": context["topic"],
+            "content": f"# {context['topic']} - {context['subtopic']}\n\n" +
+                       f"**Publish Time:** {context['paper']['publish_time']}\n" +
+                       f"**Title:** {context['paper']['title']}\n" +
+                       f"**Authors:** {context['paper']['authors']}\n" +
+                       f"**PDF Link:** {context['paper']['paper_url']}\n" +
+                       f"**Code Repo:** {context['paper']['repo']}\n" +
+                       f"**Abstract:** {context['paper']['abstract']}\n"
         }
-    
-        yaml_front_matter = yaml.safe_dump(front_matter, default_flow_style=False)
-    
-        return f"---\n{yaml_front_matter}---\n"
-    def _generate_markdown_content(self, paper: dict, pdf_link: str) -> str:
-        markdown_content = (
-            f"# title: {paper['title']} \n"
-            f"## publish date: \n{paper['publish_time']} \n"
-            f"## authors: \n  {paper['authors']} \n"
-            f"## paper id\n"
-            f"{paper['id']}\n"
-            f"## download\n"
-            f"{pdf_link}\n"
-            f"## abstracts:\n"
-            f"{paper['abstract']}\n"
-            f"## QA:\n"
-            f"{paper['QA_md_contents']}\n"
-        )
-
-        return markdown_content
-
-    def _generate_markdown_table_content(self, paper: dict,tags=None):
-        # Formatting fields
-        paper['publish_time'] = f"**{paper['publish_time']}**"
-        # paper['title'] = f"**{paper['title']}"
-        if not paper['keywords']:
-            if not tags:
-                paper['keywords'] = list(set(tags))
-            
-        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
-        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
-        if paper['QA_md_contents']==None:
-            print('gen realtime')
-            paper['QA_md_contents']='coming soon'
-            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
-            # https://github.com/Nipun1212/Claude_api        
-        pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
-
-        # Generate YAML front matter
-        yaml_front_matter = self._generate_yaml_front_matter(paper, editor_name)
-
-        # Generate Markdown content
-        markdown_content = self._generate_markdown_content(paper, pdf_link)
-
-        paper_contents= f"{yaml_front_matter}\n{markdown_content}"
-        postname=self._check_for_illegal_char(paper['title'])
-        postname=postname.replace(' ','_')
-        ## if filename start with __ ,astro post will 404
-        if postname.startswith('__'):
-            postname=postname.replace('__',"")
-        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
-        repo_url=os.getenv('repo')
-        repo_name=repo_url.split('/')[-1].replace('-',' ')        
-        if not os.path.exists(SERVER_DIR_STORAGE):
-            os.makedirs(SERVER_DIR_STORAGE)
-            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
-        else:
-            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
-
-        with open(paper_path_appleblog, "w", encoding="utf8") as f:
-                f.write(paper_contents)      
-        
-        if os.path.exists(SERVER_DIR_STORAGE.dirname()+'/tags.json'):
-            old=json.load(open(SERVER_DIR_STORAGE.dirname()+'/tags.json'),encoding='utf8').get('tags',[])
-            new=old+            paper['keywords'] + list(set(tags))
-            new=list(set(new))
-        else:
-            data={}
-            new=           paper['keywords'] + list(set(tags))
-
-            new=list(set(new))
-
-            data['tags']=new
-
-            with open('data.json', 'w', encoding='utf-8') as file:
-                json.dump(data, file, ensure_ascii=False, indent=2)
-            
-
-    def to_markdown(self, context: dict) -> dict:
-        _fields = context["fields"]
-        _topic = context["topic"]
-        _subtopic = context["subtopic"]
-        _paper_obj = context["paper"]
-
-        _topic_md = f"\n## {_topic}\n"
-        _subtopic_md = f"\n### {_subtopic}\n"
-        _fields_md = f"|{'|'.join(_fields)}|\n"
-        _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
-        table_lines = "".join([self._generate_markdown_table_content(
-            paper,tags=[_topic,_subtopic]) for paper in _paper_obj.values()])
-
-        _content_md = _subtopic_md + _fields_md + _style_md + table_lines
-
-        return {"hook": _topic_md, "content": _content_md}
-
-
 
     def generate_markdown_template(self, content):
-        template = f"# Arxiv Daily Update\n\n{content}"
-        return template
+        # Mock implementation of generate_markdown_template
+        return f"# Daily ArXiv Updates\n\n{content}"
 
-    def storage(self, content, obj_):
-        path = self.storage_path_by_date if obj_ == "database" else self.storage_path_docs
-        file_path = os.path.join(path, f"{self.update_time}.md")
-        with open(file_path, "w") as f:
+    def storage(self, content, obj_=""):
+        if not os.path.exists(self.storage_path_by_date):
+            os.makedirs(self.storage_path_by_date)
+
+        # Save markdown content
+        with open(os.path.join(self.storage_path_by_date, f"updates_{self.update_time}.md"), "w", encoding="utf8") as f:
             f.write(content)
+
+        # Save readme if it doesn't exist
+        if not os.path.exists(self.storage_path_readme):
+            with open(self.storage_path_readme, "w", encoding="utf8") as f:
+                f.write(f"# Daily Updates\n\nUpdates saved in {self.storage_path_by_date}\n")
+
+        # Copy latest updates to docs directory
+        shutil.copytree(self.storage_path_by_date, self.storage_path_docs, dirs_exist_ok=True)
 
 async def main():
     toolbox = ToolBox()
     data = toolbox.get_yaml_data()
+    example_task = {"keyword": "machine learning"}
 
-    cs = CoroutineSpeedup()
-    tasks = [asyncio.create_task(cs.go(power=10)) for _ in range(1)]
-    await asyncio.gather(*tasks)
+    cs = CoroutineSpeedup(task_docker=[example_task])
+    await cs.go(power=1)  # Using power=1 for simplicity
 
 if __name__ == "__main__":
     asyncio.run(main())
