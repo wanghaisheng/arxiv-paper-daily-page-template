@@ -178,6 +178,10 @@ class CoroutineSpeedup:
         base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
         _paper = {}
         arxiv_res = context.get("response")
+        if not arxiv_res:
+            print("No results to parse.")
+            return
+
         for result in arxiv_res:
 #             beaware result is a https://github.com/lukasschwab/arxiv.py 
             attributes_and_methods = dir(result)
@@ -446,7 +450,7 @@ class _OverloadTasks:
                 with open(paper_path_appleblog, "w", encoding="utf8") as f:
                     f.write(paper_contents)      
         except Exception as e:
-            print(f'save md {postname} error occured {e}')
+            print(f'Error generating markdown for {paper["title"]}: {e}')
 
 
     @staticmethod
