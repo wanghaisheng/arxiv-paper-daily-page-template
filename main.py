@@ -361,89 +361,6 @@ class _OverloadTasks:
 
         return output_str
         
-    def _generate_markdown_table_content_old(self, paper: dict,tags=None):
-        paper['publish_time'] = f"**{paper['publish_time']}**"
-        paper['title'] = f"**{paper['title']}**"
-        _pdf = self._set_markdown_hyperlink(
-            text=paper['id'], link=paper['paper_url'])
-        _repo = self._set_markdown_hyperlink(
-            text="link", link=paper['repo']) if "http" in paper['repo'] else "null"
-        paper['abstract']=f"{paper['abstract']}"
-        paper['keywords'] = list(set(tags))
-        line = f"|{paper['publish_time']}" \
-               f"|{paper['title']}" \
-               f"|{paper['authors']}" \
-               f"|{_pdf}" \
-               f"|{_repo}" \
-               f"|{paper['abstract']}|\n"
-        print(':::',line)
-        paper_contents= f"# title:{paper['title']} \r " \
-                        f"## publish date: \r{paper['publish_time']} \r" \
-                        f"## authors: \r  {paper['authors']} \r" \
-                        f"## abstract: \r  {paper['abstract']} \r" 
-                        # f"## {paper['summary']}"            
-        #    gpt paper summary section
-        postname=self._check_for_illegal_char(paper['title'])
-        postname=postname.replace(' ','_')
-        ## if filename start with __ ,astro post will 404
-        if postname.startswith('__'):
-            postname=postname.replace('__',"")
-        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
-        repo_url=os.getenv('repo')
-        repo_name=repo_url.split('/')[-1].replace('-',' ')
-        post_title=paper["title"]
-        post_pubdate=str(datetime.now(TIME_ZONE_CN)).split('.')[0]
-        post_tags=paper['keywords']
-        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
-        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
-        if paper['QA_md_contents']==None:
-            print('gen realtime')
-            paper['QA_md_contents']='coming soon'
-            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
-            # https://github.com/Nipun1212/Claude_api
-        paper_contents= f"---\n" \
-        f"layout: '../../layouts/MarkdownPost.astro'\n" \
-        f"title: '{post_title}'\n" \
-        f"pubDate: '{post_pubdate}'\n" \
-        f"description: ''\n" \
-        f"author: '{editor_name}'\n" \
-        f"cover:\n" \
-        f"    url: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
-        f"    square: 'https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg'\n" \
-        f"    alt: 'cover'\n" \
-        f"tags: '{post_tags}' \n" \
-        f"theme: 'light'\n" \
-        f"featured: true\n" \
-        f"\n" \
-        f"meta:\n" \
-        f" - name: author\n" \
-        f"   content: {paper['authors']}\n" \
-        f" - name: keywords\n" \
-        f"   content: key3, key4\n" \
-        f"\n" \
-        f"keywords: key1, key2, key3\n" \
-        f"---\n" \
-        f"\n" \
-        f"## paper id\n" \
-        f"{paper['id']}\n" \
-        f"## download\n" \
-        f"{_pdf}\n" \
-        f"## abstracts:\n" \
-        f"{paper['abstract']}\n" \
-        f"## QA:\n" \
-        f"{paper['QA_md_contents']}\n" 
-        
-        if not os.path.exists(SERVER_DIR_STORAGE):
-            os.makedirs(SERVER_DIR_STORAGE)
-            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
-        else:
-            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
-
-        with open(paper_path_appleblog, "w", encoding="utf8") as f:
-                f.write(paper_contents)      
-
-
-        return line
     import yaml
     
     def _generate_yaml_front_matter(self, paper: dict, editor_name: str) -> str:
@@ -494,43 +411,44 @@ class _OverloadTasks:
 
     def _generate_markdown_table_content(self, paper: dict,tags=None):
         # Formatting fields
-        paper['publish_time'] = f"**{paper['publish_time']}**"
-        # paper['title'] = f"**{paper['title']}"
-        paper['keywords'] = list(set(tags))
-        QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
-        paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
-        if paper['QA_md_contents']==None:
-            print('gen realtime')
-            paper['QA_md_contents']='coming soon'
-            # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
-            # https://github.com/Nipun1212/Claude_api        
-        pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
-
-        # Generate YAML front matter
-        yaml_front_matter = self._generate_yaml_front_matter(paper, editor_name)
-
-        # Generate Markdown content
-        markdown_content = self._generate_markdown_content(paper, pdf_link)
-
-        paper_contents= f"{yaml_front_matter}\n{markdown_content}"
-        postname=self._check_for_illegal_char(paper['title'])
-        postname=postname.replace(' ','_')
-        ## if filename start with __ ,astro post will 404
-        if postname.startswith('__'):
-            postname=postname.replace('__',"")
-        print(f"convert=== {postname}")
-            
-        paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
-        repo_url=os.getenv('repo')
-        repo_name=repo_url.split('/')[-1].replace('-',' ')        
-        if not os.path.exists(SERVER_DIR_STORAGE):
-            os.makedirs(SERVER_DIR_STORAGE)
-            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
-        else:
-            print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
-
-        with open(paper_path_appleblog, "w", encoding="utf8") as f:
-            f.write(paper_contents)      
+        try:
+            paper['publish_time'] = f"**{paper['publish_time']}**"
+            # paper['title'] = f"**{paper['title']}"
+            paper['keywords'] = list(set(tags))
+            QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
+            paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
+            if paper['QA_md_contents']==None:
+                print('gen realtime')
+                paper['QA_md_contents']='coming soon'
+                # https://huggingface.co/spaces/taesiri/ClaudeReadsArxiv
+                # https://github.com/Nipun1212/Claude_api        
+            pdf_link = self._set_markdown_hyperlink(text=paper['id'], link=paper['paper_url'])
+    
+            # Generate YAML front matter
+            yaml_front_matter = self._generate_yaml_front_matter(paper, editor_name)
+    
+            # Generate Markdown content
+            markdown_content = self._generate_markdown_content(paper, pdf_link)
+    
+            paper_contents= f"{yaml_front_matter}\n{markdown_content}"
+            postname=self._check_for_illegal_char(paper['title'])
+            postname=postname.replace(' ','_')
+            ## if filename start with __ ,astro post will 404
+            if postname.startswith('__'):
+                postname=postname.replace('__',"")
+            print(f"convert=== {postname}")
+                
+            paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
+            repo_url=os.getenv('repo')
+            repo_name=repo_url.split('/')[-1].replace('-',' ')        
+            if not os.path.exists(SERVER_DIR_STORAGE):
+                os.makedirs(SERVER_DIR_STORAGE)
+                print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
+            if os.path.exists(paper_path_appleblog):
+                print(f"paper '{paper_path_appleblog}' already exists.")
+            else:
+                with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                    f.write(paper_contents)      
 
 
 
