@@ -85,32 +85,38 @@ class CoroutineSpeedup:
         self.max_queue_size = 0
         self.cache_space = []
         self.max_results = 20
-    
     async def _adaptor(self):
         try:
             print("Starting _adaptor...")
             while True:
+                # Check if both queues are empty
                 if self.worker.empty() and self.channel.empty():
-                    print("Worker queue is empty. Breaking loop...")
+                    print("Both worker and channel queues are empty. Breaking loop...")
                     break
     
-                try:
-                    task = await self.worker.get()
-                    print(f"Got task: {task}")
+                # Check for pending tasks in worker queue
+                if not self.worker.empty():
+                    try:
+                        task = await self.worker.get()
+                        print(f"Got task: {task}")
     
-                    if task.get("pending"):
-                        print("Handling pending task...")
-                        await self.runtime(context=task.get("pending"))
-                    elif task.get("response"):
-                        print("Handling response task...")
-                        await self.parse(context=task)
-                    else:
-                        print("Unexpected task format:", task)
-                except asyncio.QueueEmpty:
-                    print("Queue was empty when trying to fetch a task. Continuing...")
-                    continue
-                except Exception as e:
-                    print(f"Error processing task: {e}")
+                        if task.get("pending"):
+                            print("Handling pending task...")
+                            await self.runtime(context=task.get("pending"))
+                        elif task.get("response"):
+                            print("Handling response task...")
+                            await self.parse(context=task)
+                        else:
+                            print("Unexpected task format:", task)
+                    except asyncio.QueueEmpty:
+                        print("Queue was empty when trying to fetch a task. Continuing...")
+                        continue
+                    except Exception as e:
+                        print(f"Error processing task: {e}")
+    
+                # Debugging output for queue statuses
+                print(f"Worker queue size: {self.worker.qsize()}")
+                print(f"Channel queue size: {self.channel.qsize()}")
     
             print("Adaptor loop completed.")
         except Exception as e:
