@@ -494,7 +494,6 @@ class _OverloadTasks:
 
     def _generate_markdown_table_content(self, paper: dict,tags=None):
         # Formatting fields
-        print(f"convert=== {postname}")
         paper['publish_time'] = f"**{paper['publish_time']}**"
         # paper['title'] = f"**{paper['title']}"
         paper['keywords'] = list(set(tags))
@@ -519,6 +518,8 @@ class _OverloadTasks:
         ## if filename start with __ ,astro post will 404
         if postname.startswith('__'):
             postname=postname.replace('__',"")
+        print(f"convert=== {postname}")
+            
         paper_path_appleblog=SERVER_PATH_STORAGE_MD.format(postname)
         repo_url=os.getenv('repo')
         repo_name=repo_url.split('/')[-1].replace('-',' ')        
