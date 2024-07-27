@@ -266,6 +266,7 @@ class CoroutineSpeedup:
             file_obj: dict = {}
             while not self.channel.empty():
                 # 将上下文替换成 Markdown 语法文本
+                print('convert c to m')
                 context: dict = self.channel.get()
                 md_obj: dict = ot.to_markdown(context)     
         elif render_style=='mkdocs':
