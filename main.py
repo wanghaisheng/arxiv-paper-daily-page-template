@@ -148,7 +148,7 @@ class CoroutineSpeedup:
             max_results=self.max_results,
             sort_by=arxiv.SortCriterion.SubmittedDate
         ).results()
-
+        print(f'query results:{len(res)}')
         context.update({"response": res, "hook": context})
         self.worker.put_nowait(context)
 
