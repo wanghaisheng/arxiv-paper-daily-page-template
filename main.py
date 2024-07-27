@@ -592,15 +592,17 @@ class _OverloadTasks:
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
         tt=[]
+        print(f'md table content for:{paper}--')
         for paper in _paper_obj.values():
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
             tt.append(t)
-        table_lines = "".join(tt)
+        if len(tt)>0:
+            table_lines = "".join(tt)
 
-        _content_md = _subtopic_md + _fields_md + _style_md + table_lines
+            _content_md = _subtopic_md + _fields_md + _style_md + table_lines
 
-        return {"hook": _topic_md, "content": _content_md}
+            return {"hook": _topic_md, "content": _content_md}
 
 
 class Scaffold:
