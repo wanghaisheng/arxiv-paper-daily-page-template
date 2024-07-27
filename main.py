@@ -514,7 +514,7 @@ class _OverloadTasks:
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
             print(f'md is save:{paper}')
-            if not t:
+            if  t is None:
                 pass
             else:
                 tt.append(t)
