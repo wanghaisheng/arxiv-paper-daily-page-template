@@ -595,7 +595,7 @@ class _OverloadTasks:
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
             tt.append(t)
-        table_lines = "".join([tt])
+        table_lines = "".join(tt)
 
         _content_md = _subtopic_md + _fields_md + _style_md + table_lines
 
