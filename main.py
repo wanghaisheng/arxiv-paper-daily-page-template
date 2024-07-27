@@ -282,8 +282,8 @@ class CoroutineSpeedup:
                 with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
                     f.write(md_obj["content"])
         
-        template_ = ot.generate_markdown_template(content="".join(list(file_obj.values())))
-        ot.storage(template_, obj_="database")
+                template_ = ot.generate_markdown_template(content="".join(list(file_obj.values())))
+                ot.storage(template_, obj_="database")
         
         return template_
     def go(self, power: int):
