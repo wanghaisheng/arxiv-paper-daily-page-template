@@ -140,7 +140,7 @@ class CoroutineSpeedup:
         arxiv_res = context.get("response")
         if len(list(arxiv_res))==0:
             print('no respomsr data')
-            return
+            # return
         async with aiohttp.ClientSession() as session:
             for result in arxiv_res:
                 paper_id = result.get_short_id()
