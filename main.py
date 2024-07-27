@@ -285,7 +285,7 @@ class CoroutineSpeedup:
                 template_ = ot.generate_markdown_template(content="".join(list(file_obj.values())))
                 ot.storage(template_, obj_="database")
         
-        return template_
+                return template_
     def go(self, power: int):
         # 任务重载
         self.offload_tasks()
