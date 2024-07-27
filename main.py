@@ -614,7 +614,7 @@ class Scaffold:
         template_ = booster.overload_tasks()
 
         # Replace project README file.
-        if render_style=='appleblog':
+        if render_style=='mkdocs':
         
             if env == "production":
                 with open(SERVER_PATH_README, "w", encoding="utf8") as f:
