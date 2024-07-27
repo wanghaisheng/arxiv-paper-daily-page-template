@@ -590,8 +590,11 @@ class _OverloadTasks:
         _subtopic_md = f"\n### {_subtopic}\n"
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
-        tt=self._generate_markdown_table_content(
-            paper,tags=[_topic,_subtopic]) for paper in _paper_obj.values()
+        tt=[]
+        for paper in _paper_obj.values():
+            t=self._generate_markdown_table_content(
+            paper,tags=[_topic,_subtopic])
+            tt.append(t)
         table_lines = "".join([tt])
 
         _content_md = _subtopic_md + _fields_md + _style_md + table_lines
