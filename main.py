@@ -449,7 +449,8 @@ class _OverloadTasks:
             else:
                 with open(paper_path_appleblog, "w", encoding="utf8") as f:
                     f.write(paper_contents)      
-
+        except Exception as e:
+            print(f'save md {postname} error occured {e}')
 
 
     @staticmethod
