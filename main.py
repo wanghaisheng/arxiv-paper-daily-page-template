@@ -264,6 +264,8 @@ class CoroutineSpeedup:
 
     def overload_tasks(self):
         file_obj = {}
+        ot = _OverloadTasks()
+
         while not self.channel.empty():
             context = self.channel.get()
             md_obj = ot.to_markdown(context)
