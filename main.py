@@ -263,42 +263,27 @@ class CoroutineSpeedup:
         self.max_queue_size = self.worker.qsize()
 
     def overload_tasks(self):
-        render_style='appleblog'
-        if render_style=='appleblog':
+        file_obj = {}
+        while not self.channel.empty():
+            context = self.channel.get()
+            md_obj = ot.to_markdown(context)
             
-            ot = _OverloadTasks()
-            file_obj: dict = {}
-            while not self.channel.empty():
-                # 将上下文替换成 Markdown 语法文本
-                print('convert c to m')
-                context: dict = self.channel.get()
-                md_obj: dict = ot.to_markdown(context)     
-        elif render_style=='mkdocs':
-            file_obj: dict = {}
-            while not self.channel.empty():
-                # 将上下文替换成 Markdown 语法文本
-                context: dict = self.channel.get()
-                md_obj: dict = ot.to_markdown(context)
-    
-                # 子主题分流
+            if render_style == 'appleblog':
+                # Existing logic
+                pass
+            elif render_style == 'mkdocs':
                 if not file_obj.get(md_obj["hook"]):
                     file_obj[md_obj["hook"]] = md_obj["hook"]
                 file_obj[md_obj["hook"]] += md_obj["content"]
-    
-                # 生成 mkdocs 所需文件
+                
                 os.makedirs(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}'), exist_ok=True)
                 with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
                     f.write(md_obj["content"])
-                   
-    
-            # 生成 Markdown 模板文件
-            template_ = ot.generate_markdown_template(
-                content="".join(list(file_obj.values())))
-            # 存储 Markdown 模板文件
-            ot.storage(template_, obj_="database")
-    
-            return template_
-
+        
+        template_ = ot.generate_markdown_template(content="".join(list(file_obj.values())))
+        ot.storage(template_, obj_="database")
+        
+        return template_
     def go(self, power: int):
         # 任务重载
         self.offload_tasks()
