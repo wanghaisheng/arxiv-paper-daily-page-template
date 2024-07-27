@@ -37,8 +37,6 @@ from config import (
     SERVER_PATH_STORAGE_BACKUP,
     TIME_ZONE_CN,
     topic,
-
-render_style,
 editor_name,
     logger
 )
@@ -109,7 +107,7 @@ class CoroutineSpeedup:
 
         self.cache_space = []
 
-        self.max_results = 2000
+        self.max_results = 30
 
     def _adaptor(self):
         while not self.worker.empty():
@@ -185,7 +183,7 @@ class CoroutineSpeedup:
             paper_title=paper_title.replace("'","\'")
             paper_url = result.entry_id
             paper_abstract= result.summary.strip().replace('\n',' ').replace('\r'," ")
-            # print(paper_title)
+            print(paper_title)
             code_url = base_url + paper_id
             paper_first_author = result.authors[0]
 
@@ -255,25 +253,27 @@ class CoroutineSpeedup:
         self.max_queue_size = self.worker.qsize()
 
     def overload_tasks(self):
-
+        render_style='appleblog'
+        if render_style=='appleblog':
             
-        ot = _OverloadTasks()
-        file_obj: dict = {}
-        while not self.channel.empty():
-            # 将上下文替换成 Markdown 语法文本
-            context: dict = self.channel.get()
-            md_obj: dict = ot.to_markdown(context)
-
-            # 子主题分流
-            if not file_obj.get(md_obj["hook"]):
-                file_obj[md_obj["hook"]] = md_obj["hook"]
-            file_obj[md_obj["hook"]] += md_obj["content"]
-
-            # 生成 mkdocs 所需文件
-            os.makedirs(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}'), exist_ok=True)
-            with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
-                f.write(md_obj["content"])
-               
+            ot = _OverloadTasks()
+        elif render_style=='mkdocs':
+            file_obj: dict = {}
+            while not self.channel.empty():
+                # 将上下文替换成 Markdown 语法文本
+                context: dict = self.channel.get()
+                md_obj: dict = ot.to_markdown(context)
+    
+                # 子主题分流
+                if not file_obj.get(md_obj["hook"]):
+                    file_obj[md_obj["hook"]] = md_obj["hook"]
+                file_obj[md_obj["hook"]] += md_obj["content"]
+    
+                # 生成 mkdocs 所需文件
+                os.makedirs(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}'), exist_ok=True)
+                with open(os.path.join(SERVER_PATH_DOCS, f'{context["topic"]}', f'{context["subtopic"]}.md'), 'w') as f:
+                    f.write(md_obj["content"])
+                   
     
             # 生成 Markdown 模板文件
             template_ = ot.generate_markdown_template(
@@ -360,7 +360,7 @@ class _OverloadTasks:
                f"|{_pdf}" \
                f"|{_repo}" \
                f"|{paper['abstract']}|\n"
-        # print(':::',line)
+        print(':::',line)
         paper_contents= f"# title:{paper['title']} \r " \
                         f"## publish date: \r{paper['publish_time']} \r" \
                         f"## authors: \r  {paper['authors']} \r" \
@@ -422,9 +422,9 @@ class _OverloadTasks:
             print(f"Directory '{SERVER_DIR_STORAGE}' was created.")
         else:
             print(f"Directory '{SERVER_DIR_STORAGE}' already exists.")
-        if not os.path.exists(paper_path_appleblog):
-            with open(paper_path_appleblog, "w", encoding="utf8") as f:
-                    f.write(paper_contents)      
+
+        with open(paper_path_appleblog, "w", encoding="utf8") as f:
+                f.write(paper_contents)      
 
 
         return line
@@ -480,10 +480,7 @@ class _OverloadTasks:
         # Formatting fields
         paper['publish_time'] = f"**{paper['publish_time']}**"
         # paper['title'] = f"**{paper['title']}"
-        if not paper['keywords']:
-            if not tags:
-                paper['keywords'] = list(set(tags))
-            
+        paper['keywords'] = list(set(tags))
         QA_md_link =f"https://github.com/taesiri/ArXivQA/blob/main/papers/{paper['id']}.md"
         paper['QA_md_contents']=ToolBox.handle_md(QA_md_link)
         if paper['QA_md_contents']==None:
@@ -516,22 +513,7 @@ class _OverloadTasks:
 
         with open(paper_path_appleblog, "w", encoding="utf8") as f:
                 f.write(paper_contents)      
-        
-        if os.path.exists(SERVER_DIR_STORAGE.dirname()+'/tags.json'):
-            old=json.load(open(SERVER_DIR_STORAGE.dirname()+'/tags.json'),encoding='utf8').get('tags',[])
-            new=old+            paper['keywords'] + list(set(tags))
-            new=list(set(new))
-        else:
-            data={}
-            new=           paper['keywords'] + list(set(tags))
 
-            new=list(set(new))
-
-            data['tags']=new
-
-            with open('data.json', 'w', encoding='utf-8') as file:
-                json.dump(data, file, ensure_ascii=False, indent=2)
-            
 
 
     @staticmethod
@@ -631,14 +613,12 @@ class Scaffold:
         template_ = booster.overload_tasks()
 
         # Replace project README file.
-        if render_style=='mkdocs':
-
-            if env == "production":
-                with open(SERVER_PATH_README, "w", encoding="utf8") as f:
-                    for i in template_:
-                        f.write(i)
-                
-                shutil.copyfile(SERVER_PATH_README, os.path.join(SERVER_PATH_DOCS, "index.md"))
+        if env == "production":
+            with open(SERVER_PATH_README, "w", encoding="utf8") as f:
+                for i in template_:
+                    f.write(i)
+            
+            shutil.copyfile(SERVER_PATH_README, os.path.join(SERVER_PATH_DOCS, "index.md"))
 
 if __name__ == "__main__":
     
