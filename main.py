@@ -511,7 +511,6 @@ class _OverloadTasks:
         _fields_md = f"|{'|'.join(_fields)}|\n"
         _style_md = f"|{'|'.join([self._set_style_to('center') for _ in range(len(_fields))])}|\n"
         tt=[]
-        print(f'md table content for:{paper}--')
         for paper in _paper_obj.values():
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
