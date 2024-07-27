@@ -138,6 +138,11 @@ class CoroutineSpeedup:
         # output = scraper.scrape()
         # cols = ("id", "title", "categories", "abstract", "doi", "created", "updated", "authors")
         # df = pd.DataFrame(output, columns=cols)
+
+        if not os.path.exists(SERVER_DIR_STORAGE):
+            os.makedirs(SERVER_DIR_STORAGE)
+            print(f"Directory '{SERVER_DIR_STORAGE}' was created.")        
+            self.max_results=2000
         res = arxiv.Search(
             query="ti:"+keyword_+"+OR+abs:"+keyword_,
             max_results=self.max_results,
@@ -504,7 +509,10 @@ class _OverloadTasks:
         for paper in _paper_obj.values():
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
-            tt.append(t)
+            if not t:
+                pass
+            else:
+                tt.append(t)
         if len(tt)>0:
             table_lines = "".join(tt)
 
