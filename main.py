@@ -510,6 +510,7 @@ class _OverloadTasks:
         for paper in _paper_obj.values():
             t=self._generate_markdown_table_content(
             paper,tags=[_topic,_subtopic])
+            print(f'md is save:{paper}')
             if not t:
                 pass
             else:
