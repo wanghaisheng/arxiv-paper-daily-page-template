@@ -272,7 +272,7 @@ async def main():
         # Set tasks
     pending_atomic = [{"subtopic": subtopic, "keyword": keyword.replace('"', ""), "topic": topic}
                           for topic, subtopics in context.items() for subtopic, keyword in subtopics.items()]
-    cs = CoroutineSpeedup(task_docker=[example_task])
+    cs = CoroutineSpeedup(task_docker=pending_atomic)
     await cs.go(power=1)  # Using power=1 for simplicity
 
 if __name__ == "__main__":
