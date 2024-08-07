@@ -26,10 +26,7 @@ paper to podcast ...ask and question
 *  mkdocs 
 * . appleblog
 
-3. landingpage:
 
-*  https://github.com/wanghaisheng/astro-launchpad-landingpage
-* https://github.com/ixartz/SaaS-Boilerplate
 
 ### demo site
 
