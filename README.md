@@ -26,9 +26,7 @@ paper to podcast ...ask and question
 
 2. appleblog
 
-3. https://github.com/ixartz/Astro-boilerplate
-
-4. https://github.com/wanghaisheng/astro-launchpad-landingpage
+3. https://github.com/wanghaisheng/astro-launchpad-landingpage
 
 
 ### demo site
