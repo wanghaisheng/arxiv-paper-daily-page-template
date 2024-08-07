@@ -18,17 +18,20 @@ https://github.com/wanghaisheng/paper-to-video
 paper to podcast ...ask and question 
 
 
-
+## themes 
 
 风格样式选择
 
-1.mkdocs 
+1. mkdocs 
 
-2.appleblog
+2. appleblog
 
-3.https://github.com/ixartz/Astro-boilerplate
+3. https://github.com/ixartz/Astro-boilerplate
 
-demo site
+4. https://github.com/wanghaisheng/astro-launchpad-landingpage
+
+
+### demo site
 
 https://arxiv-paper-daily-template-jeu1.vercel.app/
 
