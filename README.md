@@ -22,11 +22,13 @@ paper to podcast ...ask and question
 
 风格样式选择
 
-1. mkdocs 
+1. blogs
+*  mkdocs 
+* . appleblog
 
-2. appleblog
+3. landingpage:
 
-3. https://github.com/wanghaisheng/astro-launchpad-landingpage
+*  https://github.com/wanghaisheng/astro-launchpad-landingpage
 
 
 ### demo site
